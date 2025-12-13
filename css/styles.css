@@ -430,6 +430,12 @@ nav a:hover {
     transition: transform 0.3s ease;
 }
 
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
 .contact {
     padding: 4rem 0;
     background: var(--background);
