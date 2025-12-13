@@ -1809,3 +1809,572 @@ footer {
     font-style: italic;
     color: var(--accent);
 }
+
+/* Intro Section */
+.intro-section {
+    padding: 4rem 0;
+    background: var(--background);
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px var(--shadow);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(107, 94, 78, 0.2);
+}
+
+.intro-icon {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+.intro-card h2 {
+    font-family: 'Cinzel', serif;
+    color: var(--main);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.intro-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text);
+    text-align: left;
+}
+
+/* Flyers Section */
+.flyers-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(231, 217, 196, 0.3) 0%, rgba(191, 207, 178, 0.2) 100%);
+}
+
+.flyers-section h2 {
+    text-align: center;
+    color: var(--main);
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flyers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flyer-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.flyer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(107, 94, 78, 0.25);
+}
+
+.flyer-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.flyer-card h3 {
+    font-family: 'Cinzel', serif;
+    color: var(--main);
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+    padding: 0 1rem;
+}
+
+.flyer-download-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--soft-green) 100%);
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    margin: 0 1rem 1.5rem 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 12px rgba(107, 94, 78, 0.15);
+}
+
+.flyer-download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(107, 94, 78, 0.25);
+    background: linear-gradient(135deg, var(--soft-green) 0%, var(--dark-green) 100%);
+}
+
+.flyer-download-btn i {
+    margin-right: 0.5rem;
+}
+
+/* Calendar Section */
+.calendar-section {
+    padding: 4rem 0;
+    background: var(--background);
+}
+
+.calendar-section h2 {
+    text-align: center;
+    color: var(--main);
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.calendar-wrapper {
+    max-width: 900px;
+    margin: 2rem auto 0;
+    background: var(--white);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px var(--shadow);
+}
+
+.calendly-inline-widget {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.calendar-fallback {
+    text-align: center;
+    padding: 2rem;
+}
+
+.calendar-fallback p {
+    font-size: 1.2rem;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+}
+
+/* Science Facts Section */
+.science-facts {
+    margin: 3rem 0;
+}
+
+.science-facts h2 {
+    text-align: center;
+    color: var(--main);
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fact-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(107, 94, 78, 0.25);
+}
+
+.fact-icon {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.fact-card h3 {
+    font-family: 'Cinzel', serif;
+    color: var(--main);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.fact-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text);
+    text-align: left;
+}
+
+/* Service Book Button */
+.service-book-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--soft-green) 100%);
+    color: var(--white);
+    padding: 0.7rem 1.3rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(107, 94, 78, 0.15);
+}
+
+.service-book-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(107, 94, 78, 0.25);
+    background: linear-gradient(135deg, var(--soft-green) 0%, var(--dark-green) 100%);
+}
+
+.service-book-btn i {
+    margin-right: 0.5rem;
+}
+
+/* About Page Specific Styles */
+.about-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.tag {
+    background: linear-gradient(135deg, var(--highlight) 0%, var(--soft-pink) 100%);
+    color: var(--main);
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 2px solid var(--accent);
+}
+
+.about-quote {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--accent);
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(182, 191, 165, 0.1) 0%, rgba(191, 207, 178, 0.1) 100%);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    font-family: 'Cinzel', serif;
+}
+
+/* Responsive Design for New Sections */
+@media (max-width: 768px) {
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .intro-card {
+        padding: 2rem;
+    }
+    
+    .flyers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .calendar-wrapper {
+        padding: 1rem;
+    }
+    
+    .calendly-inline-widget {
+        min-width: 100% !important;
+    }
+    
+    .about-tags {
+        justify-content: center;
+    }
+}
+
+/* ========== FLYER MODAL ========== */
+.flyer-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(62, 58, 52, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.flyer-modal-overlay.active {
+    opacity: 1;
+}
+
+.flyer-modal-content {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 90%;
+    max-height: 90vh;
+    position: relative;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.flyer-modal-overlay.active .flyer-modal-content {
+    transform: scale(1);
+}
+
+.flyer-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10001;
+}
+
+.flyer-modal-close:hover {
+    background: var(--dark-green);
+    transform: rotate(90deg);
+}
+
+.flyer-modal-content h3 {
+    font-family: 'Cinzel', serif;
+    color: var(--main);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.flyer-modal-image {
+    max-width: 100%;
+    max-height: 70vh;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+}
+
+.flyer-modal-actions {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* ========== SCROLL PROGRESS BAR ========== */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent) 0%, var(--soft-green) 100%);
+    z-index: 10000;
+    width: 0%;
+    transition: width 0.1s ease;
+    box-shadow: 0 2px 10px rgba(182, 191, 165, 0.5);
+}
+
+/* ========== BACK TO TOP BUTTON ========== */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--soft-green) 100%);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(107, 94, 78, 0.3);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: linear-gradient(135deg, var(--soft-green) 0%, var(--dark-green) 100%);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(107, 94, 78, 0.4);
+}
+
+/* ========== PAGE LOADER ========== */
+.page-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.page-loader.fade-out {
+    opacity: 0;
+}
+
+.loader-spinner {
+    font-size: 3rem;
+    color: var(--accent);
+    animation: spin 2s linear infinite, pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* ========== MODAL ANIMATIONS ========== */
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-content {
+    animation: none;
+}
+
+/* ========== ENHANCED CARD INTERACTIONS ========== */
+.intro-card,
+.flyer-card,
+.fact-card,
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+}
+
+/* ========== ACTIVE NAVIGATION LINK ========== */
+nav a.active {
+    background: var(--soft-green);
+    color: var(--white);
+    box-shadow: 0 2px 8px rgba(182, 191, 165, 0.3);
+}
+
+/* ========== SMOOTH PAGE TRANSITIONS ========== */
+body {
+    transition: opacity 0.3s ease;
+}
+
+/* ========== ENHANCED FLOATING BUTTON ========== */
+.floating-services {
+    transition: transform 0.1s ease-out;
+    will-change: transform;
+}
+
+/* ========== IMAGE FADE IN ========== */
+img {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* ========== ENHANCED SERVICE CARD OVERLAY ========== */
+.service-overlay {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* ========== RESPONSIVE ENHANCEMENTS ========== */
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .flyer-modal-content {
+        padding: 1.5rem;
+        max-width: 95%;
+    }
+    
+    .flyer-modal-image {
+        max-height: 60vh;
+    }
+    
+    .floating-services {
+        transform: none !important;
+    }
+}

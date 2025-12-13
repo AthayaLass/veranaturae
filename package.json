@@ -1,0 +1,25 @@
+{
+  "name": "veranaturae",
+  "version": "1.0.0",
+  "description": "Veranaturae - Mindfulness, Yoga & Ayurveda website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/index.html",
+    "start": "live-server --port=3000 --open=/index.html",
+    "serve": "live-server --port=3000 --open=/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AthayaLass/veranaturae.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AthayaLass/veranaturae/issues"
+  },
+  "homepage": "https://github.com/AthayaLass/veranaturae#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

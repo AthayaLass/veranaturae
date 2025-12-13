@@ -4,10 +4,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayurveda - Veranaturae</title>
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://veranaturae.com/ayurveda.html">
+    <meta property="og:title" content="Ayurveda - Veranaturae">
+    <meta property="og:description" content="Discover the ancient wisdom of Ayurveda and its science-backed benefits for holistic wellness.">
+    <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
+    
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo-link">
+                    <img src="images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="ayurveda.html">Ayurveda</a></li>
+                    </ul>
+                </nav>
+                <div class="burger-menu" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="index.html" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+                <li><a href="mindfulness.html" onclick="closeMobileMenu()">Mindfulness</a></li>
+                <li><a href="ayurveda.html" onclick="closeMobileMenu()">Ayurveda</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Ayurveda</h1>
+                <p class="subtitle">Ancient Wisdom for Modern Wellness</p>
+            </div>
+        </section>
+
+        <section class="mindfulness-section">
+            <div class="container">
+                <div class="mindfulness-intro">
+                    <p>Ayurveda, the "science of life," is one of the world's oldest holistic healing systems. Originating in India over 5,000 years ago, it offers a comprehensive approach to health and wellness that balances mind, body, and spirit through natural practices, personalized lifestyle recommendations, and an understanding of our unique constitution.</p>
+                </div>
+
+                <div class="icon-divider">
+                    <i class="fas fa-leaf"></i>
+                </div>
+
+                <div class="mindfulness-description">
+                    <h2>What is Ayurveda?</h2>
+                    <p>Ayurveda recognizes that each person has a unique constitution, or <em>prakriti</em>, determined by three fundamental energies called <em>doshas</em>: Vata (air and space), Pitta (fire and water), and Kapha (earth and water). These doshas govern all physical and mental processes and provide every living being with an individual blueprint for health and fulfillment.</p>
+                    
+                    <p>The goal of Ayurveda is not just to treat disease, but to maintain optimal health and prevent illness. It emphasizes living in harmony with nature's rhythms, following daily and seasonal routines, eating according to your constitution, and using natural remedies to support the body's innate healing abilities.</p>
+                    
+                    <p>Ayurvedic practices include dietary recommendations, herbal medicine, yoga, meditation, massage, detoxification treatments, and lifestyle modifications. All of these are tailored to your unique dosha balance, making Ayurveda a truly personalized approach to wellness.</p>
+                </div>
+
+                <div class="icon-divider">
+                    <i class="fas fa-microscope"></i>
+                </div>
+
+                <div class="science-facts">
+                    <h2>Science-Backed Benefits</h2>
+                    <div class="facts-grid">
+                        <div class="fact-card">
+                            <div class="fact-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h3>Herbal Medicine</h3>
+                            <p>Modern research has validated many Ayurvedic herbs. Turmeric (curcumin) has been extensively studied for its anti-inflammatory properties. Studies in "Journal of Clinical Medicine" show it can reduce inflammation markers. Ashwagandha has been shown in randomized controlled trials to reduce cortisol levels and improve stress resilience.</p>
+                        </div>
+                        <div class="fact-card">
+                            <div class="fact-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3>Digestive Health</h3>
+                            <p>Ayurvedic dietary principles emphasize mindful eating and food combinations. Research published in "Alternative Medicine Review" shows that Ayurvedic dietary interventions can improve digestive function and reduce symptoms of irritable bowel syndrome. The emphasis on eating according to one's constitution aligns with modern personalized nutrition approaches.</p>
+                        </div>
+                        <div class="fact-card">
+                            <div class="fact-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Cardiovascular Health</h3>
+                            <p>Studies have shown that Ayurvedic lifestyle modifications, including dietary changes and stress management, can improve cardiovascular health. Research in "Journal of Ayurveda and Integrative Medicine" demonstrates reductions in blood pressure and cholesterol levels following Ayurvedic interventions.</p>
+                        </div>
+                        <div class="fact-card">
+                            <div class="fact-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Mental Health</h3>
+                            <p>Ayurvedic practices like meditation, yoga, and herbal treatments have shown promise in managing anxiety and depression. A study in "Evidence-Based Complementary and Alternative Medicine" found that Ayurvedic treatments, combined with lifestyle modifications, significantly improved symptoms of anxiety and depression.</p>
+                        </div>
+                        <div class="fact-card">
+                            <div class="fact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Circadian Rhythms</h3>
+                            <p>Ayurveda's emphasis on daily routines (dinacharya) aligns with modern chronobiology research. Studies show that aligning activities with natural circadian rhythms improves sleep quality, hormone regulation, and overall health. The Ayurvedic practice of waking with the sun and eating at specific times supports optimal metabolic function.</p>
+                        </div>
+                        <div class="fact-card">
+                            <div class="fact-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3>Holistic Approach</h3>
+                            <p>Modern medicine is increasingly recognizing the value of holistic approaches. Research in "Frontiers in Medicine" highlights how Ayurveda's mind-body-spirit approach can complement conventional treatments, particularly for chronic conditions. The personalized nature of Ayurveda aligns with the emerging field of precision medicine.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="icon-divider">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+
+                <div class="mindfulness-benefits">
+                    <h2>Benefits of Ayurveda</h2>
+                    <p>Through Ayurvedic practices, you can experience:</p>
+                    <ul>
+                        <li>Improved digestion and metabolism</li>
+                        <li>Enhanced energy and vitality</li>
+                        <li>Better sleep quality</li>
+                        <li>Reduced stress and anxiety</li>
+                        <li>Strengthened immune system</li>
+                        <li>Improved mental clarity and focus</li>
+                        <li>Better hormonal balance</li>
+                        <li>Enhanced skin health and radiance</li>
+                        <li>Greater sense of overall well-being</li>
+                        <li>Deeper connection with nature's rhythms</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Ayurveda Services</h2>
+                <div class="services-info">
+                    <div class="info-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Every session is personalized according to your unique constitution (dosha) and individual needs!</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Session language: available in French, Italian and English.</span>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-service="ayurveda">
+                        <div class="service-image">
+                            <img src="images/fafa04.jpg" alt="Ayurveda Consultation" class="service-img">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Ayurveda Consultation</h3>
+                            <p class="service-teaser">Discover your unique constitution (dosha) and receive personalized recommendations for diet, lifestyle, herbs, and daily routines to restore balance and enhance your well-being.</p>
+                            <a href="index.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Book a Session
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="yoga">
+                        <div class="service-image">
+                            <img src="images/landscape_01.jpeg" alt="Yoga and Breathwork" class="service-img">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Yoga and Breathwork</h3>
+                            <p class="service-teaser">Ayurvedic yoga practices tailored to your dosha type. Learn breathing techniques (pranayama) and yoga postures that support your unique constitution and promote balance.</p>
+                            <a href="index.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Book a Session
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Service Pricing Modal -->
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Veranaturae. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
-

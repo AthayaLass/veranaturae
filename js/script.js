@@ -441,11 +441,397 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe sections for animation
 document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('.mindfulness-section, .about-section, .contact');
+    const sections = document.querySelectorAll('.mindfulness-section, .about-section, .contact, .intro-section, .flyers-section, .calendar-section, .services, .science-facts');
     sections.forEach(section => {
         section.style.opacity = '0';
         section.style.transform = 'translateY(30px)';
         section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(section);
     });
+    
+    // Animate cards individually
+    const cards = document.querySelectorAll('.intro-card, .flyer-card, .fact-card, .service-card');
+    cards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        observer.observe(card);
+    });
+});
+
+// ========== FLYER PREVIEW MODAL ==========
+function openFlyerModal(imageSrc, title) {
+    const modal = document.createElement('div');
+    modal.className = 'flyer-modal-overlay';
+    modal.innerHTML = `
+        <div class="flyer-modal-content">
+            <button class="flyer-modal-close" onclick="closeFlyerModal(this)">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>${title}</h3>
+            <img src="${imageSrc}" alt="${title}" class="flyer-modal-image">
+            <div class="flyer-modal-actions">
+                <a href="${imageSrc}" download class="flyer-download-btn">
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+    document.body.style.overflow = 'hidden';
+    
+    // Animate in
+    setTimeout(() => {
+        modal.classList.add('active');
+    }, 10);
+}
+
+function closeFlyerModal(button) {
+    const modal = button.closest('.flyer-modal-overlay');
+    modal.classList.remove('active');
+    setTimeout(() => {
+        document.body.removeChild(modal);
+        document.body.style.overflow = '';
+    }, 300);
+}
+
+// Add click handlers to flyer cards
+document.addEventListener('DOMContentLoaded', function() {
+    const flyerCards = document.querySelectorAll('.flyer-card');
+    flyerCards.forEach(card => {
+        const image = card.querySelector('.flyer-image');
+        const title = card.querySelector('h3').textContent;
+        if (image) {
+            image.addEventListener('click', function() {
+                openFlyerModal(this.src, title);
+            });
+            image.style.cursor = 'pointer';
+        }
+    });
+});
+
+// ========== TYPING EFFECT FOR HERO SUBTITLE ==========
+function typeWriter(element, text, speed = 50) {
+    let i = 0;
+    element.textContent = '';
+    function type() {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+    type();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const subtitle = document.querySelector('.hero .subtitle');
+    if (subtitle && !subtitle.dataset.typed) {
+        const originalText = subtitle.textContent;
+        subtitle.dataset.typed = 'true';
+        typeWriter(subtitle, originalText, 50);
+    }
+});
+
+// ========== PARALLAX EFFECT FOR HERO ==========
+document.addEventListener('DOMContentLoaded', function() {
+    const hero = document.querySelector('.hero');
+    if (hero) {
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * 0.5;
+            hero.style.transform = `translateY(${rate}px)`;
+        });
+    }
+});
+
+// ========== SCROLL PROGRESS INDICATOR ==========
+function createScrollProgress() {
+    const progressBar = document.createElement('div');
+    progressBar.className = 'scroll-progress';
+    document.body.appendChild(progressBar);
+    
+    window.addEventListener('scroll', () => {
+        const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (window.pageYOffset / windowHeight) * 100;
+        progressBar.style.width = scrolled + '%';
+    });
+}
+
+document.addEventListener('DOMContentLoaded', createScrollProgress);
+
+// ========== BACK TO TOP BUTTON ==========
+function createBackToTopButton() {
+    const button = document.createElement('button');
+    button.className = 'back-to-top';
+    button.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    button.setAttribute('aria-label', 'Back to top');
+    document.body.appendChild(button);
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            button.classList.add('visible');
+        } else {
+            button.classList.remove('visible');
+        }
+    });
+    
+    button.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', createBackToTopButton);
+
+// ========== ENHANCED CARD INTERACTIONS ==========
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.intro-card, .flyer-card, .fact-card, .service-card');
+    
+    cards.forEach(card => {
+        // 3D tilt effect on mouse move
+        card.addEventListener('mousemove', function(e) {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 10;
+            const rotateY = (centerX - x) / 10;
+            
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+        });
+    });
+});
+
+// ========== ANIMATED COUNTERS ==========
+function animateCounter(element, target, duration = 2000) {
+    let start = 0;
+    const increment = target / (duration / 16);
+    const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+            element.textContent = target + '+';
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(start) + '+';
+        }
+    }, 16);
+}
+
+// Observe counters
+const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.dataset.counted) {
+            entry.target.dataset.counted = 'true';
+            const target = parseInt(entry.target.dataset.target) || 100;
+            animateCounter(entry.target, target);
+        }
+    });
+}, { threshold: 0.5 });
+
+// ========== SMOOTH PAGE TRANSITIONS ==========
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href^="index.html"], a[href^="about.html"], a[href^="mindfulness.html"], a[href^="ayurveda.html"]');
+    
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            if (this.hostname === window.location.hostname || !this.hostname) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                
+                // Add fade out
+                document.body.style.opacity = '0';
+                document.body.style.transition = 'opacity 0.3s ease';
+                
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 300);
+            }
+        });
+    });
+    
+    // Fade in on page load
+    document.body.style.opacity = '0';
+    setTimeout(() => {
+        document.body.style.transition = 'opacity 0.5s ease';
+        document.body.style.opacity = '1';
+    }, 100);
+});
+
+// ========== ENHANCED MODAL ANIMATIONS ==========
+document.addEventListener('DOMContentLoaded', function() {
+    const modals = document.querySelectorAll('.modal-overlay, .service-modal');
+    
+    modals.forEach(modal => {
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                    if (modal.classList.contains('active')) {
+                        const content = modal.querySelector('.modal-content');
+                        if (content) {
+                            content.style.animation = 'modalSlideIn 0.4s ease-out';
+                        }
+                    }
+                }
+            });
+        });
+        
+        observer.observe(modal, { attributes: true });
+    });
+});
+
+// ========== LOADING ANIMATION ==========
+window.addEventListener('load', function() {
+    const loader = document.createElement('div');
+    loader.className = 'page-loader';
+    loader.innerHTML = '<div class="loader-spinner"><i class="fas fa-leaf"></i></div>';
+    document.body.appendChild(loader);
+    
+    setTimeout(() => {
+        loader.classList.add('fade-out');
+        setTimeout(() => {
+            document.body.removeChild(loader);
+        }, 500);
+    }, 500);
+});
+
+// ========== INTERACTIVE SERVICE CARDS ==========
+document.addEventListener('DOMContentLoaded', function() {
+    const serviceCards = document.querySelectorAll('.service-card');
+    
+    serviceCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            const overlay = this.querySelector('.service-overlay');
+            if (overlay) {
+                overlay.style.opacity = '1';
+                overlay.style.transform = 'scale(1.1)';
+            }
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            const overlay = this.querySelector('.service-overlay');
+            if (overlay) {
+                overlay.style.opacity = '0.8';
+                overlay.style.transform = 'scale(1)';
+            }
+        });
+    });
+});
+
+// ========== STICKY NAVIGATION HIGHLIGHT ==========
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    
+    function highlightNav() {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.pageYOffset >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+    
+    window.addEventListener('scroll', highlightNav);
+    highlightNav();
+});
+
+// ========== IMAGE LAZY LOADING WITH FADE IN ==========
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img[src]');
+    
+    const imageObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.style.opacity = '0';
+                img.style.transition = 'opacity 0.5s ease';
+                
+                if (img.complete) {
+                    img.style.opacity = '1';
+                } else {
+                    img.addEventListener('load', function() {
+                        this.style.opacity = '1';
+                    });
+                }
+                
+                imageObserver.unobserve(img);
+            }
+        });
+    }, { rootMargin: '50px' });
+    
+    images.forEach(img => {
+        imageObserver.observe(img);
+    });
+});
+
+// ========== SMOOTH SCROLL TO CALENDAR ==========
+document.addEventListener('DOMContentLoaded', function() {
+    const calendarLinks = document.querySelectorAll('a[href*="#calendar"]');
+    
+    calendarLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            if (this.getAttribute('href').includes('#calendar')) {
+                e.preventDefault();
+                const target = document.getElementById('calendar');
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+});
+
+// ========== ENHANCED FLOATING BUTTON ==========
+document.addEventListener('DOMContentLoaded', function() {
+    const floatingBtn = document.querySelector('.floating-services');
+    if (floatingBtn) {
+        let mouseX = 0;
+        let mouseY = 0;
+        let currentX = 0;
+        let currentY = 0;
+        
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+        
+        function animate() {
+            const rect = floatingBtn.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            
+            const diffX = mouseX - centerX;
+            const diffY = mouseY - centerY;
+            
+            currentX += (diffX * 0.05 - currentX) * 0.1;
+            currentY += (diffY * 0.05 - currentY) * 0.1;
+            
+            floatingBtn.style.transform = `translate(${currentX}px, ${currentY}px)`;
+            requestAnimationFrame(animate);
+        }
+        
+        animate();
+    }
 });
