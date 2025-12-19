@@ -225,6 +225,99 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 buttonText: 'Stay Updated',
                 buttonAction: 'mailto:veronica@oceantoearth.life?subject=Ayurveda Interest'
+            },
+            'ayurveda-main': {
+                title: 'Ayurveda Services',
+                description: 'Discover the ancient wisdom of Ayurvedic healing. Our holistic approach to wellness through Ayurveda offers personalized consultations, therapeutic massages, and nutrition guidance tailored to your unique constitution.',
+                pricing: [
+                    {
+                        title: 'Ayurvedic Consultation',
+                        icon: 'fas fa-user-md',
+                        description: 'Personalized wellness consultation to determine your dosha and create a customized wellness plan',
+                        price: 'Contact for Pricing'
+                    },
+                    {
+                        title: 'Ayurvedic Massages',
+                        icon: 'fas fa-spa',
+                        description: 'Therapeutic massages using traditional Ayurvedic techniques and oils',
+                        price: 'Contact for Pricing'
+                    },
+                    {
+                        title: 'Ayurvedic Nutrition',
+                        icon: 'fas fa-utensils',
+                        description: 'Personalized dietary recommendations based on your dosha and lifestyle',
+                        price: 'Contact for Pricing'
+                    }
+                ],
+                features: [
+                    'Personalized dosha assessment',
+                    'Traditional Ayurvedic practices',
+                    'Holistic wellness approach',
+                    'Natural healing methods',
+                    'Ongoing support and guidance'
+                ],
+                buttonText: 'Book a Consultation',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Ayurveda Services Inquiry'
+            },
+            'mindfulness-main': {
+                title: 'Mindfulness Services',
+                description: 'Cultivate presence, reduce stress, and enhance well-being through personalized mindfulness practices. Our services are designed for individuals, corporate settings, and unique underwater experiences.',
+                pricing: [
+                    {
+                        title: '1:1 Mindfulness Session',
+                        icon: 'fas fa-user',
+                        description: 'Personalized one-on-one mindfulness coaching session',
+                        price: 'Contact for Pricing'
+                    },
+                    {
+                        title: 'Corporate Mindfulness',
+                        icon: 'fas fa-briefcase',
+                        description: 'Mindfulness workshops and programs tailored for your organization',
+                        price: 'Contact for Pricing'
+                    },
+                    {
+                        title: 'Underwater Mindfulness',
+                        icon: 'fas fa-water',
+                        description: 'Unique underwater mindfulness experience in collaboration with athelas-diving.com',
+                        price: 'Contact for Pricing'
+                    }
+                ],
+                features: [
+                    'Personalized approach',
+                    'Stress reduction techniques',
+                    'Enhanced focus and clarity',
+                    'Emotional regulation',
+                    'Available in multiple languages'
+                ],
+                buttonText: 'Book a Session',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Mindfulness Services Inquiry'
+            },
+            'yoga-main': {
+                title: 'Yoga Services',
+                description: 'Unite mind, body, and spirit through gentle movement and breathwork. Experience personalized private sessions or join group classes designed for all levels.',
+                pricing: [
+                    {
+                        title: 'Private Yoga Session',
+                        icon: 'fas fa-user',
+                        description: 'One-on-one personalized yoga session tailored to your needs',
+                        price: 'Contact for Pricing'
+                    },
+                    {
+                        title: 'Group Yoga Session',
+                        icon: 'fas fa-users',
+                        description: 'Group yoga classes for all levels in a supportive environment',
+                        price: 'Contact for Pricing'
+                    }
+                ],
+                features: [
+                    'Gentle movement practices',
+                    'Breathing techniques (pranayama)',
+                    'Mind-body connection',
+                    'All levels welcome',
+                    'Personalized guidance'
+                ],
+                buttonText: 'Book a Session',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Yoga Services Inquiry'
             }
         }
     };
@@ -242,7 +335,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'work': 'linear-gradient(135deg, #e8f4f8 0%, #d1e7dd 100%)',
             'yoga': 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
             'underwater': 'linear-gradient(135deg, #a8c0ff 0%, #b8a9c9 100%)',
-            'ayurveda': 'linear-gradient(135deg, #ffd1ff 0%, #fad0c4 100%)'
+            'ayurveda': 'linear-gradient(135deg, #ffd1ff 0%, #fad0c4 100%)',
+            'ayurveda-main': 'linear-gradient(135deg, #ffd1ff 0%, #fad0c4 100%)',
+            'mindfulness-main': 'linear-gradient(135deg, #a8c0ff 0%, #b8a9c9 100%)',
+            'yoga-main': 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)'
         };
         
         const pricingHTML = data.pricing.map(item => `
@@ -373,6 +469,14 @@ function closeMobileMenu() {
     if (burgerMenu && mobileNav) {
         burgerMenu.classList.remove('active');
         mobileNav.classList.remove('active');
+    }
+}
+
+// Flyers sidebar toggle function
+function toggleFlyersSidebar() {
+    const flyersSidebar = document.getElementById('flyersSidebar');
+    if (flyersSidebar) {
+        flyersSidebar.classList.toggle('active');
     }
 }
 
