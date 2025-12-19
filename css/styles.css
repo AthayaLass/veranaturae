@@ -1056,6 +1056,14 @@ footer {
     margin-top: 2rem;
 }
 
+.services-grid-center {
+    grid-template-columns: repeat(2, minmax(300px, 400px));
+    justify-content: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .service-card {
     background: linear-gradient(135deg, rgba(249, 248, 246, 0.9) 0%, rgba(231, 217, 196, 0.8) 100%);
     border-radius: 20px;
