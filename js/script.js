@@ -318,6 +318,93 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 buttonText: 'Book a Session',
                 buttonAction: 'mailto:veronica@oceantoearth.life?subject=Yoga Services Inquiry'
+            },
+            'ayurveda-consultation': {
+                title: 'Ayurvedic Consultation',
+                description: 'Discover your unique constitution (dosha) and receive personalized recommendations for diet, lifestyle, herbs, and daily routines to restore balance and enhance your well-being. This comprehensive consultation includes dosha analysis, health assessment, and a customized wellness plan.',
+                pricing: [
+                    {
+                        title: 'Initial Consultation',
+                        icon: 'fas fa-user-md',
+                        description: 'Comprehensive 90-minute consultation including dosha analysis and personalized wellness plan',
+                        price: 'Contact for Pricing'
+                    },
+                    {
+                        title: 'Follow-up Consultation',
+                        icon: 'fas fa-redo',
+                        description: '60-minute follow-up session to track progress and adjust recommendations',
+                        price: 'Contact for Pricing'
+                    }
+                ],
+                features: [
+                    'Detailed dosha analysis (Vata, Pitta, Kapha)',
+                    'Identification of current imbalances',
+                    'Pulse and tongue diagnosis',
+                    'Comprehensive health history review',
+                    'Personalized recommendations for diet, lifestyle, and herbs'
+                ],
+                buttonText: 'Book a Consultation',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Ayurvedic Consultation'
+            },
+            'ayurveda-massages': {
+                title: 'Ayurvedic Massages',
+                description: 'Experience therapeutic massages using traditional Ayurvedic techniques and oils. These treatments help balance the doshas, improve circulation, release toxins, and promote deep relaxation and healing.',
+                pricing: [
+                    {
+                        title: 'Abhyanga (Full Body Oil Massage)',
+                        icon: 'fas fa-spa',
+                        description: 'Traditional full-body massage with warm medicated oils',
+                        price: 'Contact for Pricing'
+                    },
+                    {
+                        title: 'Shirodhara (Head Treatment)',
+                        icon: 'fas fa-head-side-virus',
+                        description: 'Therapeutic oil stream treatment for the forehead and scalp',
+                        price: 'Contact for Pricing'
+                    },
+                    {
+                        title: 'Massage Package',
+                        icon: 'fas fa-gift',
+                        description: 'Series of treatments for optimal results',
+                        price: 'Contact for Pricing'
+                    }
+                ],
+                features: [
+                    'Dosha-specific oil selection',
+                    'Traditional Ayurvedic techniques',
+                    'Deep relaxation and stress relief',
+                    'Improved circulation and detoxification',
+                    'Enhanced energy flow'
+                ],
+                buttonText: 'Book a Treatment',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Ayurvedic Massages'
+            },
+            'ayurveda-nutrition': {
+                title: 'Ayurvedic Nutrition',
+                description: 'Receive customized dietary recommendations tailored to your dosha type and individual needs. Learn which foods support your constitution, optimal meal timing, food combinations, and how to eat in harmony with nature\'s rhythms.',
+                pricing: [
+                    {
+                        title: 'Nutrition Consultation',
+                        icon: 'fas fa-utensils',
+                        description: '60-minute personalized nutrition session with meal planning guidance',
+                        price: 'Contact for Pricing'
+                    },
+                    {
+                        title: '3-Session Nutrition Package',
+                        icon: 'fas fa-calendar-check',
+                        description: 'Three sessions including initial consultation and follow-ups',
+                        price: 'Contact for Pricing'
+                    }
+                ],
+                features: [
+                    'Dosha-specific food recommendations',
+                    'Meal timing and routine guidance',
+                    'Food combination principles',
+                    'Seasonal eating recommendations',
+                    'Personalized meal plan examples'
+                ],
+                buttonText: 'Book a Consultation',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Ayurvedic Nutrition'
             }
         }
     };
@@ -338,7 +425,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'ayurveda': 'linear-gradient(135deg, #ffd1ff 0%, #fad0c4 100%)',
             'ayurveda-main': 'linear-gradient(135deg, #ffd1ff 0%, #fad0c4 100%)',
             'mindfulness-main': 'linear-gradient(135deg, #a8c0ff 0%, #b8a9c9 100%)',
-            'yoga-main': 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)'
+            'yoga-main': 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
+            'ayurveda-consultation': 'linear-gradient(135deg, #ffd1ff 0%, #fad0c4 100%)',
+            'ayurveda-massages': 'linear-gradient(135deg, #ffd1ff 0%, #fad0c4 100%)',
+            'ayurveda-nutrition': 'linear-gradient(135deg, #ffd1ff 0%, #fad0c4 100%)'
         };
         
         const pricingHTML = data.pricing.map(item => `
