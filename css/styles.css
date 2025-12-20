@@ -2224,6 +2224,44 @@ footer {
     margin-bottom: 1.5rem;
 }
 
+/* Calendar Service Buttons */
+.calendar-service-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    flex-wrap: wrap;
+}
+
+.calendar-service-btn {
+    background: var(--white);
+    color: var(--main);
+    border: 2px solid var(--accent);
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.calendar-service-btn:hover {
+    background: var(--soft-green);
+    color: var(--text);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+.calendar-service-btn.active {
+    background: var(--accent);
+    color: var(--white);
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(107, 94, 78, 0.2);
+}
+
 /* Science Facts Section */
 .science-facts {
     margin: 3rem 0;
