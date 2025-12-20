@@ -420,14 +420,150 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 buttonText: 'Book a Consultation',
                 buttonAction: 'mailto:veronica@oceantoearth.life?subject=Ayurvedic Nutrition'
+            },
+            'mindfulness-1to1': {
+                title: '1:1 Mindfulness Sessions',
+                description: 'Step into a more balanced life with personal guidance. Whether you\'re new to mindfulness or deepening an existing practice, my individual coaching sessions are designed around your unique goals and life rhythm. Together, we\'ll cultivate presence, resilience, and self-awareness - one mindful breath at a time.',
+                pricing: [
+                    {
+                        title: 'Individual Session',
+                        icon: 'fas fa-user',
+                        description: '1-hour personalized mindfulness session',
+                        price: 'CHF 70'
+                    },
+                    {
+                        title: '4-Session Package',
+                        icon: 'fas fa-calendar-check',
+                        description: '4 sessions of 1 hour each',
+                        price: 'CHF 280'
+                    },
+                    {
+                        title: '8-Session Package',
+                        icon: 'fas fa-star',
+                        description: '8 sessions of 1 hour each',
+                        price: 'CHF 480'
+                    }
+                ],
+                features: [
+                    'Personalized approach',
+                    '30 min discovery session included',
+                    'Follow-up support',
+                    'Flexible scheduling',
+                    'Progress tracking'
+                ],
+                buttonText: 'Book Your Session',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=1:1 Mindfulness Inquiry',
+                flyerDownload: 'images/Flyer_MindfulnessPaths.png'
+            },
+            'mindfulness-corporate': {
+                title: 'Corporate Mindfulness',
+                description: 'Boost your team\'s well-being, focus, and collaboration. My tailored mindfulness workshops and corporate sessions bring clarity and calm into the workplace. Help your team reduce stress, manage change, and enhance emotional intelligence, right at the heart of your organization.',
+                pricing: [
+                    {
+                        title: 'Workshop (2 hours)',
+                        icon: 'fas fa-chalkboard-teacher',
+                        description: '2-hour workshop for up to 15 people',
+                        price: 'CHF 400'
+                    },
+                    {
+                        title: 'Program (8 sessions)',
+                        icon: 'fas fa-calendar-alt',
+                        description: '8 sessions of 1 hour each for up to 10 people',
+                        price: 'CHF 2,500'
+                    }
+                ],
+                features: [
+                    'Tailored to your organization',
+                    'Stress reduction techniques',
+                    'Team building exercises',
+                    'Leadership development',
+                    'Ongoing support'
+                ],
+                buttonText: 'Contact for Details',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Corporate Mindfulness',
+                flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
+            },
+            'mindfulness-underwater': {
+                title: 'Underwater Mindfulness',
+                description: 'Experience mindfulness in a unique underwater environment. Connect with the serene underwater world while practicing mindfulness techniques. This innovative approach combines the calming effects of water with traditional mindfulness practices, creating a truly immersive and transformative experience.',
+                pricing: [
+                    {
+                        title: 'Underwater Session',
+                        icon: 'fas fa-water',
+                        description: 'Guided underwater mindfulness experience',
+                        price: 'Contact for Pricing'
+                    }
+                ],
+                features: [
+                    'Collaboration with Athelas Diving',
+                    'Unique underwater environment',
+                    'Professional diving guidance',
+                    'Mindfulness instruction',
+                    'Safety equipment provided'
+                ],
+                buttonText: 'Contact for Details',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Underwater Mindfulness'
+            },
+            'private-yoga': {
+                title: 'Private Yoga',
+                description: 'Experience personalized one-on-one yoga sessions tailored to your unique needs, goals, and experience level. Receive individual attention and guidance to deepen your practice at your own pace. Slow down, soften, and breathe. Yoga and breathwork are powerful allies on the path to mindfulness.',
+                pricing: [
+                    {
+                        title: 'Private Session',
+                        icon: 'fas fa-user',
+                        description: '1-hour private yoga and breathwork session',
+                        price: 'CHF 40'
+                    }
+                ],
+                features: [
+                    'Personalized approach',
+                    'Gentle movement',
+                    'Breathing techniques',
+                    'Stress relief',
+                    'Mind-body connection',
+                    'All levels welcome'
+                ],
+                buttonText: 'Book Your Session',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Private Yoga Session'
+            },
+            'group-yoga': {
+                title: 'Group Yoga',
+                description: 'Join a supportive community in group yoga sessions. Practice together, share energy, and grow in a welcoming environment that fosters connection and collective mindfulness. Experience gentle, conscious movement with guided breathing techniques to help you release stress, calm the mind, and return to your inner center.',
+                pricing: [
+                    {
+                        title: 'Group Session',
+                        icon: 'fas fa-users',
+                        description: '1-hour group session for up to 10 people',
+                        price: 'CHF 25 per person'
+                    }
+                ],
+                features: [
+                    'Supportive community',
+                    'Gentle movement',
+                    'Breathing techniques',
+                    'Stress relief',
+                    'Mind-body connection',
+                    'All levels welcome'
+                ],
+                buttonText: 'Book Your Session',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Group Yoga Session'
             }
         }
     };
     
     // Function to generate modal content
     function generateModalContent(serviceType) {
-        const currentLang = 'en'; // Default to English for now
-        const data = serviceData[currentLang][serviceType];
+        // Get current language from URL or default to 'en'
+        const path = window.location.pathname;
+        let currentLang = 'en'; // Default
+        if (path.includes('/it/')) currentLang = 'it';
+        else if (path.includes('/fr/')) currentLang = 'fr';
+        else if (path.includes('/en/')) currentLang = 'en';
+        
+        // Fallback to 'en' if language data doesn't exist
+        const data = (serviceData[currentLang] && serviceData[currentLang][serviceType]) 
+            ? serviceData[currentLang][serviceType] 
+            : (serviceData['en'] && serviceData['en'][serviceType] ? serviceData['en'][serviceType] : null);
         if (!data) return '';
         
         // Define service-specific background colors (matching original flip card colors)
@@ -443,7 +579,12 @@ document.addEventListener('DOMContentLoaded', function() {
             'yoga-main': 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
             'ayurveda-consultation': 'linear-gradient(135deg, #ffd1ff 0%, #fad0c4 100%)',
             'ayurveda-massages': 'linear-gradient(135deg, #ffd1ff 0%, #fad0c4 100%)',
-            'ayurveda-nutrition': 'linear-gradient(135deg, #ffd1ff 0%, #fad0c4 100%)'
+            'ayurveda-nutrition': 'linear-gradient(135deg, #ffd1ff 0%, #fad0c4 100%)',
+            'mindfulness-1to1': 'linear-gradient(135deg, #a8c0ff 0%, #b8a9c9 100%)',
+            'mindfulness-corporate': 'linear-gradient(135deg, #e8f4f8 0%, #d1e7dd 100%)',
+            'mindfulness-underwater': 'linear-gradient(135deg, #a8c0ff 0%, #b8a9c9 100%)',
+            'private-yoga': 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
+            'group-yoga': 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)'
         };
         
         const pricingHTML = data.pricing.map(item => `
@@ -515,7 +656,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
     
             const serviceType = this.dataset.service;
-            openModal(serviceType);
+            if (serviceType) {
+                openModal(serviceType);
+            }
         });
     });
     
