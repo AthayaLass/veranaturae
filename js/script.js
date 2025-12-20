@@ -548,6 +548,958 @@ document.addEventListener('DOMContentLoaded', function() {
                 buttonText: 'Book Your Session',
                 buttonAction: 'mailto:veronica@oceantoearth.life?subject=Group Yoga Session'
             }
+        },
+        'it': {
+            'coaching': {
+                title: 'Coaching Mindfulness 1:1',
+                description: 'Entra in una vita più equilibrata con una guida personale. Che tu sia nuovo alla mindfulness o stia approfondendo una pratica esistente, le mie sessioni di coaching individuali sono progettate intorno ai tuoi obiettivi unici e al ritmo della tua vita. Insieme, coltiveremo presenza, resilienza e consapevolezza di sé - un respiro consapevole alla volta.',
+                pricing: [
+                    {
+                        title: 'Sessione Individuale',
+                        icon: 'fas fa-user',
+                        description: 'Sessione di mindfulness personalizzata di 1 ora',
+                        price: 'CHF 70'
+                    },
+                    {
+                        title: 'Pacchetto 4 Sessioni',
+                        icon: 'fas fa-calendar-check',
+                        description: '4 sessioni di 1 ora ciascuna',
+                        price: 'CHF 280'
+                    },
+                    {
+                        title: 'Pacchetto 8 Sessioni',
+                        icon: 'fas fa-star',
+                        description: '8 sessioni di 1 ora ciascuna',
+                        price: 'CHF 480'
+                    }
+                ],
+                features: [
+                    'Approccio personalizzato',
+                    'Sessione di scoperta di 30 min inclusa',
+                    'Supporto di follow-up',
+                    'Pianificazione flessibile',
+                    'Monitoraggio dei progressi'
+                ],
+                buttonText: 'Prenota la Tua Sessione',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Richiesta Coaching 1:1',
+                flyerDownload: 'images/Flyer_MindfulnessPaths.png'
+            },
+            'retreat': {
+                title: 'Ritiri di Mindfulness',
+                description: 'Scappa dal rumore e riconnettiti con te stesso. Unisciti a uno dei miei ritiri di mindfulness per piccoli gruppi nei dintorni tranquilli di Berna. Questi ritiri di fine settimana o di più giorni offrono spazio per riposo profondo, meditazione guidata, movimento consapevole e tempo nella natura, così torni rinfrescato e ispirato.',
+                pricing: [
+                    {
+                        title: 'Ritiro di Gruppo (2 persone)',
+                        icon: 'fas fa-users',
+                        description: 'Esperienza di ritiro condivisa per 2 persone',
+                        price: 'CHF 250 a persona'
+                    },
+                    {
+                        title: 'Ritiro Privato (1 persona)',
+                        icon: 'fas fa-user-friends',
+                        description: 'Esperienza di ritiro individuale',
+                        price: 'CHF 300 a persona'
+                    }
+                ],
+                features: [
+                    'Pasti vegetariani inclusi',
+                    'Alloggio confortevole',
+                    'Sessioni di meditazione guidata',
+                    'Classi di movimento consapevole',
+                    'Passeggiate e attività nella natura'
+                ],
+                buttonText: 'Prenota il Tuo Ritiro',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Prenotazione Ritiro',
+                flyerDownload: 'images/Flyer_Retreat.png'
+            },
+            'work': {
+                title: 'Mindfulness al Lavoro',
+                description: 'Migliora il benessere, la concentrazione e la collaborazione del tuo team. I miei workshop di mindfulness su misura e le sessioni aziendali portano chiarezza e calma sul posto di lavoro. Aiuta il tuo team a ridurre lo stress, gestire il cambiamento e migliorare l\'intelligenza emotiva, proprio nel cuore della tua organizzazione.',
+                pricing: [
+                    {
+                        title: 'Workshop (2 ore)',
+                        icon: 'fas fa-chalkboard-teacher',
+                        description: 'Workshop di 2 ore per fino a 15 persone',
+                        price: 'CHF 400'
+                    },
+                    {
+                        title: 'Programma (8 sessioni)',
+                        icon: 'fas fa-calendar-alt',
+                        description: '8 sessioni di 1 ora ciascuna per fino a 10 persone',
+                        price: 'CHF 2,500'
+                    }
+                ],
+                features: [
+                    'Su misura per la tua organizzazione',
+                    'Tecniche di riduzione dello stress',
+                    'Esercizi di team building',
+                    'Sviluppo della leadership',
+                    'Supporto continuo'
+                ],
+                buttonText: 'Contatta per Dettagli',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Mindfulness sul Lavoro',
+                flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
+            },
+            'yoga': {
+                title: 'Yoga e Respirazione',
+                description: 'Rallenta, ammorbidisci e respira. Lo yoga e la respirazione sono potenti alleati sul percorso verso la mindfulness. In queste sessioni, combiniamo movimento dolce e consapevole con tecniche di respirazione guidate per aiutarti a rilasciare lo stress, calmare la mente e tornare al tuo centro interiore.',
+                pricing: [
+                    {
+                        title: 'Sessione Privata',
+                        icon: 'fas fa-user',
+                        description: 'Sessione privata di yoga e respirazione di 1 ora',
+                        price: 'CHF 40'
+                    },
+                    {
+                        title: 'Sessione di Gruppo',
+                        icon: 'fas fa-users',
+                        description: 'Sessione di gruppo di 1 ora per fino a 10 persone',
+                        price: 'CHF 25 a persona'
+                    }
+                ],
+                features: [
+                    'Movimento dolce',
+                    'Tecniche di respirazione',
+                    'Riduzione dello stress',
+                    'Connessione mente-corpo',
+                    'Tutti i livelli sono benvenuti'
+                ],
+                buttonText: 'Prenota la Tua Sessione',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Sessione Yoga'
+            },
+            'underwater': {
+                title: 'Mindfulness Subacquea',
+                description: 'Sperimenta la mindfulness in un ambiente subacqueo unico. Connettiti con il mondo sottomarino sereno mentre pratichi tecniche di mindfulness. Questo approccio innovativo combina gli effetti calmanti dell\'acqua con le pratiche tradizionali di mindfulness, creando un\'esperienza davvero immersiva e trasformativa.',
+                pricing: [
+                    {
+                        title: 'Sessione Subacquea',
+                        icon: 'fas fa-water',
+                        description: 'Esperienza di mindfulness subacquea guidata',
+                        price: 'Contatta per il Prezzo'
+                    }
+                ],
+                features: [
+                    'Collaborazione con Athelas Diving',
+                    'Ambiente subacqueo unico',
+                    'Guida subacquea professionale',
+                    'Istruzione di mindfulness',
+                    'Attrezzatura di sicurezza fornita'
+                ],
+                buttonText: 'Contatta per Dettagli',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Mindfulness Subacquea'
+            },
+            'ayurveda': {
+                title: 'Benessere Ayurvedico',
+                description: 'Scopri l\'antica saggezza della guarigione ayurvedica. In arrivo! Esplora l\'approccio olistico al benessere attraverso l\'Ayurveda, il sistema tradizionale indiano di medicina. Scopri la tua costituzione unica e come bilanciare mente, corpo e spirito attraverso pratiche naturali e aggiustamenti dello stile di vita.',
+                pricing: [
+                    {
+                        title: 'Consultazione Ayurvedica',
+                        icon: 'fas fa-leaf',
+                        description: 'Consultazione di benessere personalizzata',
+                        price: 'In Arrivo'
+                    }
+                ],
+                features: [
+                    'Valutazione della costituzione',
+                    'Raccomandazioni sullo stile di vita',
+                    'Pratiche di guarigione naturali',
+                    'Approccio olistico al benessere',
+                    'Supporto continuo'
+                ],
+                buttonText: 'Resta Aggiornato',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Interesse Ayurveda'
+            },
+            'ayurveda-main': {
+                title: 'Servizi Ayurvedici',
+                description: 'Scopri l\'antica saggezza della guarigione ayurvedica. Il nostro approccio olistico al benessere attraverso l\'Ayurveda offre consultazioni personalizzate, massaggi terapeutici e guida nutrizionale su misura per la tua costituzione unica.',
+                pricing: [
+                    {
+                        title: 'Consultazione Ayurvedica',
+                        icon: 'fas fa-user-md',
+                        description: 'Consultazione di benessere personalizzata per determinare il tuo dosha e creare un piano di benessere personalizzato',
+                        price: 'Contatta per il Prezzo'
+                    },
+                    {
+                        title: 'Massaggi Ayurvedici',
+                        icon: 'fas fa-spa',
+                        description: 'Massaggi terapeutici utilizzando tecniche e oli ayurvedici tradizionali',
+                        price: 'Contatta per il Prezzo'
+                    },
+                    {
+                        title: 'Nutrizione Ayurvedica',
+                        icon: 'fas fa-utensils',
+                        description: 'Raccomandazioni dietetiche personalizzate basate sul tuo dosha e stile di vita',
+                        price: 'Contatta per il Prezzo'
+                    }
+                ],
+                features: [
+                    'Valutazione dosha personalizzata',
+                    'Pratiche ayurvediche tradizionali',
+                    'Approccio olistico al benessere',
+                    'Metodi di guarigione naturali',
+                    'Supporto e guida continui'
+                ],
+                buttonText: 'Prenota una Consultazione',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Richiesta Servizi Ayurvedici'
+            },
+            'mindfulness-main': {
+                title: 'Servizi di Mindfulness',
+                description: 'Coltiva la presenza, riduci lo stress e migliora il benessere attraverso pratiche di mindfulness personalizzate. I nostri servizi sono progettati per individui, ambienti aziendali ed esperienze subacquee uniche.',
+                pricing: [
+                    {
+                        title: 'Sessione Mindfulness 1:1',
+                        icon: 'fas fa-user',
+                        description: 'Sessione di coaching mindfulness personalizzata uno-a-uno',
+                        price: 'Contatta per il Prezzo'
+                    },
+                    {
+                        title: 'Mindfulness Aziendale',
+                        icon: 'fas fa-briefcase',
+                        description: 'Workshop e programmi di mindfulness su misura per la tua organizzazione',
+                        price: 'Contatta per il Prezzo'
+                    },
+                    {
+                        title: 'Mindfulness Subacquea',
+                        icon: 'fas fa-water',
+                        description: 'Esperienza di mindfulness subacquea unica in collaborazione con athelas-diving.com',
+                        price: 'Contatta per il Prezzo'
+                    }
+                ],
+                features: [
+                    'Approccio personalizzato',
+                    'Tecniche di riduzione dello stress',
+                    'Focus e chiarezza migliorati',
+                    'Regolazione emotiva',
+                    'Disponibile in più lingue'
+                ],
+                buttonText: 'Prenota una Sessione',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Richiesta Servizi Mindfulness'
+            },
+            'yoga-main': {
+                title: 'Servizi Yoga',
+                description: 'Unisci mente, corpo e spirito attraverso movimento dolce e respirazione. Sperimenta sessioni private personalizzate o unisciti a classi di gruppo progettate per tutti i livelli.',
+                pricing: [
+                    {
+                        title: 'Sessione Yoga Privata',
+                        icon: 'fas fa-user',
+                        description: 'Sessione yoga personalizzata uno-a-uno su misura per le tue esigenze',
+                        price: 'Contatta per il Prezzo'
+                    },
+                    {
+                        title: 'Sessione Yoga di Gruppo',
+                        icon: 'fas fa-users',
+                        description: 'Classi yoga di gruppo per tutti i livelli in un ambiente di supporto',
+                        price: 'Contatta per il Prezzo'
+                    }
+                ],
+                features: [
+                    'Pratiche di movimento dolce',
+                    'Tecniche di respirazione (pranayama)',
+                    'Connessione mente-corpo',
+                    'Tutti i livelli sono benvenuti',
+                    'Guida personalizzata'
+                ],
+                buttonText: 'Prenota una Sessione',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Richiesta Servizi Yoga'
+            },
+            'ayurveda-consultation': {
+                title: 'Consultazione Ayurvedica',
+                description: 'Scopri la tua costituzione unica (dosha) e ricevi raccomandazioni personalizzate per dieta, stile di vita, erbe e routine quotidiane per ripristinare l\'equilibrio e migliorare il tuo benessere. Questa consultazione completa include analisi del dosha, valutazione della salute e un piano di benessere personalizzato.',
+                pricing: [
+                    {
+                        title: 'Consultazione Iniziale',
+                        icon: 'fas fa-user-md',
+                        description: 'Consultazione completa di 90 minuti inclusa analisi del dosha e piano di benessere personalizzato',
+                        price: 'Contatta per il Prezzo'
+                    },
+                    {
+                        title: 'Consultazione di Follow-up',
+                        icon: 'fas fa-redo',
+                        description: 'Sessione di follow-up di 60 minuti per monitorare i progressi e adattare le raccomandazioni',
+                        price: 'Contatta per il Prezzo'
+                    }
+                ],
+                features: [
+                    'Analisi dettagliata del dosha (Vata, Pitta, Kapha)',
+                    'Identificazione degli squilibri attuali',
+                    'Diagnosi del polso e della lingua',
+                    'Revisione completa della storia della salute',
+                    'Raccomandazioni personalizzate per dieta, stile di vita ed erbe'
+                ],
+                buttonText: 'Prenota una Consultazione',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Consultazione Ayurvedica'
+            },
+            'ayurveda-massages': {
+                title: 'Massaggi Ayurvedici',
+                description: 'Sperimenta massaggi terapeutici utilizzando tecniche e oli ayurvedici tradizionali. Questi trattamenti aiutano a bilanciare i dosha, migliorare la circolazione, rilasciare tossine e promuovere rilassamento profondo e guarigione.',
+                pricing: [
+                    {
+                        title: 'Abhyanga (Massaggio con Olio per tutto il Corpo)',
+                        icon: 'fas fa-spa',
+                        description: 'Massaggio tradizionale per tutto il corpo con oli medicati caldi',
+                        price: 'Contatta per il Prezzo'
+                    },
+                    {
+                        title: 'Shirodhara (Trattamento della Testa)',
+                        icon: 'fas fa-head-side-virus',
+                        description: 'Trattamento terapeutico con flusso di olio per la fronte e il cuoio capelluto',
+                        price: 'Contatta per il Prezzo'
+                    },
+                    {
+                        title: 'Pacchetto Massaggi',
+                        icon: 'fas fa-gift',
+                        description: 'Serie di trattamenti per risultati ottimali',
+                        price: 'Contatta per il Prezzo'
+                    }
+                ],
+                features: [
+                    'Selezione di oli specifica per dosha',
+                    'Tecniche ayurvediche tradizionali',
+                    'Rilassamento profondo e riduzione dello stress',
+                    'Circolazione e disintossicazione migliorate',
+                    'Flusso energetico migliorato'
+                ],
+                buttonText: 'Prenota un Trattamento',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Massaggi Ayurvedici'
+            },
+            'ayurveda-nutrition': {
+                title: 'Nutrizione Ayurvedica',
+                description: 'Ricevi raccomandazioni dietetiche personalizzate su misura per il tuo tipo di dosha e le tue esigenze individuali. Scopri quali alimenti supportano la tua costituzione, il momento ottimale dei pasti, le combinazioni alimentari e come mangiare in armonia con i ritmi della natura.',
+                pricing: [
+                    {
+                        title: 'Consultazione Nutrizionale',
+                        icon: 'fas fa-utensils',
+                        description: 'Sessione nutrizionale personalizzata di 60 minuti con guida alla pianificazione dei pasti',
+                        price: 'Contatta per il Prezzo'
+                    },
+                    {
+                        title: 'Pacchetto Nutrizionale 3 Sessioni',
+                        icon: 'fas fa-calendar-check',
+                        description: 'Tre sessioni inclusa consultazione iniziale e follow-up',
+                        price: 'Contatta per il Prezzo'
+                    }
+                ],
+                features: [
+                    'Raccomandazioni alimentari specifiche per dosha',
+                    'Guida al momento dei pasti e alle routine',
+                    'Principi di combinazione alimentare',
+                    'Raccomandazioni alimentari stagionali',
+                    'Esempi di piano alimentare personalizzato'
+                ],
+                buttonText: 'Prenota una Consultazione',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Nutrizione Ayurvedica'
+            },
+            'mindfulness-1to1': {
+                title: 'Sessioni Mindfulness 1:1',
+                description: 'Entra in una vita più equilibrata con una guida personale. Che tu sia nuovo alla mindfulness o stia approfondendo una pratica esistente, le mie sessioni di coaching individuali sono progettate intorno ai tuoi obiettivi unici e al ritmo della tua vita. Insieme, coltiveremo presenza, resilienza e consapevolezza di sé - un respiro consapevole alla volta.',
+                pricing: [
+                    {
+                        title: 'Sessione Individuale',
+                        icon: 'fas fa-user',
+                        description: 'Sessione di mindfulness personalizzata di 1 ora',
+                        price: 'CHF 70'
+                    },
+                    {
+                        title: 'Pacchetto 4 Sessioni',
+                        icon: 'fas fa-calendar-check',
+                        description: '4 sessioni di 1 ora ciascuna',
+                        price: 'CHF 280'
+                    },
+                    {
+                        title: 'Pacchetto 8 Sessioni',
+                        icon: 'fas fa-star',
+                        description: '8 sessioni di 1 ora ciascuna',
+                        price: 'CHF 480'
+                    }
+                ],
+                features: [
+                    'Approccio personalizzato',
+                    'Sessione di scoperta di 30 min inclusa',
+                    'Supporto di follow-up',
+                    'Pianificazione flessibile',
+                    'Monitoraggio dei progressi'
+                ],
+                buttonText: 'Prenota la Tua Sessione',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Richiesta Mindfulness 1:1',
+                flyerDownload: 'images/Flyer_MindfulnessPaths.png'
+            },
+            'mindfulness-corporate': {
+                title: 'Mindfulness Aziendale',
+                description: 'Migliora il benessere, la concentrazione e la collaborazione del tuo team. I miei workshop di mindfulness su misura e le sessioni aziendali portano chiarezza e calma sul posto di lavoro. Aiuta il tuo team a ridurre lo stress, gestire il cambiamento e migliorare l\'intelligenza emotiva, proprio nel cuore della tua organizzazione.',
+                pricing: [
+                    {
+                        title: 'Workshop (2 ore)',
+                        icon: 'fas fa-chalkboard-teacher',
+                        description: 'Workshop di 2 ore per fino a 15 persone',
+                        price: 'CHF 400'
+                    },
+                    {
+                        title: 'Programma (8 sessioni)',
+                        icon: 'fas fa-calendar-alt',
+                        description: '8 sessioni di 1 ora ciascuna per fino a 10 persone',
+                        price: 'CHF 2,500'
+                    }
+                ],
+                features: [
+                    'Su misura per la tua organizzazione',
+                    'Tecniche di riduzione dello stress',
+                    'Esercizi di team building',
+                    'Sviluppo della leadership',
+                    'Supporto continuo'
+                ],
+                buttonText: 'Contatta per Dettagli',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Mindfulness Aziendale',
+                flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
+            },
+            'mindfulness-underwater': {
+                title: 'Mindfulness Subacquea',
+                description: 'Sperimenta la mindfulness in un ambiente subacqueo unico. Connettiti con il mondo sottomarino sereno mentre pratichi tecniche di mindfulness. Questo approccio innovativo combina gli effetti calmanti dell\'acqua con le pratiche tradizionali di mindfulness, creando un\'esperienza davvero immersiva e trasformativa.',
+                pricing: [
+                    {
+                        title: 'Sessione Subacquea',
+                        icon: 'fas fa-water',
+                        description: 'Esperienza di mindfulness subacquea guidata',
+                        price: 'Contatta per il Prezzo'
+                    }
+                ],
+                features: [
+                    'Collaborazione con Athelas Diving',
+                    'Ambiente subacqueo unico',
+                    'Guida subacquea professionale',
+                    'Istruzione di mindfulness',
+                    'Attrezzatura di sicurezza fornita'
+                ],
+                buttonText: 'Contatta per Dettagli',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Mindfulness Subacquea'
+            },
+            'private-yoga': {
+                title: 'Yoga Privato',
+                description: 'Sperimenta sessioni yoga personalizzate uno-a-uno su misura per le tue esigenze, obiettivi e livello di esperienza unici. Ricevi attenzione e guida individuali per approfondire la tua pratica al tuo ritmo. Rallenta, ammorbidisci e respira. Lo yoga e la respirazione sono potenti alleati sul percorso verso la mindfulness.',
+                pricing: [
+                    {
+                        title: 'Sessione Privata',
+                        icon: 'fas fa-user',
+                        description: 'Sessione privata di yoga e respirazione di 1 ora',
+                        price: 'CHF 40'
+                    }
+                ],
+                features: [
+                    'Approccio personalizzato',
+                    'Movimento dolce',
+                    'Tecniche di respirazione',
+                    'Riduzione dello stress',
+                    'Connessione mente-corpo',
+                    'Tutti i livelli sono benvenuti'
+                ],
+                buttonText: 'Prenota la Tua Sessione',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Sessione Yoga Privata'
+            },
+            'group-yoga': {
+                title: 'Yoga di Gruppo',
+                description: 'Unisciti a una comunità di supporto nelle sessioni yoga di gruppo. Pratica insieme, condividi energia e cresci in un ambiente accogliente che favorisce la connessione e la mindfulness collettiva. Sperimenta movimento dolce e consapevole con tecniche di respirazione guidate per aiutarti a rilasciare lo stress, calmare la mente e tornare al tuo centro interiore.',
+                pricing: [
+                    {
+                        title: 'Sessione di Gruppo',
+                        icon: 'fas fa-users',
+                        description: 'Sessione di gruppo di 1 ora per fino a 10 persone',
+                        price: 'CHF 25 a persona'
+                    }
+                ],
+                features: [
+                    'Comunità di supporto',
+                    'Movimento dolce',
+                    'Tecniche di respirazione',
+                    'Riduzione dello stress',
+                    'Connessione mente-corpo',
+                    'Tutti i livelli sono benvenuti'
+                ],
+                buttonText: 'Prenota la Tua Sessione',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Sessione Yoga di Gruppo'
+            }
+        },
+        'fr': {
+            'coaching': {
+                title: 'Coaching Mindfulness 1:1',
+                description: 'Entrez dans une vie plus équilibrée avec un accompagnement personnel. Que vous soyez nouveau dans la pleine conscience ou que vous approfondissiez une pratique existante, mes séances de coaching individuelles sont conçues autour de vos objectifs uniques et du rythme de votre vie. Ensemble, nous cultiverons la présence, la résilience et la conscience de soi - une respiration consciente à la fois.',
+                pricing: [
+                    {
+                        title: 'Séance Individuelle',
+                        icon: 'fas fa-user',
+                        description: 'Séance de pleine conscience personnalisée d\'1 heure',
+                        price: 'CHF 70'
+                    },
+                    {
+                        title: 'Forfait 4 Séances',
+                        icon: 'fas fa-calendar-check',
+                        description: '4 séances d\'1 heure chacune',
+                        price: 'CHF 280'
+                    },
+                    {
+                        title: 'Forfait 8 Séances',
+                        icon: 'fas fa-star',
+                        description: '8 séances d\'1 heure chacune',
+                        price: 'CHF 480'
+                    }
+                ],
+                features: [
+                    'Approche personnalisée',
+                    'Séance de découverte de 30 min incluse',
+                    'Suivi et soutien',
+                    'Planification flexible',
+                    'Suivi des progrès'
+                ],
+                buttonText: 'Réservez Votre Séance',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Demande de Coaching 1:1',
+                flyerDownload: 'images/Flyer_MindfulnessPaths.png'
+            },
+            'retreat': {
+                title: 'Retraites de Pleine Conscience',
+                description: 'Échappez au bruit et reconnectez-vous avec vous-même. Rejoignez l\'une de mes retraites de pleine conscience en petit groupe dans les environs tranquilles de Berne. Ces retraites de week-end ou de plusieurs jours offrent un espace pour un repos profond, la méditation guidée, le mouvement conscient et du temps dans la nature, afin que vous reveniez rafraîchi et inspiré.',
+                pricing: [
+                    {
+                        title: 'Retraite de Groupe (2 personnes)',
+                        icon: 'fas fa-users',
+                        description: 'Expérience de retraite partagée pour 2 personnes',
+                        price: 'CHF 250 par personne'
+                    },
+                    {
+                        title: 'Retraite Privée (1 personne)',
+                        icon: 'fas fa-user-friends',
+                        description: 'Expérience de retraite individuelle',
+                        price: 'CHF 300 par personne'
+                    }
+                ],
+                features: [
+                    'Repas végétariens inclus',
+                    'Hébergement confortable',
+                    'Séances de méditation guidée',
+                    'Cours de mouvement conscient',
+                    'Promenades et activités dans la nature'
+                ],
+                buttonText: 'Réservez Votre Retraite',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Réservation de Retraite',
+                flyerDownload: 'images/Flyer_Retreat.png'
+            },
+            'work': {
+                title: 'Pleine Conscience au Travail',
+                description: 'Améliorez le bien-être, la concentration et la collaboration de votre équipe. Mes ateliers de pleine conscience sur mesure et mes séances d\'entreprise apportent clarté et calme sur le lieu de travail. Aidez votre équipe à réduire le stress, gérer le changement et améliorer l\'intelligence émotionnelle, au cœur même de votre organisation.',
+                pricing: [
+                    {
+                        title: 'Atelier (2 heures)',
+                        icon: 'fas fa-chalkboard-teacher',
+                        description: 'Atelier de 2 heures pour jusqu\'à 15 personnes',
+                        price: 'CHF 400'
+                    },
+                    {
+                        title: 'Programme (8 séances)',
+                        icon: 'fas fa-calendar-alt',
+                        description: '8 séances d\'1 heure chacune pour jusqu\'à 10 personnes',
+                        price: 'CHF 2,500'
+                    }
+                ],
+                features: [
+                    'Adapté à votre organisation',
+                    'Techniques de réduction du stress',
+                    'Exercices de renforcement d\'équipe',
+                    'Développement du leadership',
+                    'Soutien continu'
+                ],
+                buttonText: 'Contactez pour Détails',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Pleine Conscience au Travail',
+                flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
+            },
+            'yoga': {
+                title: 'Yoga et Respiration',
+                description: 'Ralentissez, adoucissez et respirez. Le yoga et la respiration sont de puissants alliés sur le chemin de la pleine conscience. Dans ces séances, nous combinons mouvement doux et conscient avec des techniques de respiration guidées pour vous aider à libérer le stress, calmer l\'esprit et retourner à votre centre intérieur.',
+                pricing: [
+                    {
+                        title: 'Séance Privée',
+                        icon: 'fas fa-user',
+                        description: 'Séance privée de yoga et respiration d\'1 heure',
+                        price: 'CHF 40'
+                    },
+                    {
+                        title: 'Séance de Groupe',
+                        icon: 'fas fa-users',
+                        description: 'Séance de groupe d\'1 heure pour jusqu\'à 10 personnes',
+                        price: 'CHF 25 par personne'
+                    }
+                ],
+                features: [
+                    'Mouvement doux',
+                    'Techniques de respiration',
+                    'Réduction du stress',
+                    'Connexion corps-esprit',
+                    'Tous les niveaux sont les bienvenus'
+                ],
+                buttonText: 'Réservez Votre Séance',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Séance de Yoga'
+            },
+            'underwater': {
+                title: 'Pleine Conscience Sous-Marine',
+                description: 'Vivez la pleine conscience dans un environnement sous-marin unique. Connectez-vous avec le monde sous-marin serein tout en pratiquant des techniques de pleine conscience. Cette approche innovante combine les effets apaisants de l\'eau avec les pratiques traditionnelles de pleine conscience, créant une expérience vraiment immersive et transformative.',
+                pricing: [
+                    {
+                        title: 'Séance Sous-Marine',
+                        icon: 'fas fa-water',
+                        description: 'Expérience de pleine conscience sous-marine guidée',
+                        price: 'Contactez pour le Prix'
+                    }
+                ],
+                features: [
+                    'Collaboration avec Athelas Diving',
+                    'Environnement sous-marin unique',
+                    'Guidance de plongée professionnelle',
+                    'Instruction de pleine conscience',
+                    'Équipement de sécurité fourni'
+                ],
+                buttonText: 'Contactez pour Détails',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Pleine Conscience Sous-Marine'
+            },
+            'ayurveda': {
+                title: 'Bien-être Ayurvedique',
+                description: 'Découvrez la sagesse ancienne de la guérison ayurvédique. Bientôt disponible ! Explorez l\'approche holistique du bien-être à travers l\'Ayurveda, le système traditionnel indien de médecine. Découvrez votre constitution unique et comment équilibrer l\'esprit, le corps et l\'âme grâce à des pratiques naturelles et des ajustements du mode de vie.',
+                pricing: [
+                    {
+                        title: 'Consultation Ayurvedique',
+                        icon: 'fas fa-leaf',
+                        description: 'Consultation de bien-être personnalisée',
+                        price: 'Bientôt Disponible'
+                    }
+                ],
+                features: [
+                    'Évaluation de la constitution',
+                    'Recommandations de mode de vie',
+                    'Pratiques de guérison naturelles',
+                    'Approche holistique du bien-être',
+                    'Soutien continu'
+                ],
+                buttonText: 'Restez Informé',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Intérêt pour l\'Ayurveda'
+            },
+            'ayurveda-main': {
+                title: 'Services Ayurvediques',
+                description: 'Découvrez la sagesse ancienne de la guérison ayurvédique. Notre approche holistique du bien-être à travers l\'Ayurveda offre des consultations personnalisées, des massages thérapeutiques et des conseils nutritionnels adaptés à votre constitution unique.',
+                pricing: [
+                    {
+                        title: 'Consultation Ayurvedique',
+                        icon: 'fas fa-user-md',
+                        description: 'Consultation de bien-être personnalisée pour déterminer votre dosha et créer un plan de bien-être personnalisé',
+                        price: 'Contactez pour le Prix'
+                    },
+                    {
+                        title: 'Massages Ayurvediques',
+                        icon: 'fas fa-spa',
+                        description: 'Massages thérapeutiques utilisant des techniques et huiles ayurvédiques traditionnelles',
+                        price: 'Contactez pour le Prix'
+                    },
+                    {
+                        title: 'Nutrition Ayurvedique',
+                        icon: 'fas fa-utensils',
+                        description: 'Recommandations diététiques personnalisées basées sur votre dosha et votre mode de vie',
+                        price: 'Contactez pour le Prix'
+                    }
+                ],
+                features: [
+                    'Évaluation dosha personnalisée',
+                    'Pratiques ayurvédiques traditionnelles',
+                    'Approche holistique du bien-être',
+                    'Méthodes de guérison naturelles',
+                    'Soutien et guidance continus'
+                ],
+                buttonText: 'Réservez une Consultation',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Demande de Services Ayurvediques'
+            },
+            'mindfulness-main': {
+                title: 'Services de Pleine Conscience',
+                description: 'Cultivez la présence, réduisez le stress et améliorez le bien-être grâce à des pratiques de pleine conscience personnalisées. Nos services sont conçus pour les individus, les environnements d\'entreprise et les expériences sous-marines uniques.',
+                pricing: [
+                    {
+                        title: 'Séance de Pleine Conscience 1:1',
+                        icon: 'fas fa-user',
+                        description: 'Séance de coaching de pleine conscience personnalisée en tête-à-tête',
+                        price: 'Contactez pour le Prix'
+                    },
+                    {
+                        title: 'Pleine Conscience d\'Entreprise',
+                        icon: 'fas fa-briefcase',
+                        description: 'Ateliers et programmes de pleine conscience adaptés à votre organisation',
+                        price: 'Contactez pour le Prix'
+                    },
+                    {
+                        title: 'Pleine Conscience Sous-Marine',
+                        icon: 'fas fa-water',
+                        description: 'Expérience unique de pleine conscience sous-marine en collaboration avec athelas-diving.com',
+                        price: 'Contactez pour le Prix'
+                    }
+                ],
+                features: [
+                    'Approche personnalisée',
+                    'Techniques de réduction du stress',
+                    'Focus et clarté améliorés',
+                    'Régulation émotionnelle',
+                    'Disponible en plusieurs langues'
+                ],
+                buttonText: 'Réservez une Séance',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Demande de Services de Pleine Conscience'
+            },
+            'yoga-main': {
+                title: 'Services Yoga',
+                description: 'Unissez l\'esprit, le corps et l\'âme grâce au mouvement doux et à la respiration. Vivez des séances privées personnalisées ou rejoignez des cours de groupe conçus pour tous les niveaux.',
+                pricing: [
+                    {
+                        title: 'Séance Yoga Privée',
+                        icon: 'fas fa-user',
+                        description: 'Séance yoga personnalisée en tête-à-tête adaptée à vos besoins',
+                        price: 'Contactez pour le Prix'
+                    },
+                    {
+                        title: 'Séance Yoga de Groupe',
+                        icon: 'fas fa-users',
+                        description: 'Cours de yoga de groupe pour tous les niveaux dans un environnement de soutien',
+                        price: 'Contactez pour le Prix'
+                    }
+                ],
+                features: [
+                    'Pratiques de mouvement doux',
+                    'Techniques de respiration (pranayama)',
+                    'Connexion corps-esprit',
+                    'Tous les niveaux sont les bienvenus',
+                    'Guidance personnalisée'
+                ],
+                buttonText: 'Réservez une Séance',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Demande de Services Yoga'
+            },
+            'ayurveda-consultation': {
+                title: 'Consultation Ayurvedique',
+                description: 'Découvrez votre constitution unique (dosha) et recevez des recommandations personnalisées pour l\'alimentation, le mode de vie, les herbes et les routines quotidiennes pour rétablir l\'équilibre et améliorer votre bien-être. Cette consultation complète comprend l\'analyse du dosha, l\'évaluation de la santé et un plan de bien-être personnalisé.',
+                pricing: [
+                    {
+                        title: 'Consultation Initiale',
+                        icon: 'fas fa-user-md',
+                        description: 'Consultation complète de 90 minutes incluant l\'analyse du dosha et un plan de bien-être personnalisé',
+                        price: 'Contactez pour le Prix'
+                    },
+                    {
+                        title: 'Consultation de Suivi',
+                        icon: 'fas fa-redo',
+                        description: 'Séance de suivi de 60 minutes pour suivre les progrès et ajuster les recommandations',
+                        price: 'Contactez pour le Prix'
+                    }
+                ],
+                features: [
+                    'Analyse détaillée du dosha (Vata, Pitta, Kapha)',
+                    'Identification des déséquilibres actuels',
+                    'Diagnostic du pouls et de la langue',
+                    'Examen complet des antécédents de santé',
+                    'Recommandations personnalisées pour l\'alimentation, le mode de vie et les herbes'
+                ],
+                buttonText: 'Réservez une Consultation',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Consultation Ayurvedique'
+            },
+            'ayurveda-massages': {
+                title: 'Massages Ayurvediques',
+                description: 'Vivez des massages thérapeutiques utilisant des techniques et huiles ayurvédiques traditionnelles. Ces traitements aident à équilibrer les doshas, améliorer la circulation, libérer les toxines et promouvoir une relaxation profonde et la guérison.',
+                pricing: [
+                    {
+                        title: 'Abhyanga (Massage à l\'Huile du Corps Entier)',
+                        icon: 'fas fa-spa',
+                        description: 'Massage traditionnel du corps entier avec des huiles médicinales chaudes',
+                        price: 'Contactez pour le Prix'
+                    },
+                    {
+                        title: 'Shirodhara (Traitement de la Tête)',
+                        icon: 'fas fa-head-side-virus',
+                        description: 'Traitement thérapeutique avec flux d\'huile pour le front et le cuir chevelu',
+                        price: 'Contactez pour le Prix'
+                    },
+                    {
+                        title: 'Forfait Massages',
+                        icon: 'fas fa-gift',
+                        description: 'Série de traitements pour des résultats optimaux',
+                        price: 'Contactez pour le Prix'
+                    }
+                ],
+                features: [
+                    'Sélection d\'huiles spécifique au dosha',
+                    'Techniques ayurvédiques traditionnelles',
+                    'Relaxation profonde et réduction du stress',
+                    'Circulation et détoxification améliorées',
+                    'Flux d\'énergie amélioré'
+                ],
+                buttonText: 'Réservez un Traitement',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Massages Ayurvediques'
+            },
+            'ayurveda-nutrition': {
+                title: 'Nutrition Ayurvedique',
+                description: 'Recevez des recommandations diététiques personnalisées adaptées à votre type de dosha et à vos besoins individuels. Apprenez quels aliments soutiennent votre constitution, le moment optimal des repas, les combinaisons alimentaires et comment manger en harmonie avec les rythmes de la nature.',
+                pricing: [
+                    {
+                        title: 'Consultation Nutritionnelle',
+                        icon: 'fas fa-utensils',
+                        description: 'Séance nutritionnelle personnalisée de 60 minutes avec conseils pour la planification des repas',
+                        price: 'Contactez pour le Prix'
+                    },
+                    {
+                        title: 'Forfait Nutrition 3 Séances',
+                        icon: 'fas fa-calendar-check',
+                        description: 'Trois séances incluant la consultation initiale et les suivis',
+                        price: 'Contactez pour le Prix'
+                    }
+                ],
+                features: [
+                    'Recommandations alimentaires spécifiques au dosha',
+                    'Conseils sur le moment des repas et les routines',
+                    'Principes de combinaison alimentaire',
+                    'Recommandations alimentaires saisonnières',
+                    'Exemples de plan de repas personnalisé'
+                ],
+                buttonText: 'Réservez une Consultation',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Nutrition Ayurvedique'
+            },
+            'mindfulness-1to1': {
+                title: 'Séances de Pleine Conscience 1:1',
+                description: 'Entrez dans une vie plus équilibrée avec un accompagnement personnel. Que vous soyez nouveau dans la pleine conscience ou que vous approfondissiez une pratique existante, mes séances de coaching individuelles sont conçues autour de vos objectifs uniques et du rythme de votre vie. Ensemble, nous cultiverons la présence, la résilience et la conscience de soi - une respiration consciente à la fois.',
+                pricing: [
+                    {
+                        title: 'Séance Individuelle',
+                        icon: 'fas fa-user',
+                        description: 'Séance de pleine conscience personnalisée d\'1 heure',
+                        price: 'CHF 70'
+                    },
+                    {
+                        title: 'Forfait 4 Séances',
+                        icon: 'fas fa-calendar-check',
+                        description: '4 séances d\'1 heure chacune',
+                        price: 'CHF 280'
+                    },
+                    {
+                        title: 'Forfait 8 Séances',
+                        icon: 'fas fa-star',
+                        description: '8 séances d\'1 heure chacune',
+                        price: 'CHF 480'
+                    }
+                ],
+                features: [
+                    'Approche personnalisée',
+                    'Séance de découverte de 30 min incluse',
+                    'Suivi et soutien',
+                    'Planification flexible',
+                    'Suivi des progrès'
+                ],
+                buttonText: 'Réservez Votre Séance',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Demande de Pleine Conscience 1:1',
+                flyerDownload: 'images/Flyer_MindfulnessPaths.png'
+            },
+            'mindfulness-corporate': {
+                title: 'Pleine Conscience d\'Entreprise',
+                description: 'Améliorez le bien-être, la concentration et la collaboration de votre équipe. Mes ateliers de pleine conscience sur mesure et mes séances d\'entreprise apportent clarté et calme sur le lieu de travail. Aidez votre équipe à réduire le stress, gérer le changement et améliorer l\'intelligence émotionnelle, au cœur même de votre organisation.',
+                pricing: [
+                    {
+                        title: 'Atelier (2 heures)',
+                        icon: 'fas fa-chalkboard-teacher',
+                        description: 'Atelier de 2 heures pour jusqu\'à 15 personnes',
+                        price: 'CHF 400'
+                    },
+                    {
+                        title: 'Programme (8 séances)',
+                        icon: 'fas fa-calendar-alt',
+                        description: '8 séances d\'1 heure chacune pour jusqu\'à 10 personnes',
+                        price: 'CHF 2,500'
+                    }
+                ],
+                features: [
+                    'Adapté à votre organisation',
+                    'Techniques de réduction du stress',
+                    'Exercices de renforcement d\'équipe',
+                    'Développement du leadership',
+                    'Soutien continu'
+                ],
+                buttonText: 'Contactez pour Détails',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Pleine Conscience d\'Entreprise',
+                flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
+            },
+            'mindfulness-underwater': {
+                title: 'Pleine Conscience Sous-Marine',
+                description: 'Vivez la pleine conscience dans un environnement sous-marin unique. Connectez-vous avec le monde sous-marin serein tout en pratiquant des techniques de pleine conscience. Cette approche innovante combine les effets apaisants de l\'eau avec les pratiques traditionnelles de pleine conscience, créant une expérience vraiment immersive et transformative.',
+                pricing: [
+                    {
+                        title: 'Séance Sous-Marine',
+                        icon: 'fas fa-water',
+                        description: 'Expérience de pleine conscience sous-marine guidée',
+                        price: 'Contactez pour le Prix'
+                    }
+                ],
+                features: [
+                    'Collaboration avec Athelas Diving',
+                    'Environnement sous-marin unique',
+                    'Guidance de plongée professionnelle',
+                    'Instruction de pleine conscience',
+                    'Équipement de sécurité fourni'
+                ],
+                buttonText: 'Contactez pour Détails',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Pleine Conscience Sous-Marine'
+            },
+            'private-yoga': {
+                title: 'Yoga Privé',
+                description: 'Vivez des séances yoga personnalisées en tête-à-tête adaptées à vos besoins, objectifs et niveau d\'expérience uniques. Recevez une attention et des conseils individuels pour approfondir votre pratique à votre rythme. Ralentissez, adoucissez et respirez. Le yoga et la respiration sont de puissants alliés sur le chemin de la pleine conscience.',
+                pricing: [
+                    {
+                        title: 'Séance Privée',
+                        icon: 'fas fa-user',
+                        description: 'Séance privée de yoga et respiration d\'1 heure',
+                        price: 'CHF 40'
+                    }
+                ],
+                features: [
+                    'Approche personnalisée',
+                    'Mouvement doux',
+                    'Techniques de respiration',
+                    'Réduction du stress',
+                    'Connexion corps-esprit',
+                    'Tous les niveaux sont les bienvenus'
+                ],
+                buttonText: 'Réservez Votre Séance',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Séance de Yoga Privée'
+            },
+            'group-yoga': {
+                title: 'Yoga de Groupe',
+                description: 'Rejoignez une communauté de soutien dans les séances yoga de groupe. Pratiquez ensemble, partagez l\'énergie et grandissez dans un environnement accueillant qui favorise la connexion et la pleine conscience collective. Vivez un mouvement doux et conscient avec des techniques de respiration guidées pour vous aider à libérer le stress, calmer l\'esprit et retourner à votre centre intérieur.',
+                pricing: [
+                    {
+                        title: 'Séance de Groupe',
+                        icon: 'fas fa-users',
+                        description: 'Séance de groupe d\'1 heure pour jusqu\'à 10 personnes',
+                        price: 'CHF 25 par personne'
+                    }
+                ],
+                features: [
+                    'Communauté de soutien',
+                    'Mouvement doux',
+                    'Techniques de respiration',
+                    'Réduction du stress',
+                    'Connexion corps-esprit',
+                    'Tous les niveaux sont les bienvenus'
+                ],
+                buttonText: 'Réservez Votre Séance',
+                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Séance de Yoga de Groupe'
+            }
+        }
+    };
+    
+    // Language labels for modal UI
+    const languageLabels = {
+        'en': {
+            included: 'What\'s Included:',
+            downloadFlyer: 'Download Flyer'
+        },
+        'it': {
+            included: 'Cosa Include:',
+            downloadFlyer: 'Scarica Volantino'
+        },
+        'fr': {
+            included: 'Ce qui est inclus :',
+            downloadFlyer: 'Télécharger le Dépliant'
         }
     };
     
@@ -565,6 +1517,9 @@ document.addEventListener('DOMContentLoaded', function() {
             ? serviceData[currentLang][serviceType] 
             : (serviceData['en'] && serviceData['en'][serviceType] ? serviceData['en'][serviceType] : null);
         if (!data) return '';
+        
+        // Get language-specific labels
+        const labels = languageLabels[currentLang] || languageLabels['en'];
         
         // Define service-specific background colors (matching original flip card colors)
         const serviceColors = {
@@ -603,7 +1558,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const flyerSection = data.flyerDownload ? `
             <div class="modal-flyer">
                 <a href="${data.flyerDownload}" download class="btn-secondary">
-                    <i class="fas fa-download"></i> Download Flyer
+                    <i class="fas fa-download"></i> ${labels.downloadFlyer}
                 </a>
             </div>
         ` : '';
@@ -619,7 +1574,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     
                     <div class="modal-features">
-                        <h5>What's Included:</h5>
+                        <h5>${labels.included}</h5>
                         <ul>
                             ${featuresHTML}
                         </ul>
