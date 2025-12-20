@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veranaturae – Mindfulness, Yoga & Ayurveda</title>
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://veranaturae.com/home.html">
+    <meta property="og:title" content="Veranaturae – Mindfulness, Yoga & Ayurveda">
+    <meta property="og:description" content="Discover your true nature through mindfulness, yoga, and Ayurveda. Veranaturae offers a safe space to reconnect with yourself and find clarity, compassion, and serenity.">
+    <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Veranaturae – Mindfulness, Yoga & Ayurveda">
+    <meta name="twitter:description" content="Discover your true nature through mindfulness, yoga, and Ayurveda. Veranaturae offers a safe space to reconnect with yourself and find clarity, compassion, and serenity.">
+    <meta name="twitter:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="logo-link">
+                    <img src="../images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="home.html" class="active">Home</a></li>
+                        <li><a href="ayurveda.html">Ayurveda</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="yoga.html">Yoga</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn active" onclick="switchLanguage('en')" title="English">
+                        <span class="flag">🇬🇧</span> EN
+                    </button>
+                    <button class="lang-btn" onclick="switchLanguage('it')" title="Italiano">
+                        <span class="flag">🇮🇹</span> IT
+                    </button>
+                    <button class="lang-btn" onclick="switchLanguage('fr')" title="Français">
+                        <span class="flag">🇫🇷</span> FR
+                    </button>
+                </div>
+                <div class="burger-menu" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="home.html" class="active" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="ayurveda.html" onclick="closeMobileMenu()">Ayurveda</a></li>
+                <li><a href="mindfulness.html" onclick="closeMobileMenu()">Mindfulness</a></li>
+                <li><a href="yoga.html" onclick="closeMobileMenu()">Yoga</a></li>
+                <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+            </ul>
+            <div class="mobile-lang-switcher">
+                <button class="lang-btn active" onclick="switchLanguage('en'); closeMobileMenu();" title="English">
+                    <span class="flag">🇬🇧</span> EN
+                </button>
+                <button class="lang-btn" onclick="switchLanguage('it'); closeMobileMenu();" title="Italiano">
+                    <span class="flag">🇮🇹</span> IT
+                </button>
+                <button class="lang-btn" onclick="switchLanguage('fr'); closeMobileMenu();" title="Français">
+                    <span class="flag">🇫🇷</span> FR
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to veranaturae</h1>
+                <p class="subtitle">A Sanctuary Of Ayurveda, Mindfulness & Yoga</p>
+            </div>
+        </section>
+
+        <!-- Veranaturae Introduction Text -->
+        <section class="veranaturae-intro">
+            <div class="container">
+                <div class="veranaturae-content">
+                    <div class="veranaturae-image">
+                        <img src="../images/vero_14.jpeg" alt="Veranaturae" class="vero-image">
+                    </div>
+                    <div class="veranaturae-text">
+                        <p class="intro-paragraph"><strong>Veranaturae</strong> means "true nature" - the essence of who we are beneath the noise, the rush, and the roles we play.</p>
+                        
+                        <p class="intro-paragraph">With <strong>Veranaturae</strong>, I believe that through Ayurveda, Mindfulness & Yoga, each person can gently return to their own inner home : a place of clarity, compassion, and serenity.</p>
+                        
+                        <p class="intro-paragraph">This is not about becoming someone new. It's about remembering who you already are. In honoring your rhythms, your needs, and your unique expression, you align with your natural state : your <em><strong>vera natura</strong></em>.</p>
+                        
+                        <p class="intro-paragraph"><strong>Veranaturae</strong> is a safe and nurturing space for those longing to reconnect with themselves. A space to slow down, breathe, and reawaken to your deepest truth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-grid">
+                    <a href="ayurveda.html" class="intro-card">
+                        <div class="intro-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h2>Ayurveda</h2>
+                        <p>Ayurveda is an ancient holistic healing system from India that focuses on balancing mind, body, and spirit through natural practices. It recognizes that each person has a unique constitution (dosha) and offers personalized approaches to wellness through diet, lifestyle, herbs, and daily routines. Ayurveda teaches us to live in harmony with nature's rhythms and our own inner wisdom.</p>
+                    </a>
+                    <a href="mindfulness.html" class="intro-card">
+                        <div class="intro-icon">
+                            <i class="fas fa-dove"></i>
+                        </div>
+                        <h2>Mindfulness</h2>
+                        <p>Mindfulness is the practice of paying attention to the present moment with curiosity and without judgment. It's about being fully aware of what's happening right now – our thoughts, feelings, bodily sensations, and the world around us. Through regular practice, mindfulness helps reduce stress, improve emotional regulation, enhance self-awareness, and cultivate a greater sense of inner peace and compassion.</p>
+                    </a>
+                    <a href="yoga.html" class="intro-card">
+                        <div class="intro-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h2>Yoga</h2>
+                        <p>Yoga is an ancient practice that unites the mind, body, and spirit through movement, breath, and awareness. More than just physical exercise, yoga is a holistic path to wellness that cultivates strength, flexibility, inner peace, and a deeper connection with yourself. Through gentle, conscious movement and breathing techniques, yoga helps us find balance, reduce stress, and cultivate mindfulness in our daily lives.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flyer Download Section -->
+        <button class="flyers-toggle-btn" onclick="toggleFlyersSidebar()" aria-label="Toggle Flyers Menu">
+            <i class="fas fa-file-download"></i>
+            <span>Flyers</span>
+        </button>
+        <aside class="flyers-sidebar" id="flyersSidebar">
+            <div class="flyers-sidebar-content">
+                <div class="flyers-sidebar-header">
+                    <h3>Download Flyers</h3>
+                    <button class="flyers-close-btn" onclick="toggleFlyersSidebar()" aria-label="Close Flyers Menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="flyers-sidebar-list">
+                    <div class="flyer-sidebar-item">
+                        <img src="../images/Flyer_MindfulnessAtWork.png" alt="Mindfulness at Work Flyer" class="flyer-sidebar-image">
+                        <div class="flyer-sidebar-info">
+                            <h4>Mindfulness at Work</h4>
+                            <a href="../images/Flyer_MindfulnessAtWork.png" download="Veranaturae_MindfulnessAtWork.pdf" class="flyer-sidebar-download">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flyer-sidebar-item">
+                        <img src="../images/Flyer_MindfulnessPaths.png" alt="Mindfulness Paths Flyer" class="flyer-sidebar-image">
+                        <div class="flyer-sidebar-info">
+                            <h4>Mindfulness Paths</h4>
+                            <a href="../images/Flyer_MindfulnessPaths.png" download="Veranaturae_MindfulnessPaths.pdf" class="flyer-sidebar-download">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Calendar Section -->
+        <section id="calendar" class="calendar-section">
+            <div class="container">
+                <h2>Book a Session</h2>
+                <p class="section-intro">Schedule your mindfulness, yoga, or Ayurveda consultation</p>
+                <div class="calendar-wrapper">
+                    <!-- Calendly inline widget -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/caggia_veronica/30min" style="min-width:320px;height:700px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    <!-- Fallback if Calendly is not configured -->
+                    <div class="calendar-fallback" style="display: none;">
+                        <p>To book a session, please contact us directly:</p>
+                        <a href="mailto:veronica@oceantoearth.life" class="button">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Service Pricing Modal -->
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Veranaturae. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/language.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
+

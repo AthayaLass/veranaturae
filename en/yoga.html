@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga - Veranaturae</title>
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://veranaturae.com/yoga.html">
+    <meta property="og:title" content="Yoga - Veranaturae">
+    <meta property="og:description" content="Discover the transformative power of yoga and breathwork for mind, body, and spirit wellness.">
+    <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="logo-link">
+                    <img src="../images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="ayurveda.html">Ayurveda</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="yoga.html" class="active">Yoga</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn active" onclick="switchLanguage('en')" title="English">
+                        <span class="flag">🇬🇧</span> EN
+                    </button>
+                    <button class="lang-btn" onclick="switchLanguage('it')" title="Italiano">
+                        <span class="flag">🇮🇹</span> IT
+                    </button>
+                    <button class="lang-btn" onclick="switchLanguage('fr')" title="Français">
+                        <span class="flag">🇫🇷</span> FR
+                    </button>
+                </div>
+                <div class="burger-menu" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="home.html" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="ayurveda.html" onclick="closeMobileMenu()">Ayurveda</a></li>
+                <li><a href="mindfulness.html" onclick="closeMobileMenu()">Mindfulness</a></li>
+                <li><a href="yoga.html" class="active" onclick="closeMobileMenu()">Yoga</a></li>
+                <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+            </ul>
+            <div class="mobile-lang-switcher">
+                <button class="lang-btn active" onclick="switchLanguage('en'); closeMobileMenu();" title="English">
+                    <span class="flag">🇬🇧</span> EN
+                </button>
+                <button class="lang-btn" onclick="switchLanguage('it'); closeMobileMenu();" title="Italiano">
+                    <span class="flag">🇮🇹</span> IT
+                </button>
+                <button class="lang-btn" onclick="switchLanguage('fr'); closeMobileMenu();" title="Français">
+                    <span class="flag">🇫🇷</span> FR
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Yoga</h1>
+                    <p class="subtitle">Union of Mind, Body & Spirit</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mindfulness-section">
+            <div class="container">
+                <div class="mindfulness-intro">
+                    <p>Yoga is an ancient practice that unites the mind, body, and spirit through movement, breath, and awareness. More than just physical exercise, yoga is a holistic path to wellness that cultivates strength, flexibility, inner peace, and a deeper connection with yourself.</p>
+                </div>
+
+                <div class="icon-divider">
+                    <i class="fas fa-spa"></i>
+                </div>
+
+                <div class="mindfulness-description">
+                    <h2>What is Yoga?</h2>
+                    <p>Yoga, derived from the Sanskrit word "yuj" meaning "to unite" or "to yoke," is a practice that brings together the physical, mental, and spiritual aspects of our being. Through a combination of postures (asanas), breathing techniques (pranayama), and meditation, yoga helps us find balance, reduce stress, and cultivate mindfulness in our daily lives.</p>
+                    
+                    <p>In our sessions, we focus on gentle, conscious movement that honors your body's unique needs and limitations. Whether you're a beginner or have an established practice, yoga offers a space to slow down, listen to your body, and reconnect with your breath – the bridge between the mind and body.</p>
+                    
+                    <p>Breathwork, or pranayama, is an integral part of yoga practice. By learning to control and deepen our breath, we can calm the nervous system, increase energy, and enhance our ability to be present. Together, yoga and breathwork create a powerful foundation for mindfulness and overall well-being.</p>
+                </div>
+
+                <div class="icon-divider">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="mindfulness-benefits">
+                    <h2>Benefits of Yoga & Breathwork</h2>
+                    <p>Through regular practice, you can experience:</p>
+                    <ul>
+                        <li>Improved flexibility and strength</li>
+                        <li>Reduced stress and anxiety</li>
+                        <li>Better posture and body awareness</li>
+                        <li>Enhanced breathing capacity</li>
+                        <li>Improved sleep quality</li>
+                        <li>Greater mental clarity and focus</li>
+                        <li>Increased energy and vitality</li>
+                        <li>Better emotional regulation</li>
+                        <li>Deeper sense of inner peace</li>
+                        <li>Enhanced mind-body connection</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Yoga Services</h2>
+                <div class="services-info">
+                    <div class="info-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Every session is personalized according to your needs, experience level, and goals!</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Session language: available in French, Italian and English.</span>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-service="private-yoga">
+                        <div class="service-image">
+                            <img src="../images/yoga03.jpg" alt="Private Yoga" class="service-img">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Private Yoga</h3>
+                            <p class="service-teaser">Experience personalized one-on-one yoga sessions tailored to your unique needs, goals, and experience level. Receive individual attention and guidance to deepen your practice at your own pace.</p>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Book a Session
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="group-yoga">
+                        <div class="service-image">
+                            <img src="../images/yoga01.jpg" alt="Group Yoga" class="service-img">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Group Yoga</h3>
+                            <p class="service-teaser">Join a supportive community in group yoga sessions. Practice together, share energy, and grow in a welcoming environment that fosters connection and collective mindfulness.</p>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Book a Session
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Service Pricing Modal -->
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Veranaturae. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/language.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
+

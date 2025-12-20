@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurveda - Veranaturae</title>
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://veranaturae.com/ayurveda.html">
+    <meta property="og:title" content="Ayurveda - Veranaturae">
+    <meta property="og:description" content="Scopri l'antica saggezza dell'Ayurveda e i suoi benefici supportati dalla scienza per il benessere olistico.">
+    <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="logo-link">
+                    <img src="../images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="ayurveda.html" class="active">Ayurveda</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="yoga.html">Yoga</a></li>
+                        <li><a href="about.html">Chi Sono</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn" onclick="switchLanguage('en')" title="English">
+                        <span class="flag">🇬🇧</span> EN
+                    </button>
+                    <button class="lang-btn active" onclick="switchLanguage('it')" title="Italiano">
+                        <span class="flag">🇮🇹</span> IT
+                    </button>
+                    <button class="lang-btn" onclick="switchLanguage('fr')" title="Français">
+                        <span class="flag">🇫🇷</span> FR
+                    </button>
+                </div>
+                <div class="burger-menu" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="home.html" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="ayurveda.html" class="active" onclick="closeMobileMenu()">Ayurveda</a></li>
+                <li><a href="mindfulness.html" onclick="closeMobileMenu()">Mindfulness</a></li>
+                <li><a href="yoga.html" onclick="closeMobileMenu()">Yoga</a></li>
+                <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+            </ul>
+            <div class="mobile-lang-switcher">
+                <button class="lang-btn" onclick="switchLanguage('en'); closeMobileMenu();" title="English">
+                    <span class="flag">🇬🇧</span> EN
+                </button>
+                <button class="lang-btn active" onclick="switchLanguage('it'); closeMobileMenu();" title="Italiano">
+                    <span class="flag">🇮🇹</span> IT
+                </button>
+                <button class="lang-btn" onclick="switchLanguage('fr'); closeMobileMenu();" title="Français">
+                    <span class="flag">🇫🇷</span> FR
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Ayurveda</h1>
+                    <p class="subtitle">Saggezza Antica per il Benessere Moderno</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mindfulness-section">
+            <div class="container">
+                <div class="mindfulness-intro">
+                    <p>L'Ayurveda è un antico sistema di guarigione olistico che supporta l'equilibrio tra corpo, mente e spirito. Radicato nella saggezza della natura, ci invita a vivere in armonia con la nostra costituzione unica e i nostri ritmi naturali.</p>
+                </div>
+
+                <div class="icon-divider">
+                    <i class="fas fa-leaf"></i>
+                </div>
+
+                <div class="mindfulness-description">
+                    <h2>Cos'è l'Ayurveda</h2>
+                    <p>Originatasi in India oltre 5.000 anni fa, l'Ayurveda considera la salute come uno stato di equilibrio dinamico piuttosto che l'assenza di sintomi. Riconosce che ogni persona ha una costituzione unica (prakriti), modellata dagli elementi e espressa attraverso i tre dosha: Vata, Pitta e Kapha. Quando viviamo in allineamento con la nostra costituzione, l'energia fluisce naturalmente e il benessere è sostenuto. Quando sorge uno squilibrio, spesso si riflette attraverso disagio fisico, malessere emotivo o affaticamento mentale. L'Ayurveda lavora dolcemente per ripristinare l'armonia affrontando le cause profonde dello squilibrio piuttosto che mascherare i sintomi. Attraverso scelte di stile di vita consapevoli, nutrimento e pratiche di cura di sé, supporta la vitalità a lungo termine e la coerenza interiore.</p>
+                </div>
+
+                <div class="icon-divider">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+
+                <div class="mindfulness-benefits">
+                    <h2>Servizi Ayurvedici</h2>
+                    <ul>
+                        <li>Valutazione individuale della costituzione ayurvedica e degli squilibri</li>
+                        <li>Guida nutrizionale e dietetica personalizzata</li>
+                        <li>Raccomandazioni sullo stile di vita e sulle routine quotidiane</li>
+                        <li>Massaggi ayurvedici e terapie corporee</li>
+                        <li>Supporto per digestione, energia, stress ed equilibrio emotivo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Servizi Ayurvedici a Veranaturae</h2>
+                <div class="services-info">
+                    <div class="info-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Ogni sessione è personalizzata secondo la tua costituzione unica (dosha) e le tue esigenze individuali!</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Lingua delle sessioni: disponibile in francese, italiano e inglese.</span>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-service="ayurveda-consultation">
+                        <div class="service-image">
+                            <img src="../images/fafa04.jpg" alt="Ayurvedic consultation" class="service-img">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Consulenza Ayurvedica</h3>
+                            <p class="service-teaser">Scopri la tua costituzione unica (dosha) e ricevi raccomandazioni personalizzate per dieta, stile di vita, erbe e routine quotidiane per ripristinare l'equilibrio e migliorare il tuo benessere.</p>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Prenota una Sessione
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="ayurveda-massages">
+                        <div class="service-image">
+                            <img src="../images/mindfulness03.jpg" alt="Ayurvedic massages" class="service-img">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Massaggi Ayurvedici</h3>
+                            <p class="service-teaser">Sperimenta massaggi terapeutici utilizzando tecniche e oli ayurvedici tradizionali per ripristinare l'equilibrio, migliorare la circolazione e promuovere un profondo rilassamento.</p>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Prenota una Sessione
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="ayurveda-nutrition">
+                        <div class="service-image">
+                            <img src="../images/food_01.jpg" alt="Ayurvedic nutrition" class="service-img">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Nutrizione Ayurvedica</h3>
+                            <p class="service-teaser">Ricevi raccomandazioni dietetiche personalizzate su misura per il tuo tipo di dosha e le tue esigenze individuali, inclusa la pianificazione dei pasti e la guida alle combinazioni alimentari.</p>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Prenota una Sessione
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Service Pricing Modal -->
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Veranaturae. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="../js/language.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

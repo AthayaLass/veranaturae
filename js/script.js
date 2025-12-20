@@ -1,3 +1,18 @@
+// Language switching function
+function switchLanguage(lang) {
+    if (!['en', 'it', 'fr'].includes(lang)) return;
+    
+    // Save preference
+    localStorage.setItem('preferredLanguage', lang);
+    
+    // Get current page
+    const currentPath = window.location.pathname;
+    const currentFile = currentPath.split('/').pop() || 'home.html';
+    
+    // Redirect to language-specific page
+    window.location.href = `/${lang}/${currentFile}`;
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {

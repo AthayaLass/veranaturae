@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - Veranaturae</title>
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://veranaturae.com/about.html">
+    <meta property="og:title" content="À Propos - Veranaturae">
+    <meta property="og:description" content="Rencontrez Veronica Caggia, scientifique des plantes, coach en pleine conscience et amoureuse de la nature dédiée à vous aider à vous reconnecter avec votre vraie nature.">
+    <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="logo-link">
+                    <img src="../images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="ayurveda.html">Ayurveda</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="yoga.html">Yoga</a></li>
+                        <li><a href="about.html" class="active">À Propos</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn" onclick="switchLanguage('en')" title="English">
+                        <span class="flag">🇬🇧</span> EN
+                    </button>
+                    <button class="lang-btn" onclick="switchLanguage('it')" title="Italiano">
+                        <span class="flag">🇮🇹</span> IT
+                    </button>
+                    <button class="lang-btn active" onclick="switchLanguage('fr')" title="Français">
+                        <span class="flag">🇫🇷</span> FR
+                    </button>
+                </div>
+                <div class="burger-menu" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="home.html" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="ayurveda.html" onclick="closeMobileMenu()">Ayurveda</a></li>
+                <li><a href="mindfulness.html" onclick="closeMobileMenu()">Mindfulness</a></li>
+                <li><a href="yoga.html" onclick="closeMobileMenu()">Yoga</a></li>
+                <li><a href="about.html" class="active" onclick="closeMobileMenu()">About</a></li>
+            </ul>
+            <div class="mobile-lang-switcher">
+                <button class="lang-btn" onclick="switchLanguage('en'); closeMobileMenu();" title="English">
+                    <span class="flag">🇬🇧</span> EN
+                </button>
+                <button class="lang-btn" onclick="switchLanguage('it'); closeMobileMenu();" title="Italiano">
+                    <span class="flag">🇮🇹</span> IT
+                </button>
+                <button class="lang-btn active" onclick="switchLanguage('fr'); closeMobileMenu();" title="Français">
+                    <span class="flag">🇫🇷</span> FR
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>À Propos de Moi</h1>
+                    <p class="subtitle">La Chuchoteuse de la Terre</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <h3>Veronica Caggia</h3>
+                        <img src="../images/vero_01.jpg" alt="Veronica Caggia - Earth Whisperer">
+                    </div>
+                    <div class="about-text">
+                        <p>Bonjour, je suis Veronica – thérapeute ayurvédique en formation, coach en pleine conscience, enseignante de yoga et quelqu'un qui sait ce que c'est que de vivre en pilote automatique.</p>
+                        
+                        <p>Pendant longtemps, j'ai été profondément connectée à la nature à travers mon travail de biologiste des plantes, pourtant je me sentais souvent déconnectée de moi-même. Découvrir l'Ayurveda, la pleine conscience et le yoga a marqué un tournant dans ma vie. Ces pratiques m'ont aidée à ralentir, à écouter intérieurement et à me reconnecter avec mon corps, mes rythmes, et à cultiver l'équilibre de manière plus douce et durable. Ce qui a commencé comme une exploration personnelle est progressivement devenu une transformation profonde, changeant la façon dont je me relie à moi-même et à la vie quotidienne.</p>
+                        
+                        <p>Maintenant, je veux partager avec les autres une façon de vivre plus consciemment, avec moins de stress, plus de présence, plus de joie et un sentiment plus profond d'harmonie avec soi-même.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Veranaturae. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/language.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

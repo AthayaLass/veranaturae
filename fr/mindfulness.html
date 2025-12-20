@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindfulness - Veranaturae</title>
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://veranaturae.com/mindfulness.html">
+    <meta property="og:title" content="Mindfulness - Veranaturae">
+    <meta property="og:description" content="Découvrez les bienfaits de la pratique de la pleine conscience soutenus par la science et comment elle peut transformer votre vie.">
+    <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="logo-link">
+                    <img src="../images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="ayurveda.html">Ayurveda</a></li>
+                        <li><a href="mindfulness.html" class="active">Mindfulness</a></li>
+                        <li><a href="yoga.html">Yoga</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn" onclick="switchLanguage('en')" title="English">
+                        <span class="flag">🇬🇧</span> EN
+                    </button>
+                    <button class="lang-btn" onclick="switchLanguage('it')" title="Italiano">
+                        <span class="flag">🇮🇹</span> IT
+                    </button>
+                    <button class="lang-btn active" onclick="switchLanguage('fr')" title="Français">
+                        <span class="flag">🇫🇷</span> FR
+                    </button>
+                </div>
+                <div class="burger-menu" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="home.html" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="ayurveda.html" onclick="closeMobileMenu()">Ayurveda</a></li>
+                <li><a href="mindfulness.html" class="active" onclick="closeMobileMenu()">Mindfulness</a></li>
+                <li><a href="yoga.html" onclick="closeMobileMenu()">Yoga</a></li>
+                <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+            </ul>
+            <div class="mobile-lang-switcher">
+                <button class="lang-btn" onclick="switchLanguage('en'); closeMobileMenu();" title="English">
+                    <span class="flag">🇬🇧</span> EN
+                </button>
+                <button class="lang-btn" onclick="switchLanguage('it'); closeMobileMenu();" title="Italiano">
+                    <span class="flag">🇮🇹</span> IT
+                </button>
+                <button class="lang-btn active" onclick="switchLanguage('fr'); closeMobileMenu();" title="Français">
+                    <span class="flag">🇫🇷</span> FR
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Pleine Conscience</h1>
+                    <p class="subtitle">L'Art d'Être Présent</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mindfulness-section">
+            <div class="container">
+                <div class="mindfulness-intro">
+                    <p>Dans notre monde au rythme effréné, nous perdons souvent le contact avec le moment présent et notre connexion au monde naturel. La pleine conscience nous offre un chemin de retour à la conscience, nous aidant à trouver la paix, la clarté et une appréciation plus profonde des moments simples de la vie.</p>
+                </div>
+
+                <div class="icon-divider">
+                    <i class="fas fa-dove"></i>
+                </div>
+
+                <div class="mindfulness-description">
+                    <h2>Qu'est-ce que la Pleine Conscience ?</h2>
+                    <p>La pleine conscience est la pratique de porter attention au moment présent avec curiosité et sans jugement. Il s'agit d'être pleinement conscient de ce qui se passe en ce moment – nos pensées, nos sentiments, nos sensations corporelles et le monde qui nous entoure.</p>
+                    
+                    <p>À son cœur, la pleine conscience est simplement l'art d'être présent. C'est apprendre à observer vos pensées et émotions au fur et à mesure qu'elles surgissent, sans s'y laisser prendre. Imaginez-vous assis près d'un ruisseau et regardant les feuilles flotter – c'est ainsi que nous apprenons à observer nos pensées : en les remarquant et en les laissant passer.</p>
+                    
+                    <p>La pleine conscience peut être pratiquée à travers la méditation, la respiration consciente, ou simplement en apportant de la conscience aux activités quotidiennes. Il ne s'agit pas de vider votre esprit – il s'agit de développer une relation bienveillante et curieuse avec tout ce qui se passe dans le moment présent.</p>
+                </div>
+
+                <div class="icon-divider">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+
+                <div class="mindfulness-benefits">
+                    <h2>Bénéfices Personnels</h2>
+                    <p>Grâce à une pratique régulière de la pleine conscience, vous pouvez ressentir de nombreux bénéfices :</p>
+                    <ul>
+                        <li>Réduction du stress et de l'anxiété</li>
+                        <li>Amélioration de la régulation émotionnelle</li>
+                        <li>Meilleure qualité de sommeil</li>
+                        <li>Augmentation de la conscience de soi</li>
+                        <li>Plus grand sentiment de paix intérieure</li>
+                        <li>Relation plus compatissante avec vous-même et les autres</li>
+                        <li>Amélioration de la concentration et de l'attention</li>
+                        <li>Meilleure gestion de la douleur</li>
+                        <li>Relations améliorées grâce à une meilleure communication</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Services de Pleine Conscience à Veranaturae</h2>
+                <div class="services-info">
+                    <div class="info-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Chaque séance est personnalisée selon les besoins de l'individu ou du groupe !</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Langue des séances : disponible en français, italien et anglais.</span>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-service="mindfulness-1to1">
+                        <div class="service-image">
+                            <img src="../images/mindfulness01.jpg" alt="1:1 Mindfulness Sessions" class="service-img">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Séances de Pleine Conscience 1:1</h3>
+                            <p class="service-teaser">Faites un pas vers une vie plus équilibrée avec un accompagnement personnel. Que vous soyez nouveau dans la pleine conscience ou que vous approfondissiez une pratique existante, mes séances de coaching individuelles sont conçues autour de vos objectifs uniques et de votre rythme de vie.</p>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Réserver une Séance
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="mindfulness-corporate">
+                        <div class="service-image">
+                            <img src="../images/plants_02.jpeg" alt="Corporate Mindfulness" class="service-img">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Pleine Conscience en Entreprise</h3>
+                            <p class="service-teaser">Améliorez le bien-être, la concentration et la collaboration de votre équipe. Mes ateliers de pleine conscience sur mesure et mes séances d'entreprise apportent clarté et calme sur le lieu de travail.</p>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Réserver une Séance
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="mindfulness-underwater">
+                        <div class="service-image">
+                            <img src="../images/fish02.JPG" alt="Underwater Mindfulness" class="service-img">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Pleine Conscience Sous-Marine</h3>
+                            <p class="service-teaser">Découvrez la pleine conscience dans un environnement sous-marin unique. Connectez-vous avec le monde sous-marin serein tout en pratiquant des techniques de pleine conscience.</p>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Réserver une Séance
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Service Pricing Modal -->
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Veranaturae. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/language.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

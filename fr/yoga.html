@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga - Veranaturae</title>
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://veranaturae.com/yoga.html">
+    <meta property="og:title" content="Yoga - Veranaturae">
+    <meta property="og:description" content="Découvrez le pouvoir transformateur du yoga et du travail sur la respiration pour le bien-être de l'esprit, du corps et de l'âme.">
+    <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="logo-link">
+                    <img src="../images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="ayurveda.html">Ayurveda</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="yoga.html" class="active">Yoga</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn" onclick="switchLanguage('en')" title="English">
+                        <span class="flag">🇬🇧</span> EN
+                    </button>
+                    <button class="lang-btn" onclick="switchLanguage('it')" title="Italiano">
+                        <span class="flag">🇮🇹</span> IT
+                    </button>
+                    <button class="lang-btn active" onclick="switchLanguage('fr')" title="Français">
+                        <span class="flag">🇫🇷</span> FR
+                    </button>
+                </div>
+                <div class="burger-menu" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="home.html" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="ayurveda.html" onclick="closeMobileMenu()">Ayurveda</a></li>
+                <li><a href="mindfulness.html" onclick="closeMobileMenu()">Mindfulness</a></li>
+                <li><a href="yoga.html" class="active" onclick="closeMobileMenu()">Yoga</a></li>
+                <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+            </ul>
+            <div class="mobile-lang-switcher">
+                <button class="lang-btn" onclick="switchLanguage('en'); closeMobileMenu();" title="English">
+                    <span class="flag">🇬🇧</span> EN
+                </button>
+                <button class="lang-btn" onclick="switchLanguage('it'); closeMobileMenu();" title="Italiano">
+                    <span class="flag">🇮🇹</span> IT
+                </button>
+                <button class="lang-btn active" onclick="switchLanguage('fr'); closeMobileMenu();" title="Français">
+                    <span class="flag">🇫🇷</span> FR
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Yoga</h1>
+                    <p class="subtitle">Union de l'Esprit, du Corps et de l'Âme</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mindfulness-section">
+            <div class="container">
+                <div class="mindfulness-intro">
+                    <p>Le Yoga est une pratique ancienne qui unit l'esprit, le corps et l'âme à travers le mouvement, la respiration et la conscience. Plus qu'un simple exercice physique, le yoga est un chemin holistique vers le bien-être qui cultive la force, la flexibilité, la paix intérieure et une connexion plus profonde avec vous-même.</p>
+                </div>
+
+                <div class="icon-divider">
+                    <i class="fas fa-spa"></i>
+                </div>
+
+                <div class="mindfulness-description">
+                    <h2>Qu'est-ce que le Yoga ?</h2>
+                    <p>Le Yoga, dérivé du mot sanskrit "yuj" signifiant "unir" ou "atteler", est une pratique qui rassemble les aspects physiques, mentaux et spirituels de notre être. Grâce à une combinaison de postures (asanas), de techniques de respiration (pranayama) et de méditation, le yoga nous aide à trouver l'équilibre, réduire le stress et cultiver la pleine conscience dans notre vie quotidienne.</p>
+                    
+                    <p>Dans nos séances, nous nous concentrons sur des mouvements doux et conscients qui respectent les besoins et limitations uniques de votre corps. Que vous soyez débutant ou que vous ayez une pratique établie, le yoga offre un espace pour ralentir, écouter votre corps et vous reconnecter avec votre respiration – le pont entre l'esprit et le corps.</p>
+                    
+                    <p>Le travail sur la respiration, ou pranayama, est une partie intégrante de la pratique du yoga. En apprenant à contrôler et approfondir notre respiration, nous pouvons calmer le système nerveux, augmenter l'énergie et améliorer notre capacité à être présents. Ensemble, le yoga et le travail sur la respiration créent une base puissante pour la pleine conscience et le bien-être général.</p>
+                </div>
+
+                <div class="icon-divider">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="mindfulness-benefits">
+                    <h2>Bénéfices du Yoga et du Travail sur la Respiration</h2>
+                    <p>Grâce à une pratique régulière, vous pouvez ressentir :</p>
+                    <ul>
+                        <li>Amélioration de la flexibilité et de la force</li>
+                        <li>Réduction du stress et de l'anxiété</li>
+                        <li>Meilleure posture et conscience corporelle</li>
+                        <li>Capacité respiratoire améliorée</li>
+                        <li>Meilleure qualité de sommeil</li>
+                        <li>Plus grande clarté mentale et concentration</li>
+                        <li>Augmentation de l'énergie et de la vitalité</li>
+                        <li>Meilleure régulation émotionnelle</li>
+                        <li>Sensation plus profonde de paix intérieure</li>
+                        <li>Connexion esprit-corps améliorée</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Services Yoga</h2>
+                <div class="services-info">
+                    <div class="info-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Chaque séance est personnalisée selon vos besoins, votre niveau d'expérience et vos objectifs !</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Langue des séances : disponible en français, italien et anglais.</span>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-service="private-yoga">
+                        <div class="service-image">
+                            <img src="../images/yoga03.jpg" alt="Private Yoga" class="service-img">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Yoga Privé</h3>
+                            <p class="service-teaser">Découvrez des séances de yoga personnalisées en tête-à-tête adaptées à vos besoins uniques, objectifs et niveau d'expérience. Recevez une attention et des conseils individuels pour approfondir votre pratique à votre propre rythme.</p>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Réserver une Séance
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="group-yoga">
+                        <div class="service-image">
+                            <img src="../images/yoga01.jpg" alt="Group Yoga" class="service-img">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Yoga de Groupe</h3>
+                            <p class="service-teaser">Rejoignez une communauté bienveillante dans des séances de yoga de groupe. Pratiquez ensemble, partagez l'énergie et grandissez dans un environnement accueillant qui favorise la connexion et la pleine conscience collective.</p>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Réserver une Séance
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Service Pricing Modal -->
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Veranaturae. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/language.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
