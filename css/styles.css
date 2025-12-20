@@ -416,11 +416,20 @@ nav a:hover {
     text-align: center;
 }
 
+.about-image h3 {
+    color: var(--main);
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
 .about-image img {
     width: 100%;
-    max-width: 300px;
-    height: 100%;
-    aspect-ratio: 1 / 1;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(107, 94, 78, 0.15);
