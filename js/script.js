@@ -577,13 +577,58 @@ function closeMobileMenu() {
     }
 }
 
+// Flyers sidebar close function
+function closeFlyersSidebar() {
+    const flyersSidebar = document.getElementById('flyersSidebar');
+    const flyersToggleBtn = document.querySelector('.flyers-toggle-btn');
+    
+    if (flyersSidebar && flyersSidebar.classList.contains('active')) {
+        flyersSidebar.classList.remove('active');
+        if (flyersToggleBtn) {
+            flyersToggleBtn.style.display = 'flex';
+        }
+    }
+}
+
 // Flyers sidebar toggle function
 function toggleFlyersSidebar() {
     const flyersSidebar = document.getElementById('flyersSidebar');
+    const flyersToggleBtn = document.querySelector('.flyers-toggle-btn');
+    
     if (flyersSidebar) {
-        flyersSidebar.classList.toggle('active');
+        const isActive = flyersSidebar.classList.contains('active');
+        if (isActive) {
+            // Closing sidebar - show button
+            closeFlyersSidebar();
+        } else {
+            // Opening sidebar - hide button
+            flyersSidebar.classList.add('active');
+            if (flyersToggleBtn) {
+                flyersToggleBtn.style.display = 'none';
+            }
+        }
     }
 }
+
+// Close flyers sidebar when clicking outside
+document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('click', function(event) {
+        const flyersSidebar = document.getElementById('flyersSidebar');
+        const flyersToggleBtn = document.querySelector('.flyers-toggle-btn');
+        
+        // Check if sidebar is active
+        if (flyersSidebar && flyersSidebar.classList.contains('active')) {
+            // Check if click is outside the sidebar and not on the toggle button
+            const clickedInsideSidebar = flyersSidebar.contains(event.target);
+            const clickedOnToggleBtn = flyersToggleBtn && flyersToggleBtn.contains(event.target);
+            
+            // If clicked outside both sidebar and toggle button, close the sidebar
+            if (!clickedInsideSidebar && !clickedOnToggleBtn) {
+                closeFlyersSidebar();
+            }
+        }
+    });
+});
 
 // Close mobile menu when clicking outside
 document.addEventListener('click', function(event) {

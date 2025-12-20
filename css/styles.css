@@ -62,6 +62,7 @@ header {
 .logo-link {
     text-decoration: none;
     display: inline-block;
+    margin-right: 3rem;
 }
 
 nav ul {
@@ -127,9 +128,13 @@ nav a:hover {
     box-shadow: 0 2px 8px rgba(107, 94, 78, 0.15);
 }
 
-.lang-btn .flag {
+.lang-btn .flag,
+.lang-btn .fi {
     font-size: 1rem;
     line-height: 1;
+    display: inline-block;
+    margin-right: 0.3rem;
+    vertical-align: middle;
 }
 
 .mobile-lang-switcher {
@@ -145,6 +150,13 @@ nav a:hover {
     flex: 1;
     max-width: 80px;
     justify-content: center;
+}
+
+.mobile-lang-switcher .lang-btn .flag,
+.mobile-lang-switcher .lang-btn .fi {
+    display: inline-block;
+    margin-right: 0.3rem;
+    vertical-align: middle;
 }
 
 @media (max-width: 991px) {
@@ -322,8 +334,16 @@ nav a:hover {
     border-radius: 0 0 40px 40px;
     box-shadow: 0 4px 32px var(--shadow);
     margin-bottom: 2rem;
+    position: relative;
 }
 .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.hero .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -770,6 +790,10 @@ footer {
     
     .header-content {
         padding: 0 1rem;
+    }
+    
+    .logo-link {
+        margin-right: 1rem;
     }
     
     .logo {
@@ -1895,10 +1919,9 @@ footer {
 
 /* Flyers Toggle Button */
 .flyers-toggle-btn {
-    position: fixed;
+    position: absolute;
     right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 20px;
     background: var(--accent);
     border: 2px solid var(--main);
     border-radius: 50px;
@@ -1918,7 +1941,7 @@ footer {
 
 .flyers-toggle-btn:hover {
     background: var(--soft-green);
-    transform: translateY(-50%) scale(1.05);
+    transform: scale(1.05);
     box-shadow: 0 6px 25px rgba(107, 94, 78, 0.25);
 }
 
@@ -1930,8 +1953,8 @@ footer {
 .flyers-sidebar {
     position: fixed;
     right: 20px;
-    top: 50%;
-    transform: translateY(-50%) translateX(calc(100% + 20px));
+    bottom: 20px;
+    transform: translateX(calc(100% + 20px));
     width: 280px;
     background: var(--white);
     border-radius: 15px;
@@ -1946,7 +1969,7 @@ footer {
 }
 
 .flyers-sidebar.active {
-    transform: translateY(-50%) translateX(0);
+    transform: translateX(0);
     opacity: 1;
     pointer-events: all;
 }
@@ -1958,6 +1981,35 @@ footer {
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--accent);
+    position: relative;
+}
+
+.flyers-sidebar-close-top {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: var(--accent);
+    border: 2px solid var(--main);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 102;
+    box-shadow: 0 2px 8px rgba(107, 94, 78, 0.2);
+    color: var(--main);
+    font-size: 1rem;
+    pointer-events: all;
+}
+
+.flyers-sidebar-close-top:hover {
+    background: var(--soft-green);
+    transform: scale(1.1) rotate(90deg);
+    box-shadow: 0 4px 12px rgba(107, 94, 78, 0.3);
+    color: var(--white);
 }
 
 .flyers-sidebar-content h3 {

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.0.0/css/flag-icons.min.css">
 </head>
 <body>
     <header>
@@ -40,13 +41,13 @@
                 </nav>
                 <div class="language-switcher">
                     <button class="lang-btn active" onclick="switchLanguage('en')" title="English">
-                        <span class="flag">🇬🇧</span> EN
+                        <span class="fi fi-gb"></span> EN
                     </button>
                     <button class="lang-btn" onclick="switchLanguage('it')" title="Italiano">
-                        <span class="flag">🇮🇹</span> IT
+                        <span class="fi fi-it"></span> IT
                     </button>
                     <button class="lang-btn" onclick="switchLanguage('fr')" title="Français">
-                        <span class="flag">🇫🇷</span> FR
+                        <span class="fi fi-fr"></span> FR
                     </button>
                 </div>
                 <div class="burger-menu" onclick="toggleMobileMenu()">
@@ -66,13 +67,13 @@
             </ul>
             <div class="mobile-lang-switcher">
                 <button class="lang-btn active" onclick="switchLanguage('en'); closeMobileMenu();" title="English">
-                    <span class="flag">🇬🇧</span> EN
+                    <span class="fi fi-gb"></span> EN
                 </button>
                 <button class="lang-btn" onclick="switchLanguage('it'); closeMobileMenu();" title="Italiano">
-                    <span class="flag">🇮🇹</span> IT
+                    <span class="fi fi-it"></span> IT
                 </button>
                 <button class="lang-btn" onclick="switchLanguage('fr'); closeMobileMenu();" title="Français">
-                    <span class="flag">🇫🇷</span> FR
+                    <span class="fi fi-fr"></span> FR
                 </button>
             </div>
         </div>
@@ -82,8 +83,10 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Welcome to veranaturae</h1>
-                <p class="subtitle">A Sanctuary Of Ayurveda, Mindfulness & Yoga</p>
+                <div class="hero-content">
+                    <h1>Welcome to veranaturae</h1>
+                    <p class="subtitle">A Sanctuary Of Ayurveda, Mindfulness & Yoga</p>
+                </div>
             </div>
         </section>
 
@@ -142,6 +145,9 @@
             <span>Flyers</span>
         </button>
         <aside class="flyers-sidebar" id="flyersSidebar">
+            <button class="flyers-sidebar-close-top" onclick="toggleFlyersSidebar()" aria-label="Close Flyers Menu">
+                <i class="fas fa-times"></i>
+            </button>
             <div class="flyers-sidebar-content">
                 <div class="flyers-sidebar-header">
                     <h3>Download Flyers</h3>
@@ -176,7 +182,7 @@
         <section id="calendar" class="calendar-section">
             <div class="container">
                 <h2>Book a Session</h2>
-                <p class="section-intro">Schedule your mindfulness, yoga, or Ayurveda consultation</p>
+                <p class="section-intro">Schedule your Ayurveda, Mindfulness or Yoga consultation</p>
                 <div class="calendar-wrapper">
                     <!-- Calendly inline widget -->
                     <div class="calendly-inline-widget" data-url="https://calendly.com/caggia_veronica/30min" style="min-width:320px;height:700px;"></div>
