@@ -184,7 +184,10 @@
                 <h2>Réserver une Séance</h2>
                 <p class="section-intro">Planifiez votre consultation d'Ayurveda, Pleine Conscience ou Yoga</p>
                 <div class="calendar-service-buttons">
-                    <button class="calendar-service-btn active" data-service="ayurveda" onclick="switchCalendlyService('ayurveda')">
+                    <button class="calendar-service-btn active" data-service="call" onclick="switchCalendlyService('call')">
+                        <i class="fas fa-phone"></i> Appeler
+                    </button>
+                    <button class="calendar-service-btn" data-service="ayurveda" onclick="switchCalendlyService('ayurveda')">
                         Ayurveda
                     </button>
                     <button class="calendar-service-btn" data-service="mindfulness" onclick="switchCalendlyService('mindfulness')">
@@ -196,8 +199,7 @@
                 </div>
                 <div class="calendar-wrapper">
                     <!-- Calendly inline widget -->
-                    <div id="calendlyWidget" class="calendly-inline-widget" data-url="https://calendly.com/caggia_veronica/30min" style="min-width:320px;height:700px;"></div>
-                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    <div id="calendlyWidget" class="calendly-inline-widget" data-url="https://calendly.com/caggia_veronica/appel-chiamata-call" style="min-width:320px;height:700px;"></div>
                     <!-- Fallback if Calendly is not configured -->
                     <div class="calendar-fallback" style="display: none;">
                         <p>To book a session, please contact us directly:</p>
@@ -228,18 +230,23 @@
         </div>
     </footer>
 
+    <!-- Calendly script -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    
     <script src="../js/language.js"></script>
     <script src="../js/script.js"></script>
     <script>
-        // Calendly service switching
+        // Calendly URLs
         const calendlyUrls = {
+            call: 'https://calendly.com/caggia_veronica/appel-chiamata-call',
             ayurveda: 'https://calendly.com/caggia_veronica/30min',
             mindfulness: 'https://calendly.com/caggia_veronica/mindfulness',
             yoga: 'https://calendly.com/caggia_veronica/yoga'
         };
 
+        // Function to switch Calendly service
         function switchCalendlyService(service) {
-            // Update active button
+            // Update button states
             document.querySelectorAll('.calendar-service-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
@@ -248,61 +255,51 @@
                 activeBtn.classList.add('active');
             }
 
-            // Update calendly widget
+            // Get widget
             const widget = document.getElementById('calendlyWidget');
-            if (widget && calendlyUrls[service]) {
-                widget.setAttribute('data-url', calendlyUrls[service]);
-                // Clear existing widget content
-                widget.innerHTML = '';
-                // Reload the widget
-                if (window.Calendly) {
-                    Calendly.initInlineWidget({
-                        url: calendlyUrls[service],
-                        parentElement: widget
-                    });
-                } else {
-                    // If Calendly hasn't loaded yet, wait for it
-                    const checkCalendly = setInterval(function() {
-                        if (window.Calendly) {
-                            clearInterval(checkCalendly);
-                            Calendly.initInlineWidget({
-                                url: calendlyUrls[service],
-                                parentElement: widget
-                            });
-                        }
-                    }, 100);
-                }
+            if (!widget || !calendlyUrls[service]) {
+                return;
             }
-        }
 
-        // Function to initialize Calendly
-        function initCalendlyWidget() {
-            const widget = document.getElementById('calendlyWidget');
-            if (widget && window.Calendly) {
-                const currentUrl = widget.getAttribute('data-url');
+            const url = calendlyUrls[service];
+            
+            // Update data-url attribute
+            widget.setAttribute('data-url', url);
+            
+            // Reinitialize the widget with the new URL
+            if (window.Calendly && typeof window.Calendly.initInlineWidget === 'function') {
+                // Clear the widget content
+                widget.innerHTML = '';
+                // Reinitialize with new URL
                 Calendly.initInlineWidget({
-                    url: currentUrl,
+                    url: url,
                     parentElement: widget
                 });
             }
         }
 
-        // Initialize Calendly when it loads
+        // Initialize on page load
         window.addEventListener('load', function() {
-            // Check for service parameter in hash first
-            const hash = window.location.hash;
-            if (hash && hash.includes('service=')) {
-                const serviceMatch = hash.match(/service=([^&]+)/);
-                if (serviceMatch && serviceMatch[1] && calendlyUrls[serviceMatch[1]]) {
-                    // Wait a bit for Calendly to load, then switch
-                    setTimeout(function() {
-                        switchCalendlyService(serviceMatch[1]);
-                    }, 500);
-                } else {
-                    initCalendlyWidget();
-                }
+            // Scroll to calendar if hash present
+            if (window.location.hash.includes('calendar')) {
+                setTimeout(function() {
+                    const section = document.getElementById('calendar');
+                    if (section) {
+                        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }, 300);
+            }
+
+            // Get service from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const service = urlParams.get('service');
+
+            // Switch to the appropriate service
+            if (service && calendlyUrls[service]) {
+                switchCalendlyService(service);
             } else {
-                initCalendlyWidget();
+                // Default to call service
+                switchCalendlyService('call');
             }
         });
     </script>
