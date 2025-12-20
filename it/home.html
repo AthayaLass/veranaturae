@@ -178,6 +178,38 @@
             </div>
         </aside>
 
+        <!-- Flyers Modal (for smaller screens) -->
+        <div class="flyers-modal-overlay" id="flyersModal">
+            <div class="flyers-modal-content">
+                <button class="flyers-modal-close" onclick="closeFlyersModal()" aria-label="Close Flyers Modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="flyers-modal-header">
+                    <h3>Scarica Volantini</h3>
+                </div>
+                <div class="flyers-modal-list">
+                    <div class="flyer-modal-item">
+                        <img src="../images/Flyer_MindfulnessAtWork.png" alt="Mindfulness at Work Flyer" class="flyer-modal-image">
+                        <div class="flyer-modal-info">
+                            <h4>Mindfulness at Work</h4>
+                            <a href="../images/Flyer_MindfulnessAtWork.png" download="Veranaturae_MindfulnessAtWork.pdf" class="flyer-modal-download">
+                                <i class="fas fa-download"></i> Scarica
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flyer-modal-item">
+                        <img src="../images/Flyer_MindfulnessPaths.png" alt="Mindfulness Paths Flyer" class="flyer-modal-image">
+                        <div class="flyer-modal-info">
+                            <h4>Mindfulness Paths</h4>
+                            <a href="../images/Flyer_MindfulnessPaths.png" download="Veranaturae_MindfulnessPaths.pdf" class="flyer-modal-download">
+                                <i class="fas fa-download"></i> Scarica
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Calendar Section -->
         <section id="calendar" class="calendar-section">
             <div class="container">
@@ -217,7 +249,7 @@
                     <p style="font-size: 1.2rem; color: var(--text); margin-bottom: 2rem;">Sentiti libero di contattarmi via e-mail o WhatsApp se preferisci.</p>
                     <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
                         <a href="mailto:v.caggia@veranaturae.ch" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-envelope"></i> Scrivimi
+                            <i class="fas fa-envelope"></i> Inviarmi un'email
                         </a>
                         <a href="https://wa.me/41792335593" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);">
                             <i class="fab fa-whatsapp"></i> WhatsApp

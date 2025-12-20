@@ -1968,6 +1968,149 @@ footer {
     pointer-events: none;
 }
 
+/* Flyers Modal (for smaller screens) */
+.flyers-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(107, 94, 78, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.flyers-modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.flyers-modal-content {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 25px 60px rgba(107, 94, 78, 0.3);
+    position: relative;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 500px;
+}
+
+.flyers-modal-overlay.active .flyers-modal-content {
+    transform: scale(1);
+}
+
+.flyers-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(107, 94, 78, 0.2);
+}
+
+.flyers-modal-close:hover {
+    background: var(--dark-green);
+    transform: rotate(90deg);
+}
+
+.flyers-modal-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--accent);
+}
+
+.flyers-modal-header h3 {
+    font-family: 'Cinzel', serif;
+    color: var(--main);
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+}
+
+.flyers-modal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.flyer-modal-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.flyer-modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flyer-modal-info h4 {
+    font-family: 'Cinzel', serif;
+    color: var(--main);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.flyer-modal-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background: var(--accent);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: background 0.3s ease;
+    font-weight: 600;
+}
+
+.flyer-modal-download:hover {
+    background: var(--main);
+    color: var(--white);
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .flyers-modal-content {
+        padding: 1.5rem;
+        max-width: 95%;
+    }
+    
+    .flyers-modal-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .flyer-modal-info h4 {
+        font-size: 1.1rem;
+    }
+}
+
 .flyers-sidebar.active {
     transform: translateX(0);
     opacity: 1;
@@ -2088,11 +2231,40 @@ footer {
     text-decoration: none;
 }
 
-/* Hide flyers sidebar and toggle button on smaller screens */
+/* Show flyers button on all screens, but use modal on smaller screens */
 @media (max-width: 1200px) {
-    .flyers-sidebar,
+    .flyers-sidebar {
+        display: none; /* Hide sidebar on smaller screens */
+    }
+    
     .flyers-toggle-btn {
-        display: none;
+        display: flex !important; /* Show button on smaller screens */
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 999;
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+        box-shadow: 0 4px 20px rgba(107, 94, 78, 0.3);
+        background: var(--accent);
+        border: 2px solid var(--main);
+    }
+    
+    .flyers-toggle-btn:hover {
+        background: var(--soft-green);
+        transform: scale(1.05);
+        box-shadow: 0 6px 25px rgba(107, 94, 78, 0.4);
+    }
+}
+
+@media (max-width: 600px) {
+    .flyers-toggle-btn {
+        padding: 0.7rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .flyers-toggle-btn span {
+        display: inline; /* Show text on mobile too */
     }
 }
 

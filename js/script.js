@@ -1690,21 +1690,61 @@ function closeFlyersSidebar() {
 
 // Flyers sidebar toggle function
 function toggleFlyersSidebar() {
-    const flyersSidebar = document.getElementById('flyersSidebar');
-    const flyersToggleBtn = document.querySelector('.flyers-toggle-btn');
+    // Check if we're on a smaller screen (mobile/tablet)
+    const isSmallScreen = window.innerWidth <= 1200;
     
-    if (flyersSidebar) {
-        const isActive = flyersSidebar.classList.contains('active');
-        if (isActive) {
-            // Closing sidebar - show button
-            closeFlyersSidebar();
-        } else {
-            // Opening sidebar - hide button
-            flyersSidebar.classList.add('active');
-            if (flyersToggleBtn) {
-                flyersToggleBtn.style.display = 'none';
+    if (isSmallScreen) {
+        // Open modal on smaller screens
+        toggleFlyersModal();
+    } else {
+        // Open sidebar on larger screens
+        const flyersSidebar = document.getElementById('flyersSidebar');
+        const flyersToggleBtn = document.querySelector('.flyers-toggle-btn');
+        
+        if (flyersSidebar) {
+            const isActive = flyersSidebar.classList.contains('active');
+            if (isActive) {
+                // Closing sidebar - show button
+                closeFlyersSidebar();
+            } else {
+                // Opening sidebar - hide button
+                flyersSidebar.classList.add('active');
+                if (flyersToggleBtn) {
+                    flyersToggleBtn.style.display = 'none';
+                }
             }
         }
+    }
+}
+
+// Flyers modal toggle function
+function toggleFlyersModal() {
+    const flyersModal = document.getElementById('flyersModal');
+    if (flyersModal) {
+        const isActive = flyersModal.classList.contains('active');
+        if (isActive) {
+            closeFlyersModal();
+        } else {
+            openFlyersModal();
+        }
+    }
+}
+
+// Open flyers modal
+function openFlyersModal() {
+    const flyersModal = document.getElementById('flyersModal');
+    if (flyersModal) {
+        flyersModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+// Close flyers modal
+function closeFlyersModal() {
+    const flyersModal = document.getElementById('flyersModal');
+    if (flyersModal) {
+        flyersModal.classList.remove('active');
+        document.body.style.overflow = '';
     }
 }
 
@@ -1712,9 +1752,10 @@ function toggleFlyersSidebar() {
 document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('click', function(event) {
         const flyersSidebar = document.getElementById('flyersSidebar');
+        const flyersModal = document.getElementById('flyersModal');
         const flyersToggleBtn = document.querySelector('.flyers-toggle-btn');
         
-        // Check if sidebar is active
+        // Check if sidebar is active (on larger screens)
         if (flyersSidebar && flyersSidebar.classList.contains('active')) {
             // Check if click is outside the sidebar and not on the toggle button
             const clickedInsideSidebar = flyersSidebar.contains(event.target);
@@ -1723,6 +1764,28 @@ document.addEventListener('DOMContentLoaded', function() {
             // If clicked outside both sidebar and toggle button, close the sidebar
             if (!clickedInsideSidebar && !clickedOnToggleBtn) {
                 closeFlyersSidebar();
+            }
+        }
+        
+        // Check if modal is active (on smaller screens)
+        if (flyersModal && flyersModal.classList.contains('active')) {
+            // Check if click is on the overlay (not on the modal content)
+            const clickedOnOverlay = event.target === flyersModal;
+            const clickedOnCloseBtn = event.target.closest('.flyers-modal-close');
+            
+            // If clicked on overlay or close button, close the modal
+            if (clickedOnOverlay || clickedOnCloseBtn) {
+                closeFlyersModal();
+            }
+        }
+    });
+    
+    // Close modal on escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            const flyersModal = document.getElementById('flyersModal');
+            if (flyersModal && flyersModal.classList.contains('active')) {
+                closeFlyersModal();
             }
         }
     });
