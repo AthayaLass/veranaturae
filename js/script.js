@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Ongoing support'
                 ],
                 buttonText: 'Click here to get in touch',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness',
+                buttonAction: 'home.html?service=mindfulness#calendar',
                 flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
             },
             'yoga': {
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Safety equipment provided'
                 ],
                 buttonText: 'Click here to get in touch',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
+                buttonAction: 'home.html?service=mindfulness#calendar'
             },
             'ayurveda': {
                 title: 'Ayurveda Wellness',
@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Ongoing support and guidance'
                 ],
                 buttonText: 'Click here to get in touch',
-                buttonAction: 'https://calendly.com/caggia_veronica/30min'
+                buttonAction: 'home.html?service=ayurveda#calendar'
             },
             'mindfulness-main': {
                 title: 'Mindfulness Services',
@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Available in multiple languages'
                 ],
                 buttonText: 'Click here to get in touch',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
+                buttonAction: 'home.html?service=mindfulness#calendar'
             },
             'yoga-main': {
                 title: 'Yoga Services',
@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Personalized guidance'
                 ],
                 buttonText: 'Click here to get in touch',
-                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
+                buttonAction: 'home.html?service=yoga#calendar'
             },
             'ayurveda-consultation': {
                 title: 'Ayurvedic Consultation',
@@ -359,7 +359,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Personalized recommendations for diet, lifestyle, and herbs'
                 ],
                 buttonText: 'Click here to get in touch',
-                buttonAction: 'https://calendly.com/caggia_veronica/30min'
+                buttonAction: 'home.html?service=ayurveda#calendar'
             },
             'ayurveda-massages': {
                 title: 'Ayurvedic Massages',
@@ -392,7 +392,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Enhanced energy flow'
                 ],
                 buttonText: 'Click here to get in touch',
-                buttonAction: 'https://calendly.com/caggia_veronica/30min'
+                buttonAction: 'home.html?service=ayurveda#calendar'
             },
             'ayurveda-nutrition': {
                 title: 'Ayurvedic Nutrition',
@@ -419,7 +419,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Personalized meal plan examples'
                 ],
                 buttonText: 'Click here to get in touch',
-                buttonAction: 'https://calendly.com/caggia_veronica/30min'
+                buttonAction: 'home.html?service=ayurveda#calendar'
             },
             'mindfulness-1to1': {
                 title: '1:1 Mindfulness Sessions',
@@ -452,7 +452,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Progress tracking'
                 ],
                 buttonText: 'Click here to get in touch',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness',
+                buttonAction: 'home.html?service=mindfulness#calendar',
                 flyerDownload: 'images/Flyer_MindfulnessPaths.png'
             },
             'mindfulness-corporate': {
@@ -480,7 +480,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Ongoing support'
                 ],
                 buttonText: 'Click here to get in touch',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness',
+                buttonAction: 'home.html?service=mindfulness#calendar',
                 flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
             },
             'mindfulness-underwater': {
@@ -502,7 +502,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Safety equipment provided'
                 ],
                 buttonText: 'Click here to get in touch',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
+                buttonAction: 'home.html?service=mindfulness#calendar'
             },
             'private-yoga': {
                 title: 'Private Yoga',
@@ -524,7 +524,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'All levels welcome'
                 ],
                 buttonText: 'Click here to get in touch',
-                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
+                buttonAction: 'home.html?service=yoga#calendar'
             },
             'group-yoga': {
                 title: 'Group Yoga',
@@ -546,7 +546,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'All levels welcome'
                 ],
                 buttonText: 'Click here to get in touch',
-                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
+                buttonAction: 'home.html?service=yoga#calendar'
             }
         },
         'it': {
@@ -740,7 +740,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Supporto e guida continui'
                 ],
                 buttonText: 'Clicca qui per contattarci',
-                buttonAction: 'https://calendly.com/caggia_veronica/30min'
+                buttonAction: 'home.html?service=ayurveda#calendar'
             },
             'mindfulness-main': {
                 title: 'Servizi di Mindfulness',
@@ -773,7 +773,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Disponibile in più lingue'
                 ],
                 buttonText: 'Clicca qui per contattarci',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
+                buttonAction: 'home.html?service=mindfulness#calendar'
             },
             'yoga-main': {
                 title: 'Servizi Yoga',
@@ -800,7 +800,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Guida personalizzata'
                 ],
                 buttonText: 'Clicca qui per contattarci',
-                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
+                buttonAction: 'home.html?service=yoga#calendar'
             },
             'ayurveda-consultation': {
                 title: 'Consultazione Ayurvedica',
@@ -827,7 +827,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Raccomandazioni personalizzate per dieta, stile di vita ed erbe'
                 ],
                 buttonText: 'Clicca qui per contattarci',
-                buttonAction: 'https://calendly.com/caggia_veronica/30min'
+                buttonAction: 'home.html?service=ayurveda#calendar'
             },
             'ayurveda-massages': {
                 title: 'Massaggi Ayurvedici',
@@ -860,7 +860,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Flusso energetico migliorato'
                 ],
                 buttonText: 'Clicca qui per contattarci',
-                buttonAction: 'https://calendly.com/caggia_veronica/30min'
+                buttonAction: 'home.html?service=ayurveda#calendar'
             },
             'ayurveda-nutrition': {
                 title: 'Nutrizione Ayurvedica',
@@ -887,7 +887,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Esempi di piano alimentare personalizzato'
                 ],
                 buttonText: 'Clicca qui per contattarci',
-                buttonAction: 'https://calendly.com/caggia_veronica/30min'
+                buttonAction: 'home.html?service=ayurveda#calendar'
             },
             'mindfulness-1to1': {
                 title: 'Sessioni Mindfulness 1:1',
@@ -920,7 +920,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Monitoraggio dei progressi'
                 ],
                 buttonText: 'Clicca qui per contattarci',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness',
+                buttonAction: 'home.html?service=mindfulness#calendar',
                 flyerDownload: 'images/Flyer_MindfulnessPaths.png'
             },
             'mindfulness-corporate': {
@@ -948,7 +948,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Supporto continuo'
                 ],
                 buttonText: 'Clicca qui per contattarci',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness',
+                buttonAction: 'home.html?service=mindfulness#calendar',
                 flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
             },
             'mindfulness-underwater': {
@@ -970,7 +970,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Attrezzatura di sicurezza fornita'
                 ],
                 buttonText: 'Clicca qui per contattarci',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
+                buttonAction: 'home.html?service=mindfulness#calendar'
             },
             'private-yoga': {
                 title: 'Yoga Privato',
@@ -992,7 +992,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Tutti i livelli sono benvenuti'
                 ],
                 buttonText: 'Clicca qui per contattarci',
-                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
+                buttonAction: 'home.html?service=yoga#calendar'
             },
             'group-yoga': {
                 title: 'Yoga di Gruppo',
@@ -1014,7 +1014,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Tutti i livelli sono benvenuti'
                 ],
                 buttonText: 'Clicca qui per contattarci',
-                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
+                buttonAction: 'home.html?service=yoga#calendar'
             }
         },
         'fr': {
@@ -1154,7 +1154,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Équipement de sécurité fourni'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
+                buttonAction: 'home.html?service=mindfulness#calendar'
             },
             'ayurveda': {
                 title: 'Bien-être Ayurvedique',
@@ -1208,7 +1208,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Soutien et guidance continus'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
-                buttonAction: 'https://calendly.com/caggia_veronica/30min'
+                buttonAction: 'home.html?service=ayurveda#calendar'
             },
             'mindfulness-main': {
                 title: 'Services de Pleine Conscience',
@@ -1241,7 +1241,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Disponible en plusieurs langues'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
+                buttonAction: 'home.html?service=mindfulness#calendar'
             },
             'yoga-main': {
                 title: 'Services Yoga',
@@ -1268,7 +1268,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Guidance personnalisée'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
-                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
+                buttonAction: 'home.html?service=yoga#calendar'
             },
             'ayurveda-consultation': {
                 title: 'Consultation Ayurvedique',
@@ -1295,7 +1295,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Recommandations personnalisées pour l\'alimentation, le mode de vie et les herbes'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
-                buttonAction: 'https://calendly.com/caggia_veronica/30min'
+                buttonAction: 'home.html?service=ayurveda#calendar'
             },
             'ayurveda-massages': {
                 title: 'Massages Ayurvediques',
@@ -1328,7 +1328,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Flux d\'énergie amélioré'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
-                buttonAction: 'https://calendly.com/caggia_veronica/30min'
+                buttonAction: 'home.html?service=ayurveda#calendar'
             },
             'ayurveda-nutrition': {
                 title: 'Nutrition Ayurvedique',
@@ -1355,7 +1355,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Exemples de plan de repas personnalisé'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
-                buttonAction: 'https://calendly.com/caggia_veronica/30min'
+                buttonAction: 'home.html?service=ayurveda#calendar'
             },
             'mindfulness-1to1': {
                 title: 'Séances de Pleine Conscience 1:1',
@@ -1388,7 +1388,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Suivi des progrès'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness',
+                buttonAction: 'home.html?service=mindfulness#calendar',
                 flyerDownload: 'images/Flyer_MindfulnessPaths.png'
             },
             'mindfulness-corporate': {
@@ -1416,7 +1416,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Soutien continu'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness',
+                buttonAction: 'home.html?service=mindfulness#calendar',
                 flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
             },
             'mindfulness-underwater': {
@@ -1438,7 +1438,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Équipement de sécurité fourni'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
-                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
+                buttonAction: 'home.html?service=mindfulness#calendar'
             },
             'private-yoga': {
                 title: 'Yoga Privé',
@@ -1460,7 +1460,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Tous les niveaux sont les bienvenus'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
-                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
+                buttonAction: 'home.html?service=yoga#calendar'
             },
             'group-yoga': {
                 title: 'Yoga de Groupe',
@@ -1482,7 +1482,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Tous les niveaux sont les bienvenus'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
-                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
+                buttonAction: 'home.html?service=yoga#calendar'
             }
         }
     };
