@@ -335,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'ayurveda-consultation': {
                 title: 'Ayurvedic Consultation',
-                description: 'Discover your unique constitution (dosha) and receive personalized recommendations for diet, lifestyle, herbs, and daily routines to restore balance and enhance your well-being. This comprehensive consultation includes dosha analysis, health assessment, and a customized wellness plan.',
+                description: 'Discover your unique constitution (dosha) and receive personalized recommendations for diet, lifestyle, herbs, and daily routines to restore balance and enhance your well-being.',
                 pricing: [
                     {
                         title: 'Initial Consultation',
@@ -796,7 +796,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'ayurveda-consultation': {
                 title: 'Consultazione Ayurvedica',
-                description: 'Scopri la tua costituzione unica (dosha) e ricevi raccomandazioni personalizzate per dieta, stile di vita, erbe e routine quotidiane per ripristinare l\'equilibrio e migliorare il tuo benessere. Questa consultazione completa include analisi del dosha, valutazione della salute e un piano di benessere personalizzato.',
+                description: 'Scopri la tua costituzione unica (dosha) e ricevi raccomandazioni personalizzate per dieta, stile di vita, erbe e routine quotidiane per ripristinare l\'equilibrio e migliorare il tuo benessere.',
                 pricing: [
                     {
                         title: 'Consultazione Iniziale',
@@ -1134,7 +1134,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 features: [
                     'Collaboration avec Athelas Diving',
                     'Environnement sous-marin unique',
-                    'Guidance de plongée professionnelle',
+                    'Encadrement professionnel en plongée',
                     'Instruction de pleine conscience',
                     'Équipement de sécurité fourni'
                 ],
@@ -1257,7 +1257,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'ayurveda-consultation': {
                 title: 'Consultation Ayurvedique',
-                description: 'Découvrez votre constitution unique (dosha) et recevez des recommandations personnalisées pour l\'alimentation, le mode de vie, les herbes et les routines quotidiennes pour rétablir l\'équilibre et améliorer votre bien-être. Cette consultation complète comprend l\'analyse du dosha, l\'évaluation de la santé et un plan de bien-être personnalisé.',
+                description: 'Découvrez votre constitution unique (dosha) et recevez des recommandations personnalisées pour l\'alimentation, le mode de vie, les herbes et les routines quotidiennes pour rétablir l\'équilibre et améliorer votre bien-être.',
                 pricing: [
                     {
                         title: 'Consultation Initiale',
@@ -1311,7 +1311,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'ayurveda-nutrition': {
                 title: 'Nutrition Ayurvedique',
-                description: 'Recevez des recommandations diététiques personnalisées adaptées à votre type de dosha et à vos besoins individuels. Apprenez quels aliments soutiennent votre constitution, le moment optimal des repas, les combinaisons alimentaires et comment manger en harmonie avec les rythmes de la nature.',
+                description: 'Recevez des conseils personnalisés adaptés à votre type de dosha et à vos besoins individuels. Apprenez quels aliments soutiennent votre constitution, le moment optimal des repas, les combinaisons alimentaires et comment manger en harmonie avec les rythmes de la nature.',
                 pricing: [
                     {
                         title: 'Consultation Nutritionnelle',
@@ -1327,10 +1327,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 ],
                 features: [
-                    'Recommandations alimentaires spécifiques au dosha',
+                    'Conseils alimentaires spécifiques au dosha',
                     'Conseils sur le moment des repas et les routines',
                     'Principes de combinaison alimentaire',
-                    'Recommandations alimentaires saisonnières',
+                    'Conseils alimentaires saisonnières',
                     'Exemples de plan de repas personnalisé'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
@@ -1411,7 +1411,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 features: [
                     'Collaboration avec Athelas Diving',
-                    'Guidance de plongée professionnelle',
+                    'Encadrement professionnel en plongée',
                     'Instruction de pleine conscience',
                     'Contactez-nous pour des informations sur l\'équipement/le matériel'
                 ],
@@ -1442,7 +1442,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'group-yoga': {
                 title: 'Yoga de Groupe',
-                description: 'Rejoignez une communauté de soutien dans les séances yoga de groupe. Pratiquez ensemble, partagez l\'énergie et grandissez dans un environnement accueillant qui favorise la connexion et la pleine conscience collective. Vivez un mouvement doux et conscient avec des techniques de respiration guidées pour vous aider à libérer le stress, calmer l\'esprit et retourner à votre centre intérieur.',
+                description: 'Rejoignez une communauté bienveillante dans les séances yoga de groupe. Pratiquez ensemble, partagez l\'énergie et grandissez dans un environnement accueillant qui favorise la connexion et la pleine conscience collective. Vivez un mouvement doux et conscient avec des techniques de respiration guidées pour vous aider à libérer le stress, calmer l\'esprit et retourner à votre centre intérieur.',
                 pricing: [
                     {
                         title: 'Séance de Groupe',
@@ -1452,7 +1452,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 ],
                 features: [
-                    'Communauté de soutien',
+                    'Communauté bienveillante',
                     'Mouvement doux',
                     'Techniques de respiration',
                     'Réduction du stress',
