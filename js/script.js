@@ -13,6 +13,14 @@ function switchLanguage(lang) {
     window.location.href = `/${lang}/${currentFile}`;
 }
 
+// Change language (matching Athelas_Diving implementation)
+function changeLanguage(lang) {
+    const currentPath = window.location.pathname;
+    const fileName = currentPath.split('/').pop() || 'home.html';
+    localStorage.setItem('preferredLanguage', lang);
+    window.location.href = `../${lang}/${fileName}`;
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {

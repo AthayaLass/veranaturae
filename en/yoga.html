@@ -32,18 +32,14 @@
                         <li><a href="yoga.html" class="active">Yoga</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
+                    <div class="language-selector">
+                        <div class="language-flags">
+                            <div class="language-flag en active" onclick="changeLanguage('en')" title="English"></div>
+                            <div class="language-flag fr" onclick="changeLanguage('fr')" title="Français"></div>
+                            <div class="language-flag it" onclick="changeLanguage('it')" title="Italiano"></div>
+                        </div>
+                    </div>
                 </nav>
-                <div class="language-switcher">
-                    <button class="lang-btn active" onclick="switchLanguage('en')" title="English">
-                        <span class="fi fi-gb"></span> EN
-                    </button>
-                    <button class="lang-btn" onclick="switchLanguage('it')" title="Italiano">
-                        <span class="fi fi-it"></span> IT
-                    </button>
-                    <button class="lang-btn" onclick="switchLanguage('fr')" title="Français">
-                        <span class="fi fi-fr"></span> FR
-                    </button>
-                </div>
                 <div class="burger-menu" onclick="toggleMobileMenu()">
                     <span></span>
                     <span></span>
@@ -59,17 +55,6 @@
                 <li><a href="yoga.html" class="active" onclick="closeMobileMenu()">Yoga</a></li>
                 <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
             </ul>
-            <div class="mobile-lang-switcher">
-                <button class="lang-btn active" onclick="switchLanguage('en'); closeMobileMenu();" title="English">
-                    <span class="fi fi-gb"></span> EN
-                </button>
-                <button class="lang-btn" onclick="switchLanguage('it'); closeMobileMenu();" title="Italiano">
-                    <span class="fi fi-it"></span> IT
-                </button>
-                <button class="lang-btn" onclick="switchLanguage('fr'); closeMobileMenu();" title="Français">
-                    <span class="fi fi-fr"></span> FR
-                </button>
-            </div>
         </div>
     </header>
 
