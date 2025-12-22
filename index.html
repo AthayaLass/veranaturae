@@ -7,17 +7,76 @@
     
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://veranaturae.com/">
+    <meta property="og:url" content="https://veranaturae.ch/">
+    <meta property="og:site_name" content="Veranaturae">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="it_IT">
     <meta property="og:title" content="Veranaturae – Ayurveda, Mindfulness & Yoga">
     <meta property="og:description" content="Discover your true nature through Ayurveda, mindfulness, and yoga. Veranaturae offers a safe space to reconnect with yourself and find clarity, compassion, and serenity.">
-    <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
+    <meta property="og:image" content="https://veranaturae.ch/images/Logo_Veranaturae_title.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Veranaturae Logo">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Veranaturae – Ayurveda, Mindfulness & Yoga">
     <meta name="twitter:description" content="Discover your true nature through Ayurveda, mindfulness, and yoga. Veranaturae offers a safe space to reconnect with yourself and find clarity, compassion, and serenity.">
-    <meta name="twitter:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
+    <meta name="twitter:image" content="https://veranaturae.ch/images/Logo_Veranaturae_title.png">
+    <meta name="twitter:image:alt" content="Veranaturae Logo">
+    
     <script>
+        // Language-specific content for meta tags
+        const langContent = {
+            en: {
+                title: "Veranaturae – Ayurveda, Mindfulness & Yoga",
+                description: "Discover your true nature through Ayurveda, mindfulness, and yoga. Veranaturae offers a safe space to reconnect with yourself and find clarity, compassion, and serenity."
+            },
+            fr: {
+                title: "Veranaturae – Ayurveda, Mindfulness & Yoga",
+                description: "Découvrez votre vraie nature à travers l'Ayurveda, la pleine conscience et le yoga. Veranaturae offre un espace sûr pour vous reconnecter avec vous-même et trouver clarté, compassion et sérénité."
+            },
+            it: {
+                title: "Veranaturae – Ayurveda, Mindfulness & Yoga",
+                description: "Scopri la tua vera natura attraverso l'Ayurveda, la mindfulness e lo yoga. Veranaturae offre uno spazio sicuro per riconnettersi con se stessi e trovare chiarezza, compassione e serenità."
+            }
+        };
+        
+        // Update meta tags and title based on browser language
+        function updateMetaTagsForLanguage() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            const langCode = browserLang.split('-')[0].toLowerCase();
+            
+            let targetLang = 'en'; // Default to English
+            if (langCode === 'it') {
+                targetLang = 'it';
+            } else if (langCode === 'fr') {
+                targetLang = 'fr';
+            }
+            
+            const content = langContent[targetLang];
+            if (content) {
+                // Update page title
+                document.title = content.title;
+                
+                // Update Open Graph tags
+                const ogTitle = document.querySelector('meta[property="og:title"]');
+                const ogDesc = document.querySelector('meta[property="og:description"]');
+                const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+                const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+                
+                if (ogTitle) ogTitle.setAttribute('content', content.title);
+                if (ogDesc) ogDesc.setAttribute('content', content.description);
+                if (twitterTitle) twitterTitle.setAttribute('content', content.title);
+                if (twitterDesc) twitterDesc.setAttribute('content', content.description);
+                
+                // Update html lang attribute
+                document.documentElement.lang = targetLang;
+            }
+        }
+        
         // Language detection and redirect
         function detectLanguage() {
             // Check localStorage first
@@ -41,7 +100,10 @@
             window.location.href = `/${targetLang}/home.html`;
         }
         
-        // Execute immediately
+        // Update meta tags immediately (before redirect)
+        updateMetaTagsForLanguage();
+        
+        // Execute redirect
         detectLanguage();
     </script>
 </head>
