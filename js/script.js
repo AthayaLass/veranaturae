@@ -168,8 +168,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Leadership development',
                     'Ongoing support'
                 ],
-                buttonText: 'Contact for Details',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Workplace Mindfulness',
+                buttonText: 'Click here to get in touch',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness',
                 flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
             },
             'yoga': {
@@ -217,8 +217,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Mindfulness instruction',
                     'Safety equipment provided'
                 ],
-                buttonText: 'Contact for Details',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Underwater Mindfulness'
+                buttonText: 'Click here to get in touch',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
             },
             'ayurveda': {
                 title: 'Ayurveda Wellness',
@@ -271,8 +271,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Natural healing methods',
                     'Ongoing support and guidance'
                 ],
-                buttonText: 'Book a Consultation',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Ayurveda Services Inquiry'
+                buttonText: 'Click here to get in touch',
+                buttonAction: 'https://calendly.com/caggia_veronica/30min'
             },
             'mindfulness-main': {
                 title: 'Mindfulness Services',
@@ -304,8 +304,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Emotional regulation',
                     'Available in multiple languages'
                 ],
-                buttonText: 'Book a Session',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Mindfulness Services Inquiry'
+                buttonText: 'Click here to get in touch',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
             },
             'yoga-main': {
                 title: 'Yoga Services',
@@ -331,8 +331,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'All levels welcome',
                     'Personalized guidance'
                 ],
-                buttonText: 'Book a Session',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Yoga Services Inquiry'
+                buttonText: 'Click here to get in touch',
+                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
             },
             'ayurveda-consultation': {
                 title: 'Ayurvedic Consultation',
@@ -358,8 +358,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Comprehensive health history review',
                     'Personalized recommendations for diet, lifestyle, and herbs'
                 ],
-                buttonText: 'Book a Consultation',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Ayurvedic Consultation'
+                buttonText: 'Click here to get in touch',
+                buttonAction: 'https://calendly.com/caggia_veronica/30min'
             },
             'ayurveda-massages': {
                 title: 'Ayurvedic Massages',
@@ -391,8 +391,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Improved circulation and detoxification',
                     'Enhanced energy flow'
                 ],
-                buttonText: 'Book a Treatment',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Ayurvedic Massages'
+                buttonText: 'Click here to get in touch',
+                buttonAction: 'https://calendly.com/caggia_veronica/30min'
             },
             'ayurveda-nutrition': {
                 title: 'Ayurvedic Nutrition',
@@ -418,8 +418,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Seasonal eating recommendations',
                     'Personalized meal plan examples'
                 ],
-                buttonText: 'Book a Consultation',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Ayurvedic Nutrition'
+                buttonText: 'Click here to get in touch',
+                buttonAction: 'https://calendly.com/caggia_veronica/30min'
             },
             'mindfulness-1to1': {
                 title: '1:1 Mindfulness Sessions',
@@ -451,8 +451,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Flexible scheduling',
                     'Progress tracking'
                 ],
-                buttonText: 'Book Your Session',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=1:1 Mindfulness Inquiry',
+                buttonText: 'Click here to get in touch',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness',
                 flyerDownload: 'images/Flyer_MindfulnessPaths.png'
             },
             'mindfulness-corporate': {
@@ -479,8 +479,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Leadership development',
                     'Ongoing support'
                 ],
-                buttonText: 'Contact for Details',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Corporate Mindfulness',
+                buttonText: 'Click here to get in touch',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness',
                 flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
             },
             'mindfulness-underwater': {
@@ -501,8 +501,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Mindfulness instruction',
                     'Safety equipment provided'
                 ],
-                buttonText: 'Contact for Details',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Underwater Mindfulness'
+                buttonText: 'Click here to get in touch',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
             },
             'private-yoga': {
                 title: 'Private Yoga',
@@ -523,8 +523,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Mind-body connection',
                     'All levels welcome'
                 ],
-                buttonText: 'Book Your Session',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Private Yoga Session'
+                buttonText: 'Click here to get in touch',
+                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
             },
             'group-yoga': {
                 title: 'Group Yoga',
@@ -545,8 +545,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Mind-body connection',
                     'All levels welcome'
                 ],
-                buttonText: 'Book Your Session',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Group Yoga Session'
+                buttonText: 'Click here to get in touch',
+                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
             }
         },
         'it': {
@@ -739,8 +739,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Metodi di guarigione naturali',
                     'Supporto e guida continui'
                 ],
-                buttonText: 'Prenota una Consultazione',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Richiesta Servizi Ayurvedici'
+                buttonText: 'Clicca qui per contattarci',
+                buttonAction: 'https://calendly.com/caggia_veronica/30min'
             },
             'mindfulness-main': {
                 title: 'Servizi di Mindfulness',
@@ -772,8 +772,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Regolazione emotiva',
                     'Disponibile in più lingue'
                 ],
-                buttonText: 'Prenota una Sessione',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Richiesta Servizi Mindfulness'
+                buttonText: 'Clicca qui per contattarci',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
             },
             'yoga-main': {
                 title: 'Servizi Yoga',
@@ -799,8 +799,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Tutti i livelli sono benvenuti',
                     'Guida personalizzata'
                 ],
-                buttonText: 'Prenota una Sessione',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Richiesta Servizi Yoga'
+                buttonText: 'Clicca qui per contattarci',
+                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
             },
             'ayurveda-consultation': {
                 title: 'Consultazione Ayurvedica',
@@ -826,8 +826,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Revisione completa della storia della salute',
                     'Raccomandazioni personalizzate per dieta, stile di vita ed erbe'
                 ],
-                buttonText: 'Prenota una Consultazione',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Consultazione Ayurvedica'
+                buttonText: 'Clicca qui per contattarci',
+                buttonAction: 'https://calendly.com/caggia_veronica/30min'
             },
             'ayurveda-massages': {
                 title: 'Massaggi Ayurvedici',
@@ -859,8 +859,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Circolazione e disintossicazione migliorate',
                     'Flusso energetico migliorato'
                 ],
-                buttonText: 'Prenota un Trattamento',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Massaggi Ayurvedici'
+                buttonText: 'Clicca qui per contattarci',
+                buttonAction: 'https://calendly.com/caggia_veronica/30min'
             },
             'ayurveda-nutrition': {
                 title: 'Nutrizione Ayurvedica',
@@ -886,8 +886,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Raccomandazioni alimentari stagionali',
                     'Esempi di piano alimentare personalizzato'
                 ],
-                buttonText: 'Prenota una Consultazione',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Nutrizione Ayurvedica'
+                buttonText: 'Clicca qui per contattarci',
+                buttonAction: 'https://calendly.com/caggia_veronica/30min'
             },
             'mindfulness-1to1': {
                 title: 'Sessioni Mindfulness 1:1',
@@ -919,8 +919,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Pianificazione flessibile',
                     'Monitoraggio dei progressi'
                 ],
-                buttonText: 'Prenota la Tua Sessione',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Richiesta Mindfulness 1:1',
+                buttonText: 'Clicca qui per contattarci',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness',
                 flyerDownload: 'images/Flyer_MindfulnessPaths.png'
             },
             'mindfulness-corporate': {
@@ -947,8 +947,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Sviluppo della leadership',
                     'Supporto continuo'
                 ],
-                buttonText: 'Contatta per Dettagli',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Mindfulness Aziendale',
+                buttonText: 'Clicca qui per contattarci',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness',
                 flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
             },
             'mindfulness-underwater': {
@@ -969,8 +969,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Istruzione di mindfulness',
                     'Attrezzatura di sicurezza fornita'
                 ],
-                buttonText: 'Contatta per Dettagli',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Mindfulness Subacquea'
+                buttonText: 'Clicca qui per contattarci',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
             },
             'private-yoga': {
                 title: 'Yoga Privato',
@@ -991,8 +991,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Connessione mente-corpo',
                     'Tutti i livelli sono benvenuti'
                 ],
-                buttonText: 'Prenota la Tua Sessione',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Sessione Yoga Privata'
+                buttonText: 'Clicca qui per contattarci',
+                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
             },
             'group-yoga': {
                 title: 'Yoga di Gruppo',
@@ -1013,8 +1013,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Connessione mente-corpo',
                     'Tutti i livelli sono benvenuti'
                 ],
-                buttonText: 'Prenota la Tua Sessione',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Sessione Yoga di Gruppo'
+                buttonText: 'Clicca qui per contattarci',
+                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
             }
         },
         'fr': {
@@ -1153,8 +1153,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Instruction de pleine conscience',
                     'Équipement de sécurité fourni'
                 ],
-                buttonText: 'Contactez pour Détails',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Pleine Conscience Sous-Marine'
+                buttonText: 'Cliquez ici pour nous contacter',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
             },
             'ayurveda': {
                 title: 'Bien-être Ayurvedique',
@@ -1207,8 +1207,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Méthodes de guérison naturelles',
                     'Soutien et guidance continus'
                 ],
-                buttonText: 'Réservez une Consultation',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Demande de Services Ayurvediques'
+                buttonText: 'Cliquez ici pour nous contacter',
+                buttonAction: 'https://calendly.com/caggia_veronica/30min'
             },
             'mindfulness-main': {
                 title: 'Services de Pleine Conscience',
@@ -1240,8 +1240,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Régulation émotionnelle',
                     'Disponible en plusieurs langues'
                 ],
-                buttonText: 'Réservez une Séance',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Demande de Services de Pleine Conscience'
+                buttonText: 'Cliquez ici pour nous contacter',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
             },
             'yoga-main': {
                 title: 'Services Yoga',
@@ -1267,8 +1267,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Tous les niveaux sont les bienvenus',
                     'Guidance personnalisée'
                 ],
-                buttonText: 'Réservez une Séance',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Demande de Services Yoga'
+                buttonText: 'Cliquez ici pour nous contacter',
+                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
             },
             'ayurveda-consultation': {
                 title: 'Consultation Ayurvedique',
@@ -1294,8 +1294,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Examen complet des antécédents de santé',
                     'Recommandations personnalisées pour l\'alimentation, le mode de vie et les herbes'
                 ],
-                buttonText: 'Réservez une Consultation',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Consultation Ayurvedique'
+                buttonText: 'Cliquez ici pour nous contacter',
+                buttonAction: 'https://calendly.com/caggia_veronica/30min'
             },
             'ayurveda-massages': {
                 title: 'Massages Ayurvediques',
@@ -1327,8 +1327,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Circulation et détoxification améliorées',
                     'Flux d\'énergie amélioré'
                 ],
-                buttonText: 'Réservez un Traitement',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Massages Ayurvediques'
+                buttonText: 'Cliquez ici pour nous contacter',
+                buttonAction: 'https://calendly.com/caggia_veronica/30min'
             },
             'ayurveda-nutrition': {
                 title: 'Nutrition Ayurvedique',
@@ -1354,8 +1354,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Recommandations alimentaires saisonnières',
                     'Exemples de plan de repas personnalisé'
                 ],
-                buttonText: 'Réservez une Consultation',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Nutrition Ayurvedique'
+                buttonText: 'Cliquez ici pour nous contacter',
+                buttonAction: 'https://calendly.com/caggia_veronica/30min'
             },
             'mindfulness-1to1': {
                 title: 'Séances de Pleine Conscience 1:1',
@@ -1387,8 +1387,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Planification flexible',
                     'Suivi des progrès'
                 ],
-                buttonText: 'Réservez Votre Séance',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Demande de Pleine Conscience 1:1',
+                buttonText: 'Cliquez ici pour nous contacter',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness',
                 flyerDownload: 'images/Flyer_MindfulnessPaths.png'
             },
             'mindfulness-corporate': {
@@ -1415,8 +1415,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Développement du leadership',
                     'Soutien continu'
                 ],
-                buttonText: 'Contactez pour Détails',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Pleine Conscience d\'Entreprise',
+                buttonText: 'Cliquez ici pour nous contacter',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness',
                 flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
             },
             'mindfulness-underwater': {
@@ -1437,8 +1437,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Instruction de pleine conscience',
                     'Équipement de sécurité fourni'
                 ],
-                buttonText: 'Contactez pour Détails',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Pleine Conscience Sous-Marine'
+                buttonText: 'Cliquez ici pour nous contacter',
+                buttonAction: 'https://calendly.com/caggia_veronica/mindfulness'
             },
             'private-yoga': {
                 title: 'Yoga Privé',
@@ -1459,8 +1459,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Connexion corps-esprit',
                     'Tous les niveaux sont les bienvenus'
                 ],
-                buttonText: 'Réservez Votre Séance',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Séance de Yoga Privée'
+                buttonText: 'Cliquez ici pour nous contacter',
+                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
             },
             'group-yoga': {
                 title: 'Yoga de Groupe',
@@ -1481,8 +1481,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Connexion corps-esprit',
                     'Tous les niveaux sont les bienvenus'
                 ],
-                buttonText: 'Réservez Votre Séance',
-                buttonAction: 'mailto:veronica@oceantoearth.life?subject=Séance de Yoga de Groupe'
+                buttonText: 'Cliquez ici pour nous contacter',
+                buttonAction: 'https://calendly.com/caggia_veronica/yoga'
             }
         }
     };
