@@ -336,6 +336,64 @@ nav a:hover {
     margin-bottom: 2rem;
     position: relative;
 }
+
+.hero-services-btn {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--soft-green) 100%);
+    color: var(--white);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 5px 15px rgba(107, 94, 78, 0.3);
+    z-index: 10;
+}
+
+.hero-services-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.hero-services-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(107, 94, 78, 0.4);
+    color: var(--white);
+    text-decoration: none;
+}
+
+.hero-services-btn:hover::before {
+    left: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero-services-btn {
+        position: static;
+        display: inline-flex;
+        margin: 2rem auto 0;
+        bottom: auto;
+        right: auto;
+    }
+    
+    .hero {
+        text-align: center;
+    }
+}
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -2516,6 +2574,23 @@ footer {
 
 .service-book-btn i {
     margin-right: 0.5rem;
+}
+
+/* Coming Soon Button - Orange and Attention-Grabbing */
+span.service-book-btn {
+    background: linear-gradient(135deg, #ffd4a3 0%, #ffC067 100%) !important;
+    color: var(--white) !important;
+    border: 1px solid #ffC067;
+    box-shadow: 0 3px 10px rgba(255, 192, 103, 0.25);
+    opacity: 1 !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+span.service-book-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 192, 103, 0.3);
+    background: linear-gradient(135deg, #ffC067 0%, #ffd4a3 100%) !important;
 }
 
 /* About Page Specific Styles */

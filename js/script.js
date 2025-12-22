@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         title: 'Group Session',
                         icon: 'fas fa-users',
                         description: '1-hour group session for up to 10 people',
-                        price: 'CHF 25 per person'
+                        price: 'CHF 20 per person'
                     }
                 ],
                 features: [
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'underwater': {
                 title: 'Underwater Mindfulness',
-                description: 'Experience mindfulness in a unique underwater environment. Connect with the serene underwater world while practicing mindfulness techniques. This innovative approach combines the calming effects of water with traditional mindfulness practices, creating a truly immersive and transformative experience.',
+                description: 'Experience mindfulness in an underwater environment. Connect with the serene underwater world while practicing mindfulness techniques. This innovative approach combines the calming effects of water with traditional mindfulness practices, creating a truly immersive and transformative experience.',
                 pricing: [
                     {
                         title: 'Underwater Session',
@@ -212,10 +212,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 features: [
                     'Collaboration with Athelas Diving',
-                    'Unique underwater environment',
                     'Professional diving guidance',
                     'Mindfulness instruction',
-                    'Safety equipment provided'
+                    'Contact us for equipment/material information'
                 ],
                 buttonText: 'Click here to get in touch',
                 buttonAction: 'home.html?service=mindfulness#calendar'
@@ -372,12 +371,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         price: 'Contact for Pricing'
                     },
                     {
-                        title: 'Shirodhara (Head Treatment)',
-                        icon: 'fas fa-head-side-virus',
-                        description: 'Therapeutic oil stream treatment for the forehead and scalp',
-                        price: 'Contact for Pricing'
-                    },
-                    {
                         title: 'Massage Package',
                         icon: 'fas fa-gift',
                         description: 'Series of treatments for optimal results',
@@ -485,7 +478,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'mindfulness-underwater': {
                 title: 'Underwater Mindfulness',
-                description: 'Experience mindfulness in a unique underwater environment. Connect with the serene underwater world while practicing mindfulness techniques. This innovative approach combines the calming effects of water with traditional mindfulness practices, creating a truly immersive and transformative experience.',
+                description: 'Experience mindfulness in an underwater environment. Connect with the serene underwater world while practicing mindfulness techniques. This innovative approach combines the calming effects of water with traditional mindfulness practices, creating a truly immersive and transformative experience.',
                 pricing: [
                     {
                         title: 'Underwater Session',
@@ -496,10 +489,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 features: [
                     'Collaboration with Athelas Diving',
-                    'Unique underwater environment',
                     'Professional diving guidance',
                     'Mindfulness instruction',
-                    'Safety equipment provided'
+                    'Contact us for equipment/material information'
                 ],
                 buttonText: 'Click here to get in touch',
                 buttonAction: 'home.html?service=mindfulness#calendar'
@@ -534,7 +526,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         title: 'Group Session',
                         icon: 'fas fa-users',
                         description: '1-hour group session for up to 10 people',
-                        price: 'CHF 25 per person'
+                        price: 'CHF 20 per person'
                     }
                 ],
                 features: [
@@ -654,7 +646,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         title: 'Sessione di Gruppo',
                         icon: 'fas fa-users',
                         description: 'Sessione di gruppo di 1 ora per fino a 10 persone',
-                        price: 'CHF 25 a persona'
+                        price: 'CHF 20 a persona'
                     }
                 ],
                 features: [
@@ -840,12 +832,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         price: 'Contatta per il Prezzo'
                     },
                     {
-                        title: 'Shirodhara (Trattamento della Testa)',
-                        icon: 'fas fa-head-side-virus',
-                        description: 'Trattamento terapeutico con flusso di olio per la fronte e il cuoio capelluto',
-                        price: 'Contatta per il Prezzo'
-                    },
-                    {
                         title: 'Pacchetto Massaggi',
                         icon: 'fas fa-gift',
                         description: 'Serie di trattamenti per risultati ottimali',
@@ -953,7 +939,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'mindfulness-underwater': {
                 title: 'Mindfulness Subacquea',
-                description: 'Sperimenta la mindfulness in un ambiente subacqueo unico. Connettiti con il mondo sottomarino sereno mentre pratichi tecniche di mindfulness. Questo approccio innovativo combina gli effetti calmanti dell\'acqua con le pratiche tradizionali di mindfulness, creando un\'esperienza davvero immersiva e trasformativa.',
+                description: 'Sperimenta la mindfulness in un ambiente subacqueo. Connettiti con il mondo sottomarino sereno mentre pratichi tecniche di mindfulness. Questo approccio innovativo combina gli effetti calmanti dell\'acqua con le pratiche tradizionali di mindfulness, creando un\'esperienza davvero immersiva e trasformativa.',
                 pricing: [
                     {
                         title: 'Sessione Subacquea',
@@ -964,10 +950,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 features: [
                     'Collaborazione con Athelas Diving',
-                    'Ambiente subacqueo unico',
                     'Guida subacquea professionale',
                     'Istruzione di mindfulness',
-                    'Attrezzatura di sicurezza fornita'
+                    'Contattaci per informazioni su attrezzature/materiali'
                 ],
                 buttonText: 'Clicca qui per contattarci',
                 buttonAction: 'home.html?service=mindfulness#calendar'
@@ -1002,7 +987,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         title: 'Sessione di Gruppo',
                         icon: 'fas fa-users',
                         description: 'Sessione di gruppo di 1 ora per fino a 10 persone',
-                        price: 'CHF 25 a persona'
+                        price: 'CHF 20 a persona'
                     }
                 ],
                 features: [
@@ -1122,7 +1107,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         title: 'Séance de Groupe',
                         icon: 'fas fa-users',
                         description: 'Séance de groupe d\'1 heure pour jusqu\'à 10 personnes',
-                        price: 'CHF 25 par personne'
+                        price: 'CHF 20 par personne'
                     }
                 ],
                 features: [
@@ -1308,12 +1293,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         price: 'Contactez pour le Prix'
                     },
                     {
-                        title: 'Shirodhara (Traitement de la Tête)',
-                        icon: 'fas fa-head-side-virus',
-                        description: 'Traitement thérapeutique avec flux d\'huile pour le front et le cuir chevelu',
-                        price: 'Contactez pour le Prix'
-                    },
-                    {
                         title: 'Forfait Massages',
                         icon: 'fas fa-gift',
                         description: 'Série de traitements pour des résultats optimaux',
@@ -1421,7 +1400,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'mindfulness-underwater': {
                 title: 'Pleine Conscience Sous-Marine',
-                description: 'Vivez la pleine conscience dans un environnement sous-marin unique. Connectez-vous avec le monde sous-marin serein tout en pratiquant des techniques de pleine conscience. Cette approche innovante combine les effets apaisants de l\'eau avec les pratiques traditionnelles de pleine conscience, créant une expérience vraiment immersive et transformative.',
+                description: 'Vivez la pleine conscience dans un environnement sous-marin. Connectez-vous avec le monde sous-marin serein tout en pratiquant des techniques de pleine conscience. Cette approche innovante combine les effets apaisants de l\'eau avec les pratiques traditionnelles de pleine conscience, créant une expérience vraiment immersive et transformative.',
                 pricing: [
                     {
                         title: 'Séance Sous-Marine',
@@ -1432,10 +1411,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 features: [
                     'Collaboration avec Athelas Diving',
-                    'Environnement sous-marin unique',
                     'Guidance de plongée professionnelle',
                     'Instruction de pleine conscience',
-                    'Équipement de sécurité fourni'
+                    'Contactez-nous pour des informations sur l\'équipement/le matériel'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
                 buttonAction: 'home.html?service=mindfulness#calendar'
@@ -1470,7 +1448,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         title: 'Séance de Groupe',
                         icon: 'fas fa-users',
                         description: 'Séance de groupe d\'1 heure pour jusqu\'à 10 personnes',
-                        price: 'CHF 25 par personne'
+                        price: 'CHF 20 par personne'
                     }
                 ],
                 features: [
