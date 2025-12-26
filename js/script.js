@@ -1477,15 +1477,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const languageLabels = {
         'en': {
             included: 'What\'s Included:',
-            downloadFlyer: 'Download Flyer'
+            downloadFlyer: 'Download Flyer',
+            inCollaboration: 'In collaboration with:'
         },
         'it': {
             included: 'Cosa Include:',
-            downloadFlyer: 'Scarica Volantino'
+            downloadFlyer: 'Scarica Volantino',
+            inCollaboration: 'In collaborazione con:'
         },
         'fr': {
             included: 'Ce qui est inclus :',
-            downloadFlyer: 'Télécharger le Dépliant'
+            downloadFlyer: 'Télécharger le Dépliant',
+            inCollaboration: 'En collaboration avec :'
         }
     };
     
@@ -1549,10 +1552,24 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         ` : '';
         
+        // Generate partner logo section for underwater mindfulness
+        const athelasUrl = `https://www.athelas-diving.com/${currentLang}/home.html`;
+        const partnerLogoSection = serviceType === 'mindfulness-underwater' ? `
+            <div class="modal-partner-logo">
+                <p style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.9;">${labels.inCollaboration}</p>
+                <a href="${athelasUrl}" target="_blank" rel="noopener noreferrer" class="partner-logo-link">
+                    <img src="../images/Logo_Athelas.png" alt="Athelas Diving" class="partner-logo-img">
+                </a>
+            </div>
+        ` : '';
+        
         return `
             <div class="modal-content-wrapper" style="background: ${serviceColors[serviceType] || 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'};">
                 <h2 class="modal-title">${data.title}</h2>
-                <p class="modal-description">${data.description}</p>
+                <div class="modal-description-wrapper">
+                    <p class="modal-description">${data.description}</p>
+                    ${partnerLogoSection}
+                </div>
                 
                 <div class="modal-content-grid">
                     <div class="modal-pricing">
