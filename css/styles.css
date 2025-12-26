@@ -632,6 +632,28 @@ footer {
     margin-top: 2rem;
 }
 
+.yoga-alliance-logo {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yoga-alliance-logo a {
+    display: inline-block;
+    transition: opacity 0.3s ease;
+}
+
+.yoga-alliance-logo a:hover {
+    opacity: 0.8;
+}
+
+.yoga-alliance-img {
+    max-width: 150px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
 /* Mobile Navigation */
 .burger-menu {
     display: none; /* Hidden by default on desktop */
