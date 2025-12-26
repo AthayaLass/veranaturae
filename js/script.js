@@ -454,7 +454,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 buttonText: 'Click here to get in touch',
                 buttonAction: 'home.html?service=mindfulness#calendar',
-                flyerDownload: 'images/Flyer_MindfulnessPaths.png'
+                flyerDownload: '../images/Flyer mindfulness - en.pdf'
             },
             'mindfulness-corporate': {
                 title: 'Corporate Mindfulness',
@@ -915,7 +915,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 buttonText: 'Clicca qui per contattarci',
                 buttonAction: 'home.html?service=mindfulness#calendar',
-                flyerDownload: 'images/Flyer_MindfulnessPaths.png'
+                flyerDownload: '../images/Flyer mindfulness - it.pdf'
             },
             'mindfulness-corporate': {
                 title: 'Mindfulness Aziendale',
@@ -1376,7 +1376,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
                 buttonAction: 'home.html?service=mindfulness#calendar',
-                flyerDownload: 'images/Flyer_MindfulnessPaths.png'
+                flyerDownload: '../images/Flyer mindfulness - fr.pdf'
             },
             'mindfulness-corporate': {
                 title: 'Pleine Conscience d\'Entreprise',
