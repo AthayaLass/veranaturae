@@ -482,7 +482,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 buttonText: 'Click here to get in touch',
                 buttonAction: 'home.html?service=mindfulness#calendar',
-                flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
+                flyerDownload: '../images/Flyer aziende - en.pdf'
             },
             'mindfulness-underwater': {
                 title: 'Underwater Mindfulness',
@@ -943,7 +943,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 buttonText: 'Clicca qui per contattarci',
                 buttonAction: 'home.html?service=mindfulness#calendar',
-                flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
+                flyerDownload: '../images/Flyer aziende - it.pdf'
             },
             'mindfulness-underwater': {
                 title: 'Mindfulness Subacquea',
@@ -1404,7 +1404,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
                 buttonAction: 'home.html?service=mindfulness#calendar',
-                flyerDownload: 'images/Flyer_MindfulnessAtWork.png'
+                flyerDownload: '../images/Flyer aziende - fr.pdf'
             },
             'mindfulness-underwater': {
                 title: 'Pleine Conscience Sous-Marine',
