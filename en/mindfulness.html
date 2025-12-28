@@ -3,17 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQRXLXLPG1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-JQRXLXLPG1');
-    </script>
-    
     <title>Mindfulness - Veranaturae</title>
     
     <!-- Open Graph / Social Media Meta Tags -->
@@ -21,24 +10,18 @@
     <meta property="og:url" content="https://veranaturae.com/mindfulness.html">
     <meta property="og:title" content="Mindfulness - Veranaturae">
     <meta property="og:description" content="Discover the science-backed benefits of mindfulness practice and how it can transform your life.">
-    <meta property="og:image" content="https://veranaturae.ch/images/Logo_Veranaturae_social.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
-    <meta property="og:image:alt" content="Veranaturae Logo">
-    <meta property="og:image:secure_url" content="https://veranaturae.ch/images/Logo_Veranaturae_social.png">
+    <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
     
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.0.0/css/flag-icons.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-content">
                 <a href="home.html" class="logo-link">
-                    <img src="../images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
+                    <img src="images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
                 </a>
                 <nav>
                     <ul>
@@ -48,13 +31,6 @@
                         <li><a href="yoga.html">Yoga</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
-                    <div class="language-selector">
-                        <div class="language-flags">
-                            <div class="language-flag en active" onclick="changeLanguage('en')" title="English"></div>
-                            <div class="language-flag fr" onclick="changeLanguage('fr')" title="Français"></div>
-                            <div class="language-flag it" onclick="changeLanguage('it')" title="Italiano"></div>
-                        </div>
-                    </div>
                 </nav>
                 <div class="burger-menu" onclick="toggleMobileMenu()">
                     <span></span>
@@ -82,9 +58,6 @@
                     <p class="subtitle">The Art of Being Present</p>
                 </div>
             </div>
-            <a href="#services" class="hero-services-btn">
-                <i class="fas fa-arrow-down"></i> Go to Services
-            </a>
         </section>
 
         <section class="mindfulness-section">
@@ -145,7 +118,7 @@
                 <div class="services-grid">
                     <div class="service-card" data-service="mindfulness-1to1">
                         <div class="service-image">
-                            <img src="../images/mindfulness01.jpg" alt="1:1 Mindfulness Sessions" class="service-img">
+                            <img src="images/mindfulness01.jpg" alt="1:1 Mindfulness Sessions" class="service-img">
                             <div class="service-overlay">
                                 <i class="fas fa-info-circle expand-icon"></i>
                             </div>
@@ -153,7 +126,7 @@
                         <div class="service-content">
                             <h3>1:1 Mindfulness Sessions</h3>
                             <p class="service-teaser">Step into a more balanced life with personal guidance. Whether you're new to mindfulness or deepening an existing practice, my individual coaching sessions are designed around your unique goals and life rhythm.</p>
-                            <a href="home.html?service=mindfulness#calendar" class="service-book-btn">
+                            <a href="home.html#calendar" class="service-book-btn">
                                 <i class="fas fa-calendar-alt"></i> Book a Session
                             </a>
                         </div>
@@ -161,7 +134,7 @@
                     
                     <div class="service-card" data-service="mindfulness-corporate">
                         <div class="service-image">
-                            <img src="../images/plants_02.jpeg" alt="Corporate Mindfulness" class="service-img">
+                            <img src="images/plants_02.jpeg" alt="Corporate Mindfulness" class="service-img">
                             <div class="service-overlay">
                                 <i class="fas fa-info-circle expand-icon"></i>
                             </div>
@@ -169,7 +142,7 @@
                         <div class="service-content">
                             <h3>Corporate Mindfulness</h3>
                             <p class="service-teaser">Boost your team's well-being, focus, and collaboration. My tailored mindfulness workshops and corporate sessions bring clarity and calm into the workplace.</p>
-                            <a href="home.html?service=mindfulness#calendar" class="service-book-btn">
+                            <a href="home.html#calendar" class="service-book-btn">
                                 <i class="fas fa-calendar-alt"></i> Book a Session
                             </a>
                         </div>
@@ -177,15 +150,15 @@
                     
                     <div class="service-card" data-service="mindfulness-underwater">
                         <div class="service-image">
-                            <img src="../images/fish02.JPG" alt="Underwater Mindfulness" class="service-img">
+                            <img src="images/fish02.JPG" alt="Underwater Mindfulness" class="service-img">
                             <div class="service-overlay">
                                 <i class="fas fa-info-circle expand-icon"></i>
                             </div>
                         </div>
                         <div class="service-content">
                             <h3>Underwater Mindfulness</h3>
-                            <p class="service-teaser">Experience mindfulness in a unique underwater environment. Connect with the serene underwater world while practicing mindfulness techniques. In partnership with <a href="https://www.athelas-diving.com" target="_blank" rel="noopener noreferrer">Athelas Diving</a>.</p>
-                            <a href="home.html?service=mindfulness#calendar" class="service-book-btn">
+                            <p class="service-teaser">Experience mindfulness in a unique underwater environment. Connect with the serene underwater world while practicing mindfulness techniques.</p>
+                            <a href="home.html#calendar" class="service-book-btn">
                                 <i class="fas fa-calendar-alt"></i> Book a Session
                             </a>
                         </div>
@@ -214,7 +187,6 @@
         </div>
     </footer>
 
-    <script src="../js/language.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

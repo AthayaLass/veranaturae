@@ -929,11 +929,19 @@ footer {
     }
     
     .service-image {
-        height: 200px;
+        height: auto;
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--background);
     }
     
     .service-img {
-        height: 180px;
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
     }
     
     .mindfulness-intro p,
@@ -1105,7 +1113,19 @@ footer {
     }
     
     .service-image {
-        height: 180px;
+        height: auto;
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--background);
+    }
+    
+    .service-img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
     }
     
     .service-content {
@@ -1279,6 +1299,9 @@ footer {
     width: 100%;
     height: 250px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .service-img {
@@ -3131,6 +3154,13 @@ img {
     
     .flyer-modal-image {
         max-height: 70vh;
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+    }
+    
+    .flyer-sidebar-image {
+        object-fit: contain;
     }
 }
 
@@ -3347,11 +3377,27 @@ img {
         height: auto;
     }
     
-    .service-img,
+    .service-img {
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+        object-fit: contain;
+    }
+    
     .flyer-image {
         width: 100%;
         height: auto;
-        object-fit: cover;
+        min-height: 300px;
+        object-fit: contain;
+    }
+    
+    .vero-image {
+        object-fit: contain;
+    }
+    
+    .about-image img {
+        object-fit: contain;
+        aspect-ratio: auto;
     }
     
     /* About section mobile */
@@ -3362,6 +3408,24 @@ img {
     
     .about-image {
         margin-bottom: 2rem;
+    }
+    
+    .about-image img {
+        object-fit: contain;
+        aspect-ratio: auto;
+        max-height: 500px;
+    }
+    
+    /* Veranaturae intro section mobile */
+    .veranaturae-image {
+        flex: 0 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .vero-image {
+        object-fit: contain;
+        max-height: 500px;
     }
     
     /* Section headings */

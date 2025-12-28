@@ -3,17 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQRXLXLPG1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-JQRXLXLPG1');
-    </script>
-    
     <title>Ayurveda - Veranaturae</title>
     
     <!-- Open Graph / Social Media Meta Tags -->
@@ -21,12 +10,7 @@
     <meta property="og:url" content="https://veranaturae.com/ayurveda.html">
     <meta property="og:title" content="Ayurveda - Veranaturae">
     <meta property="og:description" content="Scopri l'antica saggezza dell'Ayurveda e i suoi benefici supportati dalla scienza per il benessere olistico.">
-    <meta property="og:image" content="https://veranaturae.ch/images/Logo_Veranaturae_social.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
-    <meta property="og:image:alt" content="Veranaturae Logo">
-    <meta property="og:image:secure_url" content="https://veranaturae.ch/images/Logo_Veranaturae_social.png">
+    <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
     
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -48,14 +32,18 @@
                         <li><a href="yoga.html">Yoga</a></li>
                         <li><a href="about.html">Chi Sono</a></li>
                     </ul>
-                    <div class="language-selector">
-                        <div class="language-flags">
-                            <div class="language-flag en" onclick="changeLanguage('en')" title="English"></div>
-                            <div class="language-flag fr" onclick="changeLanguage('fr')" title="Français"></div>
-                            <div class="language-flag it active" onclick="changeLanguage('it')" title="Italiano"></div>
-                        </div>
-                    </div>
                 </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn" onclick="switchLanguage('en')" title="English">
+                        <span class="fi fi-gb"></span> EN
+                    </button>
+                    <button class="lang-btn active" onclick="switchLanguage('it')" title="Italiano">
+                        <span class="fi fi-it"></span> IT
+                    </button>
+                    <button class="lang-btn" onclick="switchLanguage('fr')" title="Français">
+                        <span class="fi fi-fr"></span> FR
+                    </button>
+                </div>
                 <div class="burger-menu" onclick="toggleMobileMenu()">
                     <span></span>
                     <span></span>
@@ -71,6 +59,17 @@
                 <li><a href="yoga.html" onclick="closeMobileMenu()">Yoga</a></li>
                 <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
             </ul>
+            <div class="mobile-lang-switcher">
+                <button class="lang-btn" onclick="switchLanguage('en'); closeMobileMenu();" title="English">
+                    <span class="flag">🇬🇧</span> EN
+                </button>
+                <button class="lang-btn active" onclick="switchLanguage('it'); closeMobileMenu();" title="Italiano">
+                    <span class="flag">🇮🇹</span> IT
+                </button>
+                <button class="lang-btn" onclick="switchLanguage('fr'); closeMobileMenu();" title="Français">
+                    <span class="flag">🇫🇷</span> FR
+                </button>
+            </div>
         </div>
     </header>
 

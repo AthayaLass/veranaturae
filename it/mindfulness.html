@@ -1,19 +1,8 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQRXLXLPG1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-JQRXLXLPG1');
-    </script>
-    
     <title>Mindfulness - Veranaturae</title>
     
     <!-- Open Graph / Social Media Meta Tags -->
@@ -21,17 +10,11 @@
     <meta property="og:url" content="https://veranaturae.com/mindfulness.html">
     <meta property="og:title" content="Mindfulness - Veranaturae">
     <meta property="og:description" content="Discover the science-backed benefits of mindfulness practice and how it can transform your life.">
-    <meta property="og:image" content="https://veranaturae.ch/images/Logo_Veranaturae_social.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
-    <meta property="og:image:alt" content="Veranaturae Logo">
-    <meta property="og:image:secure_url" content="https://veranaturae.ch/images/Logo_Veranaturae_social.png">
+    <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
     
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.0.0/css/flag-icons.min.css">
 </head>
 <body>
     <header>
@@ -46,16 +29,20 @@
                         <li><a href="ayurveda.html">Ayurveda</a></li>
                         <li><a href="mindfulness.html" class="active">Mindfulness</a></li>
                         <li><a href="yoga.html">Yoga</a></li>
-                        <li><a href="about.html">Chi Sono</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
-                    <div class="language-selector">
-                        <div class="language-flags">
-                            <div class="language-flag en" onclick="changeLanguage('en')" title="English"></div>
-                            <div class="language-flag fr" onclick="changeLanguage('fr')" title="Français"></div>
-                            <div class="language-flag it active" onclick="changeLanguage('it')" title="Italiano"></div>
-                        </div>
-                    </div>
                 </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn active" onclick="switchLanguage('en')" title="English">
+                        <span class="flag">🇬🇧</span> EN
+                    </button>
+                    <button class="lang-btn" onclick="switchLanguage('it')" title="Italiano">
+                        <span class="flag">🇮🇹</span> IT
+                    </button>
+                    <button class="lang-btn" onclick="switchLanguage('fr')" title="Français">
+                        <span class="flag">🇫🇷</span> FR
+                    </button>
+                </div>
                 <div class="burger-menu" onclick="toggleMobileMenu()">
                     <span></span>
                     <span></span>
@@ -71,6 +58,17 @@
                 <li><a href="yoga.html" onclick="closeMobileMenu()">Yoga</a></li>
                 <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
             </ul>
+            <div class="mobile-lang-switcher">
+                <button class="lang-btn active" onclick="switchLanguage('en'); closeMobileMenu();" title="English">
+                    <span class="flag">🇬🇧</span> EN
+                </button>
+                <button class="lang-btn" onclick="switchLanguage('it'); closeMobileMenu();" title="Italiano">
+                    <span class="flag">🇮🇹</span> IT
+                </button>
+                <button class="lang-btn" onclick="switchLanguage('fr'); closeMobileMenu();" title="Français">
+                    <span class="flag">🇫🇷</span> FR
+                </button>
+            </div>
         </div>
     </header>
 
@@ -79,18 +77,15 @@
             <div class="container">
                 <div class="hero-content">
                     <h1>Mindfulness</h1>
-                    <p class="subtitle">L'Arte di Essere Presente</p>
+                    <p class="subtitle">The Art of Being Present</p>
                 </div>
             </div>
-            <a href="#services" class="hero-services-btn">
-                <i class="fas fa-arrow-down"></i> Vai ai Servizi
-            </a>
         </section>
 
         <section class="mindfulness-section">
             <div class="container">
                 <div class="mindfulness-intro">
-                    <p>Nel nostro mondo frenetico, spesso perdiamo il contatto con il momento presente e la nostra connessione con il mondo naturale. La mindfulness ci offre un percorso di ritorno alla consapevolezza, aiutandoci a trovare pace, chiarezza e un'apprezzamento più profondo per i momenti semplici della vita.</p>
+                    <p>In our fast-paced world, we often lose touch with the present moment and our connection to the natural world. Mindfulness offers us a path back to awareness, helping us find peace, clarity, and a deeper appreciation for life's simple moments.</p>
                 </div>
 
                 <div class="icon-divider">
@@ -98,12 +93,12 @@
                 </div>
 
                 <div class="mindfulness-description">
-                    <h2>Cos'è la Mindfulness?</h2>
-                    <p>La mindfulness è la pratica di prestare attenzione al momento presente con curiosità e senza giudizio. Si tratta di essere pienamente consapevoli di ciò che sta accadendo proprio ora: i nostri pensieri, sentimenti, sensazioni corporee e il mondo che ci circonda.</p>
+                    <h2>What is Mindfulness?</h2>
+                    <p>Mindfulness is the practice of paying attention to the present moment with curiosity and without judgment. It's about being fully aware of what's happening right now – our thoughts, feelings, bodily sensations, and the world around us.</p>
                     
-                    <p>Nel suo nucleo, la mindfulness è semplicemente l'arte di essere presenti. È imparare a osservare i tuoi pensieri e le tue emozioni mentre sorgono, senza rimanere intrappolati in essi. Immagina di sederti accanto a un ruscello e guardare le foglie galleggiare – è così che impariamo a osservare i nostri pensieri: notandoli e lasciandoli passare.</p>
+                    <p>At its core, mindfulness is simply the art of being present. It's learning to observe your thoughts and emotions as they arise, without getting caught up in them. Imagine sitting by a stream and watching leaves float by – that's how we learn to observe our thoughts: noticing them and letting them pass.</p>
                     
-                    <p>La mindfulness può essere praticata attraverso la meditazione, la respirazione consapevole o semplicemente portando consapevolezza alle attività quotidiane. Non si tratta di svuotare la mente – si tratta di sviluppare una relazione gentile e curiosa con tutto ciò che sta accadendo nel momento presente.</p>
+                    <p>Mindfulness can be practiced through meditation, mindful breathing, or simply bringing awareness to everyday activities. It's not about emptying your mind – it's about developing a kind, curious relationship with whatever is happening in the present moment.</p>
                 </div>
 
                 <div class="icon-divider">
@@ -111,18 +106,18 @@
                 </div>
 
                 <div class="mindfulness-benefits">
-                    <h2>Benefici Personali</h2>
-                    <p>Attraverso la pratica regolare della mindfulness, puoi sperimentare numerosi benefici:</p>
+                    <h2>Personal Benefits</h2>
+                    <p>Through regular mindfulness practice, you can experience numerous benefits:</p>
                     <ul>
-                        <li>Riduzione dello stress e dell'ansia</li>
-                        <li>Miglioramento della regolazione emotiva</li>
-                        <li>Migliore qualità del sonno</li>
-                        <li>Aumento dell'autoconsapevolezza</li>
-                        <li>Maggiore senso di pace interiore</li>
-                        <li>Relazione più compassionevole con te stesso e gli altri</li>
-                        <li>Miglioramento della concentrazione e dell'attenzione</li>
-                        <li>Migliore gestione del dolore</li>
-                        <li>Relazioni migliorate attraverso una comunicazione migliore</li>
+                        <li>Reduced stress and anxiety</li>
+                        <li>Improved emotional regulation</li>
+                        <li>Better sleep quality</li>
+                        <li>Increased self-awareness</li>
+                        <li>Greater sense of inner peace</li>
+                        <li>More compassionate relationship with yourself and others</li>
+                        <li>Enhanced focus and concentration</li>
+                        <li>Better pain management</li>
+                        <li>Improved relationships through better communication</li>
                     </ul>
                 </div>
             </div>
@@ -131,15 +126,15 @@
         <!-- Services Section -->
         <section id="services" class="services">
             <div class="container">
-                <h2>Servizi di Mindfulness a Veranaturae</h2>
+                <h2>Mindfulness Services at Veranaturae</h2>
                 <div class="services-info">
                     <div class="info-item">
                         <i class="fas fa-heart"></i>
-                        <span>Ogni sessione è personalizzata secondo le esigenze dell'individuo o del gruppo!</span>
+                        <span>Every session is personalized according to the requirements of the individual or group!</span>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-globe"></i>
-                        <span>Lingua delle sessioni: disponibile in francese, italiano e inglese.</span>
+                        <span>Session language: available in French, Italian and English.</span>
                     </div>
                 </div>
                 <div class="services-grid">
@@ -151,10 +146,10 @@
                             </div>
                         </div>
                         <div class="service-content">
-                            <h3>Sessioni di Mindfulness 1:1</h3>
-                            <p class="service-teaser">Fai un passo verso una vita più equilibrata con una guida personale. Che tu sia nuovo alla mindfulness o stia approfondendo una pratica esistente, le mie sessioni di coaching individuali sono progettate intorno ai tuoi obiettivi unici e al tuo ritmo di vita.</p>
-                            <a href="home.html?service=mindfulness#calendar" class="service-book-btn">
-                                <i class="fas fa-calendar-alt"></i> Prenota una Sessione
+                            <h3>1:1 Mindfulness Sessions</h3>
+                            <p class="service-teaser">Step into a more balanced life with personal guidance. Whether you're new to mindfulness or deepening an existing practice, my individual coaching sessions are designed around your unique goals and life rhythm.</p>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Book a Session
                             </a>
                         </div>
                     </div>
@@ -167,10 +162,10 @@
                             </div>
                         </div>
                         <div class="service-content">
-                            <h3>Mindfulness Aziendale</h3>
-                            <p class="service-teaser">Migliora il benessere, la concentrazione e la collaborazione del tuo team. I miei workshop di mindfulness personalizzati e le sessioni aziendali portano chiarezza e calma sul posto di lavoro.</p>
-                            <a href="home.html?service=mindfulness#calendar" class="service-book-btn">
-                                <i class="fas fa-calendar-alt"></i> Prenota una Sessione
+                            <h3>Corporate Mindfulness</h3>
+                            <p class="service-teaser">Boost your team's well-being, focus, and collaboration. My tailored mindfulness workshops and corporate sessions bring clarity and calm into the workplace.</p>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Book a Session
                             </a>
                         </div>
                     </div>
@@ -183,10 +178,10 @@
                             </div>
                         </div>
                         <div class="service-content">
-                            <h3>Mindfulness Subacquea</h3>
-                            <p class="service-teaser">Sperimenta la mindfulness in un ambiente subacqueo unico. Connettiti con il mondo sottomarino sereno mentre pratichi tecniche di mindfulness. In collaborazione con <a href="https://www.athelas-diving.com" target="_blank" rel="noopener noreferrer">Athelas Diving</a>.</p>
-                            <a href="home.html?service=mindfulness#calendar" class="service-book-btn">
-                                <i class="fas fa-calendar-alt"></i> Prenota una Sessione
+                            <h3>Underwater Mindfulness</h3>
+                            <p class="service-teaser">Experience mindfulness in a unique underwater environment. Connect with the serene underwater world while practicing mindfulness techniques.</p>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Book a Session
                             </a>
                         </div>
                     </div>
@@ -210,7 +205,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Veranaturae. Tutti i diritti riservati.</p>
+            <p>&copy; 2025 Veranaturae. All rights reserved.</p>
         </div>
     </footer>
 

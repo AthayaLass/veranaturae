@@ -3,17 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQRXLXLPG1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-JQRXLXLPG1');
-    </script>
-    
     <title>Ayurveda - Veranaturae</title>
     
     <!-- Open Graph / Social Media Meta Tags -->
@@ -21,24 +10,18 @@
     <meta property="og:url" content="https://veranaturae.com/ayurveda.html">
     <meta property="og:title" content="Ayurveda - Veranaturae">
     <meta property="og:description" content="Discover the ancient wisdom of Ayurveda and its science-backed benefits for holistic wellness.">
-    <meta property="og:image" content="https://veranaturae.ch/images/Logo_Veranaturae_social.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
-    <meta property="og:image:alt" content="Veranaturae Logo">
-    <meta property="og:image:secure_url" content="https://veranaturae.ch/images/Logo_Veranaturae_social.png">
+    <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
     
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.0.0/css/flag-icons.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-content">
                 <a href="home.html" class="logo-link">
-                    <img src="../images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
+                    <img src="images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
                 </a>
                 <nav>
                     <ul>
@@ -48,13 +31,6 @@
                         <li><a href="yoga.html">Yoga</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
-                    <div class="language-selector">
-                        <div class="language-flags">
-                            <div class="language-flag en active" onclick="changeLanguage('en')" title="English"></div>
-                            <div class="language-flag fr" onclick="changeLanguage('fr')" title="Français"></div>
-                            <div class="language-flag it" onclick="changeLanguage('it')" title="Italiano"></div>
-                        </div>
-                    </div>
                 </nav>
                 <div class="burger-menu" onclick="toggleMobileMenu()">
                     <span></span>
@@ -82,9 +58,6 @@
                     <p class="subtitle">Ancient Wisdom for Modern Wellness</p>
                 </div>
             </div>
-            <a href="#services" class="hero-services-btn">
-                <i class="fas fa-arrow-down"></i> Go to Services
-            </a>
         </section>
 
         <section class="mindfulness-section">
@@ -136,7 +109,7 @@
                 <div class="services-grid">
                     <div class="service-card" data-service="ayurveda-consultation">
                         <div class="service-image">
-                            <img src="../images/fafa04.jpg" alt="Ayurvedic consultation" class="service-img">
+                            <img src="images/fafa04.jpg" alt="Ayurvedic consultation" class="service-img">
                             <div class="service-overlay">
                                 <i class="fas fa-info-circle expand-icon"></i>
                             </div>
@@ -144,15 +117,15 @@
                         <div class="service-content">
                             <h3>Ayurvedic consultation</h3>
                             <p class="service-teaser">Discover your unique constitution (dosha) and receive personalized recommendations for diet, lifestyle, herbs, and daily routines to restore balance and enhance your well-being.</p>
-                            <span class="service-book-btn" style="cursor: default;">
-                                <i class="fas fa-clock"></i> Coming Soon
-                            </span>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Book a Session
+                            </a>
                         </div>
                     </div>
                     
                     <div class="service-card" data-service="ayurveda-massages">
                         <div class="service-image">
-                            <img src="../images/mindfulness03.jpg" alt="Ayurvedic massages" class="service-img">
+                            <img src="images/mindfulness03.jpg" alt="Ayurvedic massages" class="service-img">
                             <div class="service-overlay">
                                 <i class="fas fa-info-circle expand-icon"></i>
                             </div>
@@ -160,15 +133,15 @@
                         <div class="service-content">
                             <h3>Ayurvedic massages</h3>
                             <p class="service-teaser">Experience therapeutic massages using traditional Ayurvedic techniques and oils to restore balance, improve circulation, and promote deep relaxation.</p>
-                            <span class="service-book-btn" style="cursor: default;">
-                                <i class="fas fa-clock"></i> Coming Soon
-                            </span>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Book a Session
+                            </a>
                         </div>
                     </div>
                     
                     <div class="service-card" data-service="ayurveda-nutrition">
                         <div class="service-image">
-                            <img src="../images/food_01.jpg" alt="Ayurvedic nutrition" class="service-img">
+                            <img src="images/food_01.jpg" alt="Ayurvedic nutrition" class="service-img">
                             <div class="service-overlay">
                                 <i class="fas fa-info-circle expand-icon"></i>
                             </div>
@@ -176,9 +149,9 @@
                         <div class="service-content">
                             <h3>Ayurvedic nutrition</h3>
                             <p class="service-teaser">Receive customized dietary recommendations tailored to your dosha type and individual needs, including meal planning and food combination guidance.</p>
-                            <span class="service-book-btn" style="cursor: default;">
-                                <i class="fas fa-clock"></i> Coming Soon
-                            </span>
+                            <a href="home.html#calendar" class="service-book-btn">
+                                <i class="fas fa-calendar-alt"></i> Book a Session
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -205,7 +178,6 @@
         </div>
     </footer>
 
-    <script src="../js/language.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
