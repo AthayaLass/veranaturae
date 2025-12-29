@@ -40,10 +40,24 @@ function switchLanguage(lang) {
 
 // Change language (matching Athelas_Diving implementation)
 function changeLanguage(lang) {
+    if (!['en', 'it', 'fr'].includes(lang)) return;
+    
     const currentPath = window.location.pathname;
-    const fileName = currentPath.split('/').pop() || 'home.html';
+    const pathParts = currentPath.split('/').filter(part => part);
+    const fileName = pathParts[pathParts.length - 1] || 'home.html';
+    
+    // Save preference
     localStorage.setItem('preferredLanguage', lang);
-    window.location.href = `../${lang}/${fileName}`;
+    
+    // Build new path - if we're in a language subdirectory, replace it; otherwise add it
+    if (pathParts.length > 1 && ['en', 'it', 'fr'].includes(pathParts[0])) {
+        // We're in a language subdirectory, replace the language
+        pathParts[0] = lang;
+        window.location.href = '/' + pathParts.join('/');
+    } else {
+        // We're not in a language subdirectory, navigate to it
+        window.location.href = `/${lang}/${fileName}`;
+    }
 }
 
 // Initialize language on page load

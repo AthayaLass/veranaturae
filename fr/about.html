@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Veranaturae</title>
+    <title>À Propos - Veranaturae</title>
     
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://veranaturae.com/about.html">
-    <meta property="og:title" content="About - Veranaturae">
-    <meta property="og:description" content="Meet Veronica Caggia, plant scientist, mindfulness coach, and nature lover dedicated to helping you reconnect with your true nature.">
-    <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
+    <meta property="og:url" content="https://veranaturae.ch/fr/about.html">
+    <meta property="og:title" content="À Propos - Veranaturae">
+    <meta property="og:description" content="Rencontrez Veronica Caggia, scientifique des plantes, coach en mindfulness et amoureuse de la nature dédiée à vous aider à vous reconnecter avec votre vraie nature.">
+    <meta property="og:image" content="https://veranaturae.ch/images/Logo_Veranaturae_title.png">
     
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -25,24 +25,20 @@
                 </a>
                 <nav>
                     <ul>
-                        <li><a href="home.html">Home</a></li>
+                        <li><a href="home.html">Accueil</a></li>
                         <li><a href="ayurveda.html">Ayurveda</a></li>
                         <li><a href="mindfulness.html">Mindfulness</a></li>
                         <li><a href="yoga.html">Yoga</a></li>
-                        <li><a href="about.html" class="active">About</a></li>
+                        <li><a href="about.html" class="active">À Propos</a></li>
                     </ul>
+                    <div class="language-selector">
+                        <div class="language-flags">
+                            <div class="language-flag en" onclick="changeLanguage('en')" title="English"></div>
+                            <div class="language-flag fr active" onclick="changeLanguage('fr')" title="Français"></div>
+                            <div class="language-flag it" onclick="changeLanguage('it')" title="Italiano"></div>
+                        </div>
+                    </div>
                 </nav>
-                <div class="language-switcher">
-                    <button class="lang-btn active" onclick="switchLanguage('en')" title="English">
-                        <span class="flag">🇬🇧</span> EN
-                    </button>
-                    <button class="lang-btn" onclick="switchLanguage('it')" title="Italiano">
-                        <span class="flag">🇮🇹</span> IT
-                    </button>
-                    <button class="lang-btn" onclick="switchLanguage('fr')" title="Français">
-                        <span class="flag">🇫🇷</span> FR
-                    </button>
-                </div>
                 <div class="burger-menu" onclick="toggleMobileMenu()">
                     <span></span>
                     <span></span>
@@ -52,22 +48,18 @@
         </div>
         <div class="mobile-nav" id="mobileNav">
             <ul>
-                <li><a href="home.html" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="home.html" onclick="closeMobileMenu()">Accueil</a></li>
                 <li><a href="ayurveda.html" onclick="closeMobileMenu()">Ayurveda</a></li>
                 <li><a href="mindfulness.html" onclick="closeMobileMenu()">Mindfulness</a></li>
                 <li><a href="yoga.html" onclick="closeMobileMenu()">Yoga</a></li>
-                <li><a href="about.html" class="active" onclick="closeMobileMenu()">About</a></li>
+                <li><a href="about.html" class="active" onclick="closeMobileMenu()">À Propos</a></li>
             </ul>
-            <div class="mobile-lang-switcher">
-                <button class="lang-btn active" onclick="switchLanguage('en'); closeMobileMenu();" title="English">
-                    <span class="flag">🇬🇧</span> EN
-                </button>
-                <button class="lang-btn" onclick="switchLanguage('it'); closeMobileMenu();" title="Italiano">
-                    <span class="flag">🇮🇹</span> IT
-                </button>
-                <button class="lang-btn" onclick="switchLanguage('fr'); closeMobileMenu();" title="Français">
-                    <span class="flag">🇫🇷</span> FR
-                </button>
+            <div class="language-selector">
+                <div class="language-flags">
+                    <div class="language-flag en" onclick="changeLanguage('en'); closeMobileMenu();" title="English"></div>
+                    <div class="language-flag fr active" onclick="changeLanguage('fr'); closeMobileMenu();" title="Français"></div>
+                    <div class="language-flag it" onclick="changeLanguage('it'); closeMobileMenu();" title="Italiano"></div>
+                </div>
             </div>
         </div>
     </header>
@@ -76,8 +68,8 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1>About Me</h1>
-                    <p class="subtitle">The Earth Whisperer</p>
+                    <h1>À Propos de Moi</h1>
+                    <p class="subtitle">La Chuchoteuse de la Terre</p>
                 </div>
             </div>
         </section>
@@ -87,14 +79,14 @@
                 <div class="about-content">
                     <div class="about-image">
                         <h3>Veronica Caggia</h3>
-                        <img src="../images/vero_01.jpg" alt="Veronica Caggia - Earth Whisperer">
+                        <img src="../images/vero_01.jpg" alt="Veronica Caggia - La Chuchoteuse de la Terre">
                     </div>
                     <div class="about-text">
-                        <p>Hi, I'm Veronica – ayurveda therapist in training, mindfulness coach, yoga teacher, and someone who knows what it's like to live on autopilot.</p>
+                        <p>Bonjour, je suis Veronica – thérapeute ayurvédique en formation, coach en mindfulness, professeure de yoga, et quelqu'un qui sait ce que c'est que de vivre en pilote automatique.</p>
                         
-                        <p>For a long time, I was deeply connected to nature through my work as a plant biologist, yet I often felt disconnected from myself. Discovering Ayurveda, mindfulness and yoga marked a turning point in my life. These practices helped me slow down, listen inward, and reconnect with my body, my rhythms, and to cultivate balance in a gentler, more sustainable way. What began as personal exploration gradually became a profound transformation, changing the way I relate to myself and to everyday life.</p>
+                        <p>Pendant longtemps, j'étais profondément connectée à la nature grâce à mon travail de biologiste des plantes, mais je me sentais souvent déconnectée de moi-même. Découvrir l'Ayurveda, la mindfulness et le yoga a marqué un tournant dans ma vie. Ces pratiques m'ont aidée à ralentir, à écouter intérieurement, et à me reconnecter avec mon corps, mes rythmes, et à cultiver l'équilibre de manière plus douce et durable. Ce qui a commencé comme une exploration personnelle est progressivement devenu une transformation profonde, changeant la façon dont je me relie à moi-même et à la vie quotidienne.</p>
                         
-                        <p>Now, I want to share with other a way of living more consciously, with less stress, more presence, more joy, and a deeper sense of harmony with oneself.</p>
+                        <p>Maintenant, je veux partager avec d'autres une façon de vivre plus consciemment, avec moins de stress, plus de présence, plus de joie, et un sens plus profond de l'harmonie avec soi-même.</p>
                     </div>
                 </div>
             </div>
@@ -103,7 +95,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Veranaturae. All rights reserved.</p>
+            <p>&copy; 2025 Veranaturae. Tous droits réservés.</p>
         </div>
     </footer>
 

@@ -43,18 +43,14 @@
                         <li><a href="yoga.html">Yoga</a></li>
                         <li><a href="about.html">Chi Sono</a></li>
                     </ul>
+                    <div class="language-selector">
+                        <div class="language-flags">
+                            <div class="language-flag en" onclick="changeLanguage('en')" title="English"></div>
+                            <div class="language-flag fr" onclick="changeLanguage('fr')" title="Français"></div>
+                            <div class="language-flag it active" onclick="changeLanguage('it')" title="Italiano"></div>
+                        </div>
+                    </div>
                 </nav>
-                <div class="language-switcher">
-                    <button class="lang-btn" onclick="switchLanguage('en')" title="English">
-                        <span class="fi fi-gb"></span> EN
-                    </button>
-                    <button class="lang-btn active" onclick="switchLanguage('it')" title="Italiano">
-                        <span class="fi fi-it"></span> IT
-                    </button>
-                    <button class="lang-btn" onclick="switchLanguage('fr')" title="Français">
-                        <span class="fi fi-fr"></span> FR
-                    </button>
-                </div>
                 <div class="burger-menu" onclick="toggleMobileMenu()">
                     <span></span>
                     <span></span>
@@ -70,16 +66,12 @@
                 <li><a href="yoga.html" onclick="closeMobileMenu()">Yoga</a></li>
                 <li><a href="about.html" onclick="closeMobileMenu()">Chi Sono</a></li>
             </ul>
-            <div class="mobile-lang-switcher">
-                <button class="lang-btn" onclick="switchLanguage('en'); closeMobileMenu();" title="English">
-                    <span class="flag">🇬🇧</span> EN
-                </button>
-                <button class="lang-btn active" onclick="switchLanguage('it'); closeMobileMenu();" title="Italiano">
-                    <span class="flag">🇮🇹</span> IT
-                </button>
-                <button class="lang-btn" onclick="switchLanguage('fr'); closeMobileMenu();" title="Français">
-                    <span class="flag">🇫🇷</span> FR
-                </button>
+            <div class="language-selector">
+                <div class="language-flags">
+                    <div class="language-flag en" onclick="changeLanguage('en'); closeMobileMenu();" title="English"></div>
+                    <div class="language-flag fr" onclick="changeLanguage('fr'); closeMobileMenu();" title="Français"></div>
+                    <div class="language-flag it active" onclick="changeLanguage('it'); closeMobileMenu();" title="Italiano"></div>
+                </div>
             </div>
         </div>
     </header>
@@ -219,27 +211,14 @@
         <section id="calendar" class="calendar-section">
             <div class="container">
                 <h2>Prenota il tuo appuntamento</h2>
-                <div class="calendar-service-buttons">
-                    <button class="calendar-service-btn active" data-service="call" onclick="switchCalendlyService('call')">
-                        <i class="fas fa-phone"></i> Chiama
-                    </button>
-                    <button class="calendar-service-btn" data-service="ayurveda" onclick="switchCalendlyService('ayurveda')">
-                        Ayurveda
-                    </button>
-                    <button class="calendar-service-btn" data-service="mindfulness" onclick="switchCalendlyService('mindfulness')">
-                        Mindfulness
-                    </button>
-                    <button class="calendar-service-btn" data-service="yoga" onclick="switchCalendlyService('yoga')">
-                        Yoga
-                    </button>
-                </div>
                 <div class="calendar-wrapper">
                     <!-- Calendly inline widget -->
-                    <div id="calendlyWidget" class="calendly-inline-widget" data-url="https://calendly.com/caggia_veronica/appel-chiamata-call" style="min-width:320px;height:700px;"></div>
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/caggia_veronica/appel-chiamata-call" style="min-width:320px;height:700px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                     <!-- Fallback if Calendly is not configured -->
                     <div class="calendar-fallback" style="display: none;">
-                        <p>To book a session, please contact us directly:</p>
-                        <a href="mailto:veronica@oceantoearth.life" class="button">Contact Me</a>
+                        <p>Per prenotare una sessione, contattaci direttamente:</p>
+                        <a href="mailto:veronica@oceantoearth.life" class="button">Contattami</a>
                     </div>
                 </div>
             </div>
@@ -284,79 +263,9 @@
         </div>
     </footer>
 
-    <!-- Calendly script -->
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-    
     <script src="../js/language.js"></script>
     <script src="../js/script.js"></script>
-    <script>
-        // Calendly URLs
-        const calendlyUrls = {
-            call: 'https://calendly.com/caggia_veronica/appel-chiamata-call',
-            ayurveda: 'https://calendly.com/caggia_veronica/30min',
-            mindfulness: 'https://calendly.com/caggia_veronica/mindfulness',
-            yoga: 'https://calendly.com/caggia_veronica/yoga'
-        };
-
-        // Function to switch Calendly service
-        function switchCalendlyService(service) {
-            // Update button states
-            document.querySelectorAll('.calendar-service-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            const activeBtn = document.querySelector(`[data-service="${service}"]`);
-            if (activeBtn) {
-                activeBtn.classList.add('active');
-            }
-
-            // Get widget
-            const widget = document.getElementById('calendlyWidget');
-            if (!widget || !calendlyUrls[service]) {
-                return;
-            }
-
-            const url = calendlyUrls[service];
-            
-            // Update data-url attribute
-            widget.setAttribute('data-url', url);
-            
-            // Reinitialize the widget with the new URL
-            if (window.Calendly && typeof window.Calendly.initInlineWidget === 'function') {
-                // Clear the widget content
-                widget.innerHTML = '';
-                // Reinitialize with new URL
-                Calendly.initInlineWidget({
-                    url: url,
-                    parentElement: widget
-                });
-            }
-        }
-
-        // Initialize on page load
-        window.addEventListener('load', function() {
-            // Scroll to calendar if hash present
-            if (window.location.hash.includes('calendar')) {
-                setTimeout(function() {
-                    const section = document.getElementById('calendar');
-                    if (section) {
-                        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                }, 300);
-            }
-
-            // Get service from URL
-            const urlParams = new URLSearchParams(window.location.search);
-            const service = urlParams.get('service');
-
-            // Switch to the appropriate service
-            if (service && calendlyUrls[service]) {
-                switchCalendlyService(service);
-            } else {
-                // Default to call service
-                switchCalendlyService('call');
-            }
-        });
-    </script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
 

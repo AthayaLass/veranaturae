@@ -12,7 +12,7 @@
     <meta property="og:description" content="Meet Veronica Caggia, plant scientist, mindfulness coach, and nature lover dedicated to helping you reconnect with your true nature.">
     <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
     
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -21,7 +21,7 @@
         <div class="container">
             <div class="header-content">
                 <a href="home.html" class="logo-link">
-                    <img src="images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
+                    <img src="../images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
                 </a>
                 <nav>
                     <ul>
@@ -31,6 +31,13 @@
                         <li><a href="yoga.html">Yoga</a></li>
                         <li><a href="about.html" class="active">About</a></li>
                     </ul>
+                    <div class="language-selector">
+                        <div class="language-flags">
+                            <div class="language-flag en active" onclick="changeLanguage('en')" title="English"></div>
+                            <div class="language-flag fr" onclick="changeLanguage('fr')" title="Français"></div>
+                            <div class="language-flag it" onclick="changeLanguage('it')" title="Italiano"></div>
+                        </div>
+                    </div>
                 </nav>
                 <div class="burger-menu" onclick="toggleMobileMenu()">
                     <span></span>
@@ -47,6 +54,13 @@
                 <li><a href="yoga.html" onclick="closeMobileMenu()">Yoga</a></li>
                 <li><a href="about.html" class="active" onclick="closeMobileMenu()">About</a></li>
             </ul>
+            <div class="language-selector">
+                <div class="language-flags">
+                    <div class="language-flag en active" onclick="changeLanguage('en'); closeMobileMenu();" title="English"></div>
+                    <div class="language-flag fr" onclick="changeLanguage('fr'); closeMobileMenu();" title="Français"></div>
+                    <div class="language-flag it" onclick="changeLanguage('it'); closeMobileMenu();" title="Italiano"></div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -65,7 +79,7 @@
                 <div class="about-content">
                     <div class="about-image">
                         <h3>Veronica Caggia</h3>
-                        <img src="images/vero_01.jpg" alt="Veronica Caggia - Earth Whisperer">
+                        <img src="../images/vero_01.jpg" alt="Veronica Caggia - Earth Whisperer">
                     </div>
                     <div class="about-text">
                         <p>Hi, I'm Veronica – ayurveda therapist in training, mindfulness coach, yoga teacher, and someone who knows what it's like to live on autopilot.</p>
@@ -85,6 +99,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="../js/language.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

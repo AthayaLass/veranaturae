@@ -18,7 +18,7 @@
     <meta name="twitter:description" content="Discover your true nature through mindfulness, yoga, and Ayurveda. Veranaturae offers a safe space to reconnect with yourself and find clarity, compassion, and serenity.">
     <meta name="twitter:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
     
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -27,7 +27,7 @@
         <div class="container">
             <div class="header-content">
                 <a href="home.html" class="logo-link">
-                    <img src="images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
+                    <img src="../images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
                 </a>
                 <nav>
                     <ul>
@@ -37,6 +37,13 @@
                         <li><a href="yoga.html">Yoga</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
+                    <div class="language-selector">
+                        <div class="language-flags">
+                            <div class="language-flag en active" onclick="changeLanguage('en')" title="English"></div>
+                            <div class="language-flag fr" onclick="changeLanguage('fr')" title="Français"></div>
+                            <div class="language-flag it" onclick="changeLanguage('it')" title="Italiano"></div>
+                        </div>
+                    </div>
                 </nav>
                 <div class="burger-menu" onclick="toggleMobileMenu()">
                     <span></span>
@@ -53,6 +60,13 @@
                 <li><a href="yoga.html" onclick="closeMobileMenu()">Yoga</a></li>
                 <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
             </ul>
+            <div class="language-selector">
+                <div class="language-flags">
+                    <div class="language-flag en active" onclick="changeLanguage('en'); closeMobileMenu();" title="English"></div>
+                    <div class="language-flag fr" onclick="changeLanguage('fr'); closeMobileMenu();" title="Français"></div>
+                    <div class="language-flag it" onclick="changeLanguage('it'); closeMobileMenu();" title="Italiano"></div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -70,7 +84,7 @@
             <div class="container">
                 <div class="veranaturae-content">
                     <div class="veranaturae-image">
-                        <img src="images/vero_14.jpeg" alt="Veranaturae" class="vero-image">
+                        <img src="../images/vero_14.jpeg" alt="Veranaturae" class="vero-image">
                     </div>
                     <div class="veranaturae-text">
                         <p class="intro-paragraph"><strong>Veranaturae</strong> means "true nature" - the essence of who we are beneath the noise, the rush, and the roles we play.</p>
@@ -129,19 +143,19 @@
                 </div>
                 <div class="flyers-sidebar-list">
                     <div class="flyer-sidebar-item">
-                        <img src="images/Flyer_MindfulnessAtWork.png" alt="Mindfulness at Work Flyer" class="flyer-sidebar-image">
+                        <img src="../images/Flyer_MindfulnessAtWork.png" alt="Mindfulness at Work Flyer" class="flyer-sidebar-image">
                         <div class="flyer-sidebar-info">
                             <h4>Mindfulness at Work</h4>
-                            <a href="images/Flyer_MindfulnessAtWork.png" download="Veranaturae_MindfulnessAtWork.pdf" class="flyer-sidebar-download">
+                            <a href="../images/Flyer_MindfulnessAtWork.png" download="Veranaturae_MindfulnessAtWork.pdf" class="flyer-sidebar-download">
                                 <i class="fas fa-download"></i> Download
                             </a>
                         </div>
                     </div>
                     <div class="flyer-sidebar-item">
-                        <img src="images/Flyer_MindfulnessPaths.png" alt="Mindfulness Paths Flyer" class="flyer-sidebar-image">
+                        <img src="../images/Flyer_MindfulnessPaths.png" alt="Mindfulness Paths Flyer" class="flyer-sidebar-image">
                         <div class="flyer-sidebar-info">
                             <h4>Mindfulness Paths</h4>
-                            <a href="images/Flyer_MindfulnessPaths.png" download="Veranaturae_MindfulnessPaths.pdf" class="flyer-sidebar-download">
+                            <a href="../images/Flyer_MindfulnessPaths.png" download="Veranaturae_MindfulnessPaths.pdf" class="flyer-sidebar-download">
                                 <i class="fas fa-download"></i> Download
                             </a>
                         </div>
@@ -157,7 +171,7 @@
                 <p class="section-intro">Schedule your mindfulness, yoga, or Ayurveda consultation</p>
                 <div class="calendar-wrapper">
                     <!-- Calendly inline widget -->
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/caggia_veronica/30min" style="min-width:320px;height:700px;"></div>
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/caggia_veronica/appel-chiamata-call" style="min-width:320px;height:700px;"></div>
                     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                     <!-- Fallback if Calendly is not configured -->
                     <div class="calendar-fallback" style="display: none;">
@@ -189,7 +203,8 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="../js/language.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
 

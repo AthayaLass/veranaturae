@@ -12,7 +12,7 @@
     <meta property="og:description" content="Discover the ancient wisdom of Ayurveda and its science-backed benefits for holistic wellness.">
     <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
     
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -21,7 +21,7 @@
         <div class="container">
             <div class="header-content">
                 <a href="home.html" class="logo-link">
-                    <img src="images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
+                    <img src="../images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
                 </a>
                 <nav>
                     <ul>
@@ -31,6 +31,13 @@
                         <li><a href="yoga.html">Yoga</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
+                    <div class="language-selector">
+                        <div class="language-flags">
+                            <div class="language-flag en active" onclick="changeLanguage('en')" title="English"></div>
+                            <div class="language-flag fr" onclick="changeLanguage('fr')" title="Français"></div>
+                            <div class="language-flag it" onclick="changeLanguage('it')" title="Italiano"></div>
+                        </div>
+                    </div>
                 </nav>
                 <div class="burger-menu" onclick="toggleMobileMenu()">
                     <span></span>
@@ -47,6 +54,13 @@
                 <li><a href="yoga.html" onclick="closeMobileMenu()">Yoga</a></li>
                 <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
             </ul>
+            <div class="language-selector">
+                <div class="language-flags">
+                    <div class="language-flag en active" onclick="changeLanguage('en'); closeMobileMenu();" title="English"></div>
+                    <div class="language-flag fr" onclick="changeLanguage('fr'); closeMobileMenu();" title="Français"></div>
+                    <div class="language-flag it" onclick="changeLanguage('it'); closeMobileMenu();" title="Italiano"></div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -109,7 +123,7 @@
                 <div class="services-grid">
                     <div class="service-card" data-service="ayurveda-consultation">
                         <div class="service-image">
-                            <img src="images/fafa04.jpg" alt="Ayurvedic consultation" class="service-img">
+                            <img src="../images/fafa04.jpg" alt="Ayurvedic consultation" class="service-img">
                             <div class="service-overlay">
                                 <i class="fas fa-info-circle expand-icon"></i>
                             </div>
@@ -125,7 +139,7 @@
                     
                     <div class="service-card" data-service="ayurveda-massages">
                         <div class="service-image">
-                            <img src="images/mindfulness03.jpg" alt="Ayurvedic massages" class="service-img">
+                            <img src="../images/mindfulness03.jpg" alt="Ayurvedic massages" class="service-img">
                             <div class="service-overlay">
                                 <i class="fas fa-info-circle expand-icon"></i>
                             </div>
@@ -141,7 +155,7 @@
                     
                     <div class="service-card" data-service="ayurveda-nutrition">
                         <div class="service-image">
-                            <img src="images/food_01.jpg" alt="Ayurvedic nutrition" class="service-img">
+                            <img src="../images/food_01.jpg" alt="Ayurvedic nutrition" class="service-img">
                             <div class="service-overlay">
                                 <i class="fas fa-info-circle expand-icon"></i>
                             </div>
@@ -178,6 +192,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="../js/language.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
