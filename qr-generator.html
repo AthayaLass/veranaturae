@@ -416,6 +416,12 @@
 
         // Generate QR code with customization
         function generateQR() {
+            // Check if QRCode library is loaded
+            if (typeof QRCode === 'undefined') {
+                alert('QR Code library is still loading. Please wait a moment and try again.');
+                return;
+            }
+
             const url = document.getElementById('urlInput').value.trim();
             const size = parseInt(document.getElementById('sizeSlider').value);
             const foregroundColor = document.getElementById('foregroundColor').value;
@@ -435,24 +441,15 @@
             }
 
             const qrcodeDiv = document.getElementById('qrcode');
-            qrcodeDiv.innerHTML = ''; // Clear previous QR code
+            qrcodeDiv.innerHTML = '<p style="text-align: center; color: #666;">Generating QR code...</p>'; // Show loading message
 
-            // Generate QR code
-            QRCode.toCanvas(validUrl, {
-                width: size,
-                margin: 2,
-                color: {
-                    dark: foregroundColor,
-                    light: backgroundColor
-                },
-                errorCorrectionLevel: errorCorrection
-            }, function (err, canvas) {
-                if (err) {
-                    console.error(err);
-                    alert('Error generating QR code. Please try again.');
-                    return;
-                }
+            // Create a canvas element with proper dimensions
+            const canvas = document.createElement('canvas');
+            canvas.width = size;
+            canvas.height = size;
 
+            // Function to process the generated QR code
+            function processQRCode(canvas) {
                 // Apply rounded corners if selected
                 if (dotShape === 'rounded') {
                     applyRoundedCorners(canvas);
@@ -466,7 +463,8 @@
                 // Convert canvas to data URL
                 const dataURL = canvas.toDataURL('image/png');
 
-                // Display QR code
+                // Clear loading message and display QR code
+                qrcodeDiv.innerHTML = '';
                 const img = document.createElement('img');
                 img.src = dataURL;
                 img.alt = 'QR Code';
@@ -475,7 +473,66 @@
                 // Store for download
                 currentQRCodeDataURL = dataURL;
                 document.getElementById('downloadBtn').disabled = false;
-            });
+            }
+
+            // Generate QR code to canvas
+            try {
+                // Try toCanvas method first
+                if (QRCode.toCanvas) {
+                    QRCode.toCanvas(canvas, validUrl, {
+                        width: size,
+                        margin: 2,
+                        color: {
+                            dark: foregroundColor,
+                            light: backgroundColor
+                        },
+                        errorCorrectionLevel: errorCorrection
+                    }, function (err) {
+                        if (err) {
+                            console.error('QR Code generation error:', err);
+                            qrcodeDiv.innerHTML = '<p style="text-align: center; color: #dc3545;">Error generating QR code. Please try again.</p>';
+                            alert('Error generating QR code: ' + err.message);
+                            return;
+                        }
+                        processQRCode(canvas);
+                    });
+                } else {
+                    // Fallback: use toDataURL and draw to canvas
+                    QRCode.toDataURL(validUrl, {
+                        width: size,
+                        margin: 2,
+                        color: {
+                            dark: foregroundColor,
+                            light: backgroundColor
+                        },
+                        errorCorrectionLevel: errorCorrection
+                    }, function (err, dataURL) {
+                        if (err) {
+                            console.error('QR Code generation error:', err);
+                            qrcodeDiv.innerHTML = '<p style="text-align: center; color: #dc3545;">Error generating QR code. Please try again.</p>';
+                            alert('Error generating QR code: ' + err.message);
+                            return;
+                        }
+                        
+                        // Load the QR code image and draw it to canvas
+                        const img = new Image();
+                        img.onload = function() {
+                            const ctx = canvas.getContext('2d');
+                            ctx.drawImage(img, 0, 0, size, size);
+                            processQRCode(canvas);
+                        };
+                        img.onerror = function() {
+                            qrcodeDiv.innerHTML = '<p style="text-align: center; color: #dc3545;">Error loading QR code image.</p>';
+                            alert('Error loading QR code image.');
+                        };
+                        img.src = dataURL;
+                    });
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                qrcodeDiv.innerHTML = '<p style="text-align: center; color: #dc3545;">Error: ' + error.message + '</p>';
+                alert('Error: ' + error.message);
+            }
         }
 
         // Apply rounded corners to QR code
@@ -584,9 +641,16 @@
             }
         });
 
-        // Auto-generate on page load with default URL
+        // Auto-generate on page load with default URL (wait for library to load)
         window.addEventListener('load', function() {
-            generateQR();
+            // Wait a bit for the QRCode library to fully load
+            setTimeout(function() {
+                if (typeof QRCode !== 'undefined') {
+                    generateQR();
+                } else {
+                    console.warn('QRCode library not loaded yet');
+                }
+            }, 100);
         });
     </script>
 </body>
