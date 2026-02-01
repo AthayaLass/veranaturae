@@ -543,6 +543,10 @@ nav a:hover {
     margin: 0 auto;
 }
 
+.location-section .about-content {
+    align-items: center;
+}
+
 .about-text p {
     font-size: 1.2rem;
     line-height: 1.8;
@@ -582,6 +586,52 @@ nav a:hover {
     width: 20px;
     display: inline-block;
     text-align: center;
+}
+
+/* Education Section Styles */
+.education-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem 0;
+}
+
+.education-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.8rem;
+    background: linear-gradient(135deg, rgba(231, 217, 196, 0.3) 0%, rgba(191, 207, 178, 0.2) 100%);
+    border-radius: 12px;
+    border-left: 4px solid var(--accent);
+    transition: all 0.3s ease;
+    line-height: 1.6;
+}
+
+.education-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(107, 94, 78, 0.15);
+    background: linear-gradient(135deg, rgba(231, 217, 196, 0.4) 0%, rgba(191, 207, 178, 0.3) 100%);
+}
+
+.education-year {
+    font-family: 'Cinzel', serif;
+    color: var(--main);
+    font-weight: 600;
+    font-size: 0.95rem;
+    min-width: 120px;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.education-description {
+    color: var(--text);
+    font-size: 0.95rem;
+    flex: 1;
+    white-space: normal;
+}
+
+.education-item:last-child {
+    margin-bottom: 0;
 }
 
 .about-image {
@@ -3190,9 +3240,22 @@ img {
         gap: 2rem;
     }
     
+    .location-section .about-content {
+        align-items: center;
+    }
+    
     .location-section .location-title {
         font-size: 2rem;
         white-space: nowrap;
+    }
+    
+    .education-description {
+        font-size: 0.92rem;
+    }
+    
+    .education-year {
+        font-size: 0.92rem;
+        min-width: 110px;
     }
     
     .back-to-top {
@@ -3285,6 +3348,30 @@ img {
     
     .about-content {
         grid-template-columns: 1fr 1fr;
+    }
+    
+    .location-section .about-content {
+        align-items: center;
+    }
+    
+    .education-description {
+        font-size: 0.95rem;
+    }
+    
+    /* On very large screens, ensure text fits on one line */
+    @media (min-width: 1400px) {
+        .education-description {
+            font-size: 0.9rem;
+        }
+        
+        .education-year {
+            font-size: 0.9rem;
+            min-width: 100px;
+        }
+    }
+    
+    .education-year {
+        font-size: 0.95rem;
     }
 }
 
@@ -3488,6 +3575,23 @@ img {
     .location-section .about-text p i {
         margin-right: 0.6rem;
         font-size: 1rem;
+    }
+    
+    /* Education section mobile */
+    .education-item {
+        flex-direction: column;
+        padding: 0.9rem 1rem;
+    }
+    
+    .education-year {
+        min-width: auto;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .education-description {
+        font-size: 0.9rem;
     }
     
     /* Veranaturae intro section mobile */
