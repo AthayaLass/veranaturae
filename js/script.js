@@ -361,8 +361,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 features: [
                     'Detailed dosha analysis (Vata, Pitta, Kapha)',
                     'Identification of current imbalances',
-                    'Pulse and tongue diagnosis',
-                    'Comprehensive health history review',
                     'Personalized recommendations for diet, lifestyle, and herbs'
                 ],
                 buttonText: 'Click here to get in touch',
@@ -822,8 +820,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 features: [
                     'Analisi dettagliata del dosha (Vata, Pitta, Kapha)',
                     'Identificazione degli squilibri attuali',
-                    'Diagnosi del polso e della lingua',
-                    'Revisione completa della storia della salute',
                     'Raccomandazioni personalizzate per dieta, stile di vita ed erbe'
                 ],
                 buttonText: 'Clicca qui per contattarci',
@@ -1283,8 +1279,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 features: [
                     'Analyse détaillée du dosha (Vata, Pitta, Kapha)',
                     'Identification des déséquilibres actuels',
-                    'Diagnostic du pouls et de la langue',
-                    'Examen complet des antécédents de santé',
                     'Recommandations personnalisées pour l\'alimentation, le mode de vie et les herbes'
                 ],
                 buttonText: 'Cliquez ici pour nous contacter',
