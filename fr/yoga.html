@@ -65,12 +65,19 @@
         </div>
         <div class="mobile-nav" id="mobileNav">
             <ul>
-                <li><a href="home.html" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="home.html" onclick="closeMobileMenu()">Accueil</a></li>
                 <li><a href="ayurveda.html" onclick="closeMobileMenu()">Ayurveda</a></li>
                 <li><a href="mindfulness.html" onclick="closeMobileMenu()">Mindfulness</a></li>
                 <li><a href="yoga.html" class="active" onclick="closeMobileMenu()">Yoga</a></li>
-                <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+                <li><a href="about.html" onclick="closeMobileMenu()">À Propos</a></li>
             </ul>
+            <div class="language-selector">
+                <div class="language-flags">
+                    <div class="language-flag en" onclick="changeLanguage('en'); closeMobileMenu();" title="English"></div>
+                    <div class="language-flag fr active" onclick="changeLanguage('fr'); closeMobileMenu();" title="Français"></div>
+                    <div class="language-flag it" onclick="changeLanguage('it'); closeMobileMenu();" title="Italiano"></div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -144,7 +151,7 @@
                 <div class="services-grid">
                     <div class="service-card" data-service="private-yoga">
                         <div class="service-image">
-                            <img src="../images/yoga03.jpg" alt="Private Yoga" class="service-img">
+                            <img src="../images/Veronica_yoga-private.jpg" alt="Private Yoga" class="service-img">
                             <div class="service-overlay">
                                 <i class="fas fa-info-circle expand-icon"></i>
                             </div>
@@ -161,7 +168,7 @@
                     
                     <div class="service-card" data-service="group-yoga">
                         <div class="service-image">
-                            <img src="../images/yoga01.jpg" alt="Group Yoga" class="service-img">
+                            <img src="../images/Veronica_yoga-group.jpg" alt="Group Yoga" class="service-img">
                             <div class="service-overlay">
                                 <i class="fas fa-info-circle expand-icon"></i>
                             </div>
@@ -173,6 +180,24 @@
                                 <i class="fas fa-calendar-alt"></i> Réserver une Séance
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section">
+            <div class="container">
+                <h2>Avis</h2>
+                <div class="reviews-list">
+                    <div class="review-group">
+                        <h3>Séances pour chercheurs en début de carrière</h3>
+                        <ul>
+                            <li>'J'ai suivi ce cours par curiosité et pour apprendre des exercices faciles et rapides à intégrer au quotidien pour se détendre ou s'ancrer.'</li>
+                            <li>'Ce cours est idéal pour se retrouver et pratiquer dans une ambiance bienveillante. Le cours de yoga est excellent.'</li>
+                            <li>'La séance de yoga du matin m'a aidé à réveiller mon corps et mon esprit, me faisant me sentir plus alerte. Une bonne habitude à conserver.'</li>
+                            <li>'J'ai beaucoup apprécié la séance de yoga du matin et le fait de pouvoir travailler dans un nouvel environnement.'</li>
+                        </ul>
                     </div>
                 </div>
             </div>
