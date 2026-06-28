@@ -434,13 +434,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         title: '4-Session Package',
                         icon: 'fas fa-calendar-check',
                         description: '4 sessions of 1 hour each',
-                        price: 'CHF 280'
+                        price: 'CHF 240'
                     },
                     {
                         title: '8-Session Package',
                         icon: 'fas fa-star',
                         description: '8 sessions of 1 hour each',
-                        price: 'CHF 480'
+                        price: 'CHF 440'
                     }
                 ],
                 features: [
@@ -510,7 +510,19 @@ document.addEventListener('DOMContentLoaded', function() {
                         title: 'Private Session',
                         icon: 'fas fa-user',
                         description: '1-hour private yoga and breathwork session',
-                        price: 'CHF 40'
+                        price: 'CHF 30'
+                    },
+                    {
+                        title: 'Combo 5 Sessions',
+                        icon: 'fas fa-calendar-check',
+                        description: '5x 1-hour private yoga and breathwork session',
+                        price: 'CHF 125'
+                    },
+                    {
+                        title: 'Combo 10 Sessions',
+                        icon: 'fas fa-star',
+                        description: '10x 1-hour private yoga and breathwork session',
+                        price: 'CHF 200'
                     }
                 ],
                 features: [
@@ -893,13 +905,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         title: 'Pacchetto 4 Sessioni',
                         icon: 'fas fa-calendar-check',
                         description: '4 sessioni di 1 ora ciascuna',
-                        price: 'CHF 280'
+                        price: 'CHF 240'
                     },
                     {
                         title: 'Pacchetto 8 Sessioni',
                         icon: 'fas fa-star',
                         description: '8 sessioni di 1 ora ciascuna',
-                        price: 'CHF 480'
+                        price: 'CHF 440'
                     }
                 ],
                 features: [
@@ -969,7 +981,19 @@ document.addEventListener('DOMContentLoaded', function() {
                         title: 'Sessione Privata',
                         icon: 'fas fa-user',
                         description: 'Sessione privata di yoga e respirazione di 1 ora',
-                        price: 'CHF 40'
+                        price: 'CHF 30'
+                    },
+                    {
+                        title: 'Combo 5 Sessioni',
+                        icon: 'fas fa-calendar-check',
+                        description: '5 sessioni private di yoga e respirazione di 1 ora',
+                        price: 'CHF 125'
+                    },
+                    {
+                        title: 'Combo 10 Sessioni',
+                        icon: 'fas fa-star',
+                        description: '10 sessioni private di yoga e respirazione di 1 ora',
+                        price: 'CHF 200'
                     }
                 ],
                 features: [
@@ -1352,13 +1376,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         title: 'Forfait 4 Séances',
                         icon: 'fas fa-calendar-check',
                         description: '4 séances d\'1 heure chacune',
-                        price: 'CHF 280'
+                        price: 'CHF 240'
                     },
                     {
                         title: 'Forfait 8 Séances',
                         icon: 'fas fa-star',
                         description: '8 séances d\'1 heure chacune',
-                        price: 'CHF 480'
+                        price: 'CHF 440'
                     }
                 ],
                 features: [
@@ -1428,7 +1452,19 @@ document.addEventListener('DOMContentLoaded', function() {
                         title: 'Séance Privée',
                         icon: 'fas fa-user',
                         description: 'Séance privée de yoga et respiration d\'1 heure',
-                        price: 'CHF 40'
+                        price: 'CHF 30'
+                    },
+                    {
+                        title: 'Combo 5 Séances',
+                        icon: 'fas fa-calendar-check',
+                        description: '5 séances privées de yoga et respiration d\'1 heure',
+                        price: 'CHF 125'
+                    },
+                    {
+                        title: 'Combo 10 Séances',
+                        icon: 'fas fa-star',
+                        description: '10 séances privées de yoga et respiration d\'1 heure',
+                        price: 'CHF 200'
                     }
                 ],
                 features: [

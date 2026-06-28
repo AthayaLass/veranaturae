@@ -319,7 +319,7 @@ nav a:hover {
 }
 
 .hero {
-    background: linear-gradient(rgba(107, 94, 78, 0.3), rgba(182, 191, 165, 0.4)), url('../images/landscape_veranaturae.jpg');
+    background: linear-gradient(rgba(107, 94, 78, 0.3), rgba(182, 191, 165, 0.4)), url('../images/Veronica_header.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1463,6 +1463,29 @@ footer {
 .student-discount i {
     color: var(--accent);
     font-size: 1rem;
+}
+
+.service-partner-logo {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(182, 191, 165, 0.25);
+}
+
+.service-partner-logo p {
+    margin: 0 0 0.6rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text);
+    opacity: 0.85;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.service-partner-logo .partner-logo-img {
+    max-width: 100px;
+    margin: 0 auto;
 }
 
 .service-status {
