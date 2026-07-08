@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner - Veranaturae</title>
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://veranaturae.ch/it/partners.html">
+    <meta property="og:title" content="Partner - Veranaturae">
+    <meta property="og:description" content="Partnership ufficiali e collaborazioni che sostengono la missione di Veranaturae.">
+    <meta property="og:image" content="https://veranaturae.ch/images/Logo_Veranaturae_title.png">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="logo-link">
+                    <img src="../images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="ayurveda.html">Ayurveda</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="yoga.html">Yoga</a></li>
+                        <li><a href="partners.html" class="active">Partner</a></li>
+                        <li><a href="about.html">Chi Sono</a></li>
+                    </ul>
+                    <div class="language-selector">
+                        <div class="language-flags">
+                            <div class="language-flag en" onclick="changeLanguage('en')" title="English"></div>
+                            <div class="language-flag fr" onclick="changeLanguage('fr')" title="Français"></div>
+                            <div class="language-flag it active" onclick="changeLanguage('it')" title="Italiano"></div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="burger-menu" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="home.html" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="ayurveda.html" onclick="closeMobileMenu()">Ayurveda</a></li>
+                <li><a href="mindfulness.html" onclick="closeMobileMenu()">Mindfulness</a></li>
+                <li><a href="yoga.html" onclick="closeMobileMenu()">Yoga</a></li>
+                <li><a href="partners.html" class="active" onclick="closeMobileMenu()">Partner</a></li>
+                <li><a href="about.html" onclick="closeMobileMenu()">Chi Sono</a></li>
+            </ul>
+            <div class="language-selector">
+                <div class="language-flags">
+                    <div class="language-flag en" onclick="changeLanguage('en'); closeMobileMenu();" title="English"></div>
+                    <div class="language-flag fr" onclick="changeLanguage('fr'); closeMobileMenu();" title="Français"></div>
+                    <div class="language-flag it active" onclick="changeLanguage('it'); closeMobileMenu();" title="Italiano"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Partner</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners-section">
+            <div class="container">
+                <p class="section-intro">Organizzazioni e istituzioni con cui collaboriamo con orgoglio.</p>
+                <div class="partners-grid">
+                    <a href="https://www.unine.ch/dp-biol/" target="_blank" rel="noopener noreferrer" class="partner-logo-link">
+                        <img src="../images/OIP.jpeg" alt="Scuola dottorale in scienze della vita di Neuchâtel">
+                    </a>
+                    <a href="https://www.oceantoearth.life" target="_blank" rel="noopener noreferrer" class="partner-logo-link">
+                        <img src="../images/logo_horiz.png" alt="OceantoEarth.Life">
+                    </a>
+                    <a href="https://www.athelas-diving.com" target="_blank" rel="noopener noreferrer" class="partner-logo-link">
+                        <img src="../images/Logo_Athelas.png" alt="Athelas Diving">
+                    </a>
+                    <a href="https://www.pianspessa.ch/" target="_blank" rel="noopener noreferrer" class="partner-logo-link">
+                        <img src="../images/LOGO FONDAZIONE PIANSPESSA_T.png" alt="Fondazione Pianspessa">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Veranaturae. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="../js/language.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
