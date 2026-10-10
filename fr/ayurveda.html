@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayurveda - Veranaturae</title>
+    <link rel="icon" type="image/png" href="../images/vero_new_design/web/favicon.png">
+    <link rel="apple-touch-icon" href="../images/vero_new_design/web/apple-touch-icon.png">
     
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:type" content="website">
@@ -12,36 +14,36 @@
     <meta property="og:description" content="Découvrez l'antique sagesse de l'Ayurveda et ses bienfaits soutenus par la science pour le bien-être holistique.">
     <meta property="og:image" content="https://veranaturae.com/images/Logo_Veranaturae_title.png">
     
-    <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/new-design.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.0.0/css/flag-icons.min.css">
 </head>
-<body>
+<body class="page-sub page-ayurveda">
     <header>
         <div class="container">
             <div class="header-content">
                 <a href="home.html" class="logo-link">
-                    <img src="../images/Logo_Veranaturae.png" alt="Veranaturae Logo" class="logo">
+                    <img src="../images/vero_new_design/web/logo-horizontal.png" alt="Veranaturae – Ayurveda, Mindfulness, Yoga" class="logo">
                 </a>
                 <nav>
                     <ul>
-                        <li><a href="home.html">Home</a></li>
+                        <li><a href="home.html">Accueil</a></li>
                         <li><a href="ayurveda.html" class="active">Ayurveda</a></li>
                         <li><a href="mindfulness.html">Mindfulness</a></li>
                         <li><a href="yoga.html">Yoga</a></li>
-                        <li><a href="partners.html" onclick="closeMobileMenu()">Partenaires</a></li>
-                <li><a href="about.html">À Propos</a></li>
+                        <li><a href="partners.html">Partenaires</a></li>
+                        <li><a href="about.html">À propos</a></li>
                     </ul>
                     <div class="language-selector">
                         <div class="language-flags">
-                            <div class="language-flag en" onclick="changeLanguage('en')" title="English"></div>
-                            <div class="language-flag fr active" onclick="changeLanguage('fr')" title="Français"></div>
-                            <div class="language-flag it" onclick="changeLanguage('it')" title="Italiano"></div>
+                            <div class="language-flag en" onclick="changeLanguage('en');" title="English"></div>
+                            <div class="language-flag fr active" onclick="changeLanguage('fr');" title="Français"></div>
+                            <div class="language-flag it" onclick="changeLanguage('it');" title="Italiano"></div>
                         </div>
                     </div>
+                    <a href="home.html#calendar" class="btn btn-solid header-cta">Réserver une séance <span class="arrow">→</span></a>
                 </nav>
-                <div class="burger-menu" onclick="toggleMobileMenu()">
+                <div class="burger-menu" onclick="toggleMobileMenu()" role="button" aria-label="Ouvrir le menu" tabindex="0">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -50,19 +52,22 @@
         </div>
         <div class="mobile-nav" id="mobileNav">
             <ul>
-                <li><a href="home.html" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="home.html" onclick="closeMobileMenu()">Accueil</a></li>
                 <li><a href="ayurveda.html" class="active" onclick="closeMobileMenu()">Ayurveda</a></li>
                 <li><a href="mindfulness.html" onclick="closeMobileMenu()">Mindfulness</a></li>
                 <li><a href="yoga.html" onclick="closeMobileMenu()">Yoga</a></li>
                 <li><a href="partners.html" onclick="closeMobileMenu()">Partenaires</a></li>
-                <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+                <li><a href="about.html" onclick="closeMobileMenu()">À propos</a></li>
             </ul>
             <div class="language-selector">
                 <div class="language-flags">
                     <div class="language-flag en" onclick="changeLanguage('en'); closeMobileMenu();" title="English"></div>
-                    <div class="language-flag fr active" onclick="changeLanguage('fr'); closeMobileMenu();" title="Français"></div>
-                    <div class="language-flag it" onclick="changeLanguage('it'); closeMobileMenu();" title="Italiano"></div>
+                            <div class="language-flag fr active" onclick="changeLanguage('fr'); closeMobileMenu();" title="Français"></div>
+                            <div class="language-flag it" onclick="changeLanguage('it'); closeMobileMenu();" title="Italiano"></div>
                 </div>
+            </div>
+            <div class="mobile-cta">
+                <a href="home.html#calendar" class="btn btn-solid" onclick="closeMobileMenu()">Réserver une séance <span class="arrow">→</span></a>
             </div>
         </div>
     </header>
@@ -193,8 +198,36 @@
     </div>
 
     <footer>
+        <img src="../images/vero_new_design/web/plant-3.png" alt="" class="footer-plant" aria-hidden="true">
         <div class="container">
-            <p>&copy; 2025 Veranaturae. Tous droits réservés.</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../images/vero_new_design/web/logo-stacked.png" alt="Veranaturae">
+                    <p>Un espace sûr et bienveillant pour ralentir, respirer et vous reconnecter à votre vraie nature à travers l'Ayurveda, la Mindfulness &amp; le Yoga.</p>
+                </div>
+                <div>
+                    <h4>Explorer</h4>
+                    <ul>
+                        <li><a href="ayurveda.html">Ayurveda</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="yoga.html">Yoga</a></li>
+                        <li><a href="partners.html">Partenaires</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:v.caggia@veranaturae.ch"><img src="../images/vero_new_design/web/icon-mail.png" alt=""> v.caggia@veranaturae.ch</a></li>
+                        <li><a href="https://wa.me/41792335593" target="_blank" rel="noopener noreferrer"><img src="../images/vero_new_design/web/icon-phone.png" alt=""> +41 79 233 55 93</a></li>
+                        <li><a href="home.html#calendar"><img src="../images/vero_new_design/web/icon-calendar.png" alt=""> Réserver une séance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Veranaturae. Tous droits réservés.</span>
+                <span>Ayurveda &bull; Mindfulness &bull; Yoga</span>
+            </div>
         </div>
     </footer>
 
