@@ -365,13 +365,14 @@ nav ul a.active::after { transform: scaleX(1); }
 }
 .pillar:hover .pillar-media img { transform: scale(1.04); }
 
+/* The pillar is the stacking context so the blob (z-index -1) sits behind ALL the text */
+.pillar { position: relative; isolation: isolate; }
 .pillar-title {
     position: relative;
     display: inline-block;
     margin: 1.9rem 0 0.6rem;
     font-size: clamp(1.9rem, 2.6vw, 2.3rem);
     color: var(--vn-olive);
-    z-index: 0;
 }
 .pillar-title::before {
     content: '';
@@ -511,11 +512,12 @@ nav ul a.active::after { transform: scaleX(1); }
         linear-gradient(180deg, rgba(91, 91, 70, 0.1) 0%, rgba(91, 91, 70, 0.35) 100%);
 }
 .booking-deco {
+    /* sits on the plain olive area between the text and the photo */
     position: absolute;
-    right: 3%;
-    bottom: 6%;
-    width: clamp(160px, 20vw, 300px);
-    opacity: 0.6;
+    right: 39%;
+    bottom: 4%;
+    width: clamp(140px, 16vw, 230px);
+    opacity: 0.5;
     z-index: 1;
     pointer-events: none;
 }
@@ -1158,10 +1160,14 @@ body.page-sub .hero .hero-deco { display: none; }
     .burger-menu { display: flex !important; }
     .mobile-nav { display: block !important; }
 
-    .hero { min-height: clamp(520px, 78vh, 700px); background-position: 62% 30%; }
-    .hero-content { padding: 3rem 0; max-width: 560px; }
-    .hero-deco-emblem { right: -8%; top: 8%; width: 60vw; opacity: 0.28; }
-    .hero-deco-stem { left: auto; right: 6%; bottom: -3%; width: 150px; }
+    /* Face sits in the upper half of the photo; text anchored to the bottom, emblem in the top-left corner */
+    .hero { min-height: clamp(560px, 82vh, 720px); background-position: 62% 22%; align-items: flex-end; }
+    .hero-content { padding: 9rem 0 2.75rem; max-width: 560px; }
+    .hero-deco-emblem { right: auto; left: -14%; top: -3%; width: 50vw; opacity: 0.25; }
+    .hero-deco-stem { left: auto; right: 4%; bottom: -3%; width: 140px; opacity: 0.22; }
+    .hero::before {
+        background: linear-gradient(180deg, rgba(74, 82, 48, 0.2) 0%, rgba(74, 82, 48, 0.2) 38%, rgba(74, 82, 48, 0.72) 68%, rgba(74, 82, 48, 0.9) 100%);
+    }
 
     .about-intro { padding: 4.5rem 0 2.5rem; }
     .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -1183,7 +1189,7 @@ body.page-sub .hero .hero-deco { display: none; }
         background: linear-gradient(180deg, rgba(91, 91, 70, 0.15) 0%, rgba(91, 91, 70, 0.35) 70%, var(--vn-olive) 100%);
     }
     .booking-text { padding: 2rem 0 3.5rem; max-width: none; }
-    .booking-deco { width: 150px; right: 4%; bottom: auto; top: 60px; }
+    .booking-deco { width: 180px; right: -6%; bottom: -3%; opacity: 0.3; }
 
     .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
     .footer-brand { grid-column: 1 / -1; }
