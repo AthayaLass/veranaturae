@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'ayurveda-consultation': {
                 title: 'Ayurvedic Consultation',
-                description: 'Discover your unique constitution (dosha) and receive personalized recommendations for diet, lifestyle, herbs, and daily routines to restore balance and enhance your well-being.',
+                description: 'Discover your unique constitution and receive personalized recommendations for diet, lifestyle, herbs, and daily routines to restore balance and enhance your well-being.',
                 pricing: [
                     {
                         title: 'Initial Consultation',
@@ -814,7 +814,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'ayurveda-consultation': {
                 title: 'Consultazione Ayurvedica',
-                description: 'Scopri la tua costituzione unica (dosha) e ricevi raccomandazioni personalizzate per dieta, stile di vita, erbe e routine quotidiane per ripristinare l\'equilibrio e migliorare il tuo benessere.',
+                description: 'Scopri la tua costituzione unica e ricevi raccomandazioni personalizzate per dieta, stile di vita, erbe e routine quotidiane per ripristinare l\'equilibrio e migliorare il tuo benessere.',
                 pricing: [
                     {
                         title: 'Consultazione Iniziale',
@@ -1285,7 +1285,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'ayurveda-consultation': {
                 title: 'Consultation Ayurvedique',
-                description: 'Découvrez votre constitution unique (dosha) et recevez des recommandations personnalisées pour l\'alimentation, le mode de vie, les herbes et les routines quotidiennes pour rétablir l\'équilibre et améliorer votre bien-être.',
+                description: 'Découvrez votre constitution unique et recevez des recommandations personnalisées pour l\'alimentation, le mode de vie, les herbes et les routines quotidiennes pour rétablir l\'équilibre et améliorer votre bien-être.',
                 pricing: [
                     {
                         title: 'Consultation Initiale',

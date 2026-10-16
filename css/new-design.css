@@ -898,7 +898,7 @@ body.page-sub .hero .hero-deco { display: none; }
 .service-book-btn i { font-size: 0.85em; }
 
 /* About */
-.about-section { padding: 5rem 0; background: var(--vn-page); }
+.about-section { padding: 5rem 0; background: var(--vn-page); overflow: hidden; }
 .about-section + .about-section { background: var(--vn-cream); }
 .about-content {
     display: grid;
@@ -924,7 +924,35 @@ body.page-sub .hero .hero-deco { display: none; }
 .about-text p { font-size: 1rem; line-height: 1.85; color: var(--vn-text); margin-bottom: 1.1rem; }
 .about-text p i { color: var(--vn-tan); width: 1.4rem; display: inline-block; }
 .location-section .about-content { align-items: start; }
-.location-section .about-image img { aspect-ratio: 4 / 3; border-radius: 36px; max-width: 520px; }
+.location-section .about-image img { aspect-ratio: 4 / 3; border-radius: 36px; max-width: 520px; object-position: center 62%; }
+
+/* Three logo blobs behind the "About me" text */
+.about-section:not(.location-section) .about-text { position: relative; isolation: isolate; }
+.about-section:not(.location-section) .about-text::before,
+.about-section:not(.location-section) .about-text::after,
+.about-section:not(.location-section) .about-text p:first-child::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    background: center / contain no-repeat;
+    opacity: 0.75;
+}
+.about-section:not(.location-section) .about-text::before {
+    background-image: url('../images/vero_new_design/web/blob-green.png');
+    width: 150px; height: 220px;
+    top: -3rem; left: -4.5rem;
+}
+.about-section:not(.location-section) .about-text p:first-child::after {
+    background-image: url('../images/vero_new_design/web/blob-coral.png');
+    width: 260px; height: 230px;
+    top: 34%; right: -4.5rem;
+}
+.about-section:not(.location-section) .about-text::after {
+    background-image: url('../images/vero_new_design/web/blob-beige.png');
+    width: 200px; height: 220px;
+    bottom: -2.5rem; left: 22%;
+}
 .location-title {
     font-size: clamp(1.8rem, 2.8vw, 2.3rem);
     color: var(--vn-olive);
@@ -1138,6 +1166,9 @@ body.page-sub .hero .hero-deco { display: none; }
     .modal-content-wrapper { padding: 2.2rem 1.4rem 1.8rem; }
 }
 @media (max-width: 600px) {
+    .about-section:not(.location-section) .about-text::before { width: 110px; height: 160px; top: -1.5rem; left: -2.5rem; }
+    .about-section:not(.location-section) .about-text p:first-child::after { width: 180px; height: 160px; right: -2.5rem; }
+    .about-section:not(.location-section) .about-text::after { width: 140px; height: 150px; bottom: -1.5rem; left: 30%; }
     .education-item { flex-direction: column; gap: 0.2rem; }
     .education-year { flex-basis: auto; }
     .review-item, .review-group { padding: 1.5rem 1.4rem; border-radius: 20px; }
