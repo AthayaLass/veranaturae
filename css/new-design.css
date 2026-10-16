@@ -924,7 +924,7 @@ body.page-sub .hero .hero-deco { display: none; }
 .about-text p { font-size: 1rem; line-height: 1.85; color: var(--vn-text); margin-bottom: 1.1rem; }
 .about-text p i { color: var(--vn-tan); width: 1.4rem; display: inline-block; }
 .location-section .about-content { align-items: start; }
-.location-section .about-image img { aspect-ratio: 4 / 3; border-radius: 36px; max-width: 520px; object-position: center 62%; }
+.location-section .about-image img { aspect-ratio: 4 / 3; border-radius: 36px; max-width: 520px; object-position: center 80%; }
 
 /* Three logo blobs behind the "About me" text */
 .about-section:not(.location-section) .about-text { position: relative; isolation: isolate; }
