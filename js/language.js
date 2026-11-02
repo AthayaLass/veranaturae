@@ -6,11 +6,12 @@ function getCurrentLanguage() {
     const path = window.location.pathname;
     if (path.includes('/it/')) return 'it';
     if (path.includes('/fr/')) return 'fr';
+    if (path.includes('/de/')) return 'de';
     if (path.includes('/en/')) return 'en';
     
     // Check localStorage
     const savedLang = localStorage.getItem('preferredLanguage');
-    if (savedLang && ['en', 'it', 'fr'].includes(savedLang)) {
+    if (savedLang && ['en', 'it', 'fr', 'de'].includes(savedLang)) {
         return savedLang;
     }
     
@@ -20,12 +21,13 @@ function getCurrentLanguage() {
     
     if (langCode === 'it') return 'it';
     if (langCode === 'en') return 'en';
+    if (langCode === 'de') return 'de';
     return 'fr'; // Default to French
 }
 
 // Switch language
 function switchLanguage(lang) {
-    if (!['en', 'it', 'fr'].includes(lang)) return;
+    if (!['en', 'it', 'fr', 'de'].includes(lang)) return;
     
     // Save preference
     localStorage.setItem('preferredLanguage', lang);
@@ -40,7 +42,7 @@ function switchLanguage(lang) {
 
 // Change language (matching Athelas_Diving implementation)
 function changeLanguage(lang) {
-    if (!['en', 'it', 'fr'].includes(lang)) return;
+    if (!['en', 'it', 'fr', 'de'].includes(lang)) return;
     
     const currentPath = window.location.pathname;
     const pathParts = currentPath.split('/').filter(part => part);
@@ -50,7 +52,7 @@ function changeLanguage(lang) {
     localStorage.setItem('preferredLanguage', lang);
     
     // Build new path - if we're in a language subdirectory, replace it; otherwise add it
-    if (pathParts.length > 1 && ['en', 'it', 'fr'].includes(pathParts[0])) {
+    if (pathParts.length > 1 && ['en', 'it', 'fr', 'de'].includes(pathParts[0])) {
         // We're in a language subdirectory, replace the language
         pathParts[0] = lang;
         window.location.href = '/' + pathParts.join('/');

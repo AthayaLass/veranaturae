@@ -1,6 +1,6 @@
 // Language switching function
 function switchLanguage(lang) {
-    if (!['en', 'it', 'fr'].includes(lang)) return;
+    if (!['en', 'it', 'fr', 'de'].includes(lang)) return;
     
     // Save preference
     localStorage.setItem('preferredLanguage', lang);
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'en': {
             'coaching': {
                 title: '1:1 Mindfulness Coaching',
-                description: 'Step into a more balanced life with personal guidance. Whether you\'re new to mindfulness or deepening an existing practice, my individual coaching sessions are designed around your unique goals and life rhythm. Together, we\'ll cultivate presence, resilience, and self-awareness - one mindful breath at a time.',
+                description: 'Step into a more balanced life with personal guidance. Whether you\'re new to mindfulness or deepening an existing practice, my individual coaching sessions are designed around your unique goals and life rhythm. Together, we\'ll cultivate presence, resilience, and self-awareness, one mindful breath at a time.',
                 pricing: [
                     {
                         title: 'Individual Session',
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     {
                         title: 'Program (8 sessions)',
                         icon: 'fas fa-calendar-alt',
-                        description: '8 sessions of 1 hour each for up to 10 people',
+                        description: '8 sessions of 1h30 each for up to 10 people',
                         price: 'CHF 2,500'
                     }
                 ],
@@ -422,7 +422,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'mindfulness-1to1': {
                 title: '1:1 Mindfulness Sessions',
-                description: 'Step into a more balanced life with personal guidance. Whether you\'re new to mindfulness or deepening an existing practice, my individual coaching sessions are designed around your unique goals and life rhythm. Together, we\'ll cultivate presence, resilience, and self-awareness - one mindful breath at a time.',
+                description: 'Step into a more balanced life with personal guidance. Whether you\'re new to mindfulness or deepening an existing practice, my individual coaching sessions are designed around your unique goals and life rhythm. Together, we\'ll cultivate presence, resilience, and self-awareness, one mindful breath at a time.',
                 pricing: [
                     {
                         title: 'Individual Session',
@@ -467,7 +467,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     {
                         title: 'Program (8 sessions)',
                         icon: 'fas fa-calendar-alt',
-                        description: '8 sessions of 1 hour each for up to 10 people',
+                        description: '8 sessions of 1h30 each for up to 10 people',
                         price: 'CHF 2,500'
                     }
                 ],
@@ -478,8 +478,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Leadership development',
                     'Ongoing support'
                 ],
-                buttonText: 'Click here to get in touch',
-                buttonAction: 'home.html?service=mindfulness#calendar',
+                buttonText: 'Request a quote',
+                buttonAction: 'mindfulness.html#quote',
                 flyerDownload: '../images/Flyer aziende - en.pdf'
             },
             'mindfulness-underwater': {
@@ -559,10 +559,92 @@ document.addEventListener('DOMContentLoaded', function() {
                 buttonAction: 'home.html?service=yoga#calendar'
             }
         },
+        'de': {
+            'mindfulness-1to1': {
+                title: '1:1-Mindfulness-Sitzungen',
+                description: 'Finden Sie mit persönlicher Begleitung in ein ausgewogeneres Leben. Ob Sie neu bei der Achtsamkeit sind oder eine bestehende Praxis vertiefen: Die Einzelsitzungen orientieren sich an Ihren Zielen und Ihrem Rhythmus.',
+                pricing: [
+                    { title: 'Einzelsitzung', icon: 'fas fa-user', description: '1 Stunde persönliche Mindfulness-Sitzung', price: 'CHF 70' },
+                    { title: 'Paket 4 Sitzungen', icon: 'fas fa-calendar-check', description: '4 Sitzungen à 1 Stunde', price: 'CHF 240' },
+                    { title: 'Paket 8 Sitzungen', icon: 'fas fa-star', description: '8 Sitzungen à 1 Stunde', price: 'CHF 440' }
+                ],
+                features: ['Persönlicher Ansatz', '30 Min. Kennenlerngespräch inbegriffen', 'Nachbetreuung', 'Flexible Termine', 'Fortschrittsbegleitung'],
+                buttonText: 'Kontakt aufnehmen',
+                buttonAction: 'home.html?service=mindfulness#calendar',
+                flyerDownload: '../images/Flyer mindfulness - en.pdf'
+            },
+            'mindfulness-corporate': {
+                title: 'Mindfulness für Unternehmen',
+                description: 'Stärken Sie Wohlbefinden, Fokus und Zusammenarbeit im Team. Massgeschneiderte Workshops und Firmensitzungen bringen Klarheit und Ruhe an den Arbeitsplatz.',
+                pricing: [
+                    { title: 'Workshop (2 Stunden)', icon: 'fas fa-chalkboard-teacher', description: '2-Stunden-Workshop für bis zu 15 Personen', price: 'CHF 400' },
+                    { title: 'Programm (8 Sitzungen)', icon: 'fas fa-calendar-alt', description: '8 Sitzungen à 1h30 für bis zu 10 Personen', price: 'CHF 2,500' }
+                ],
+                features: ['Auf Ihre Organisation zugeschnitten', 'Stressreduktion', 'Teamübungen', 'Leadership-Entwicklung', 'Laufende Begleitung'],
+                buttonText: 'Offerte anfragen',
+                buttonAction: 'mindfulness.html#quote',
+                flyerDownload: '../images/Flyer aziende - en.pdf'
+            },
+            'mindfulness-underwater': {
+                title: 'Unterwasser-Mindfulness',
+                description: 'Erleben Sie Achtsamkeit unter Wasser: eine immersive Verbindung aus Stille, Atem und der Unterwasserwelt.',
+                pricing: [{ title: 'Unterwasser-Sitzung', icon: 'fas fa-water', description: 'Geführte Unterwasser-Achtsamkeit', price: 'Preis auf Anfrage' }],
+                features: ['Zusammenarbeit mit Athelas Diving', 'Professionelle Tauchbegleitung', 'Mindfulness-Anleitung', 'Angaben zu Material auf Anfrage'],
+                buttonText: 'Kontakt aufnehmen',
+                buttonAction: 'home.html?service=mindfulness#calendar'
+            },
+            'private-yoga': {
+                title: 'Privates Yoga',
+                description: 'Persönliche Yoga-Einzelsitzungen, abgestimmt auf Ihre Bedürfnisse, Ziele und Erfahrung.',
+                pricing: [
+                    { title: 'Privatsitzung', icon: 'fas fa-user', description: '1 Stunde privates Yoga und Atemarbeit', price: 'CHF 30' },
+                    { title: 'Kombi 5 Sitzungen', icon: 'fas fa-calendar-check', description: '5 × 1 Stunde privates Yoga', price: 'CHF 125' },
+                    { title: 'Kombi 10 Sitzungen', icon: 'fas fa-star', description: '10 × 1 Stunde privates Yoga', price: 'CHF 200' }
+                ],
+                features: ['Persönlicher Ansatz', 'Sanfte Bewegung', 'Atemtechniken', 'Stressabbau', 'Körper-Geist-Verbindung', 'Alle Niveaus willkommen'],
+                buttonText: 'Kontakt aufnehmen',
+                buttonAction: 'home.html?service=yoga#calendar'
+            },
+            'group-yoga': {
+                title: 'Gruppenyoga',
+                description: 'Üben Sie gemeinsam in einem haltgebenden Rahmen. Teilen Sie Energie und wachsen Sie in einer einladenden Atmosphäre.',
+                pricing: [{ title: 'Gruppensitzung', icon: 'fas fa-users', description: '1 Stunde Gruppe, bis zu 10 Personen', price: 'CHF 20 pro Person' }],
+                features: ['Haltgebende Gemeinschaft', 'Sanfte Bewegung', 'Atemtechniken', 'Stressabbau', 'Körper-Geist-Verbindung', 'Alle Niveaus willkommen'],
+                buttonText: 'Kontakt aufnehmen',
+                buttonAction: 'home.html?service=yoga#calendar'
+            },
+            'ayurveda-consultation': {
+                title: 'Ayurvedische Beratung',
+                description: 'Entdecken Sie Ihre einzigartige Konstitution und erhalten Sie persönliche Empfehlungen zu Ernährung, Lebensstil, Kräutern und Tagesrhythmus.',
+                pricing: [
+                    { title: 'Erstberatung', icon: 'fas fa-user', description: 'Umfassende Beratung inklusive Konstitutionsanalyse', price: 'Auf Anfrage' },
+                    { title: 'Folgeberatung', icon: 'fas fa-calendar-check', description: 'Vertiefende Folgesitzung', price: 'Auf Anfrage' }
+                ],
+                features: ['Persönliche Anamnese', 'Empfehlungen zu Ernährung und Lebensstil', 'Kräuter und Routinen'],
+                buttonText: 'Kontakt aufnehmen',
+                buttonAction: 'home.html?service=ayurveda#calendar'
+            },
+            'ayurveda-massages': {
+                title: 'Ayurvedische Massagen',
+                description: 'Therapeutische Massagen mit traditionellen ayurvedischen Techniken und Ölen.',
+                pricing: [{ title: 'Massage', icon: 'fas fa-spa', description: 'Ayurvedische Massage', price: 'Auf Anfrage' }],
+                features: ['Traditionelle Techniken', 'Tiefe Entspannung', 'Förderung der Balance'],
+                buttonText: 'Kontakt aufnehmen',
+                buttonAction: 'home.html?service=ayurveda#calendar'
+            },
+            'ayurveda-nutrition': {
+                title: 'Ayurvedische Ernährung',
+                description: 'Persönliche Ernährungsempfehlungen, abgestimmt auf Ihre Konstitution und Ihren Alltag.',
+                pricing: [{ title: 'Ernährungsberatung', icon: 'fas fa-leaf', description: 'Persönliche Empfehlungen', price: 'Auf Anfrage' }],
+                features: ['Konstitutionelle Empfehlungen', 'Mahlzeitenplanung', 'Lebensmittelkombinationen'],
+                buttonText: 'Kontakt aufnehmen',
+                buttonAction: 'home.html?service=ayurveda#calendar'
+            }
+        },
         'it': {
             'coaching': {
                 title: 'Coaching Mindfulness 1:1',
-                description: 'Entra in una vita più equilibrata con una guida personale. Che tu sia nuovo alla mindfulness o stia approfondendo una pratica esistente, le mie sessioni di coaching individuali sono progettate intorno ai tuoi obiettivi unici e al ritmo della tua vita. Insieme, coltiveremo presenza, resilienza e consapevolezza di sé - un respiro consapevole alla volta.',
+                description: 'Entra in una vita più equilibrata con una guida personale. Che tu sia nuovo alla mindfulness o stia approfondendo una pratica esistente, le mie sessioni di coaching individuali sono progettate intorno ai tuoi obiettivi unici e al ritmo della tua vita. Insieme, coltiveremo presenza, resilienza e consapevolezza di sé, un respiro consapevole alla volta.',
                 pricing: [
                     {
                         title: 'Sessione Individuale',
@@ -635,7 +717,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     {
                         title: 'Programma (8 sessioni)',
                         icon: 'fas fa-calendar-alt',
-                        description: '8 sessioni di 1 ora ciascuna per fino a 10 persone',
+                        description: '8 sessioni di 1h30 ciascuna per fino a 10 persone',
                         price: 'CHF 2,500'
                     }
                 ],
@@ -893,7 +975,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'mindfulness-1to1': {
                 title: 'Sessioni Mindfulness 1:1',
-                description: 'Entra in una vita più equilibrata con una guida personale. Che tu sia nuovo alla mindfulness o stia approfondendo una pratica esistente, le mie sessioni di coaching individuali sono progettate intorno ai tuoi obiettivi unici e al ritmo della tua vita. Insieme, coltiveremo presenza, resilienza e consapevolezza di sé - un respiro consapevole alla volta.',
+                description: 'Entra in una vita più equilibrata con una guida personale. Che tu sia nuovo alla mindfulness o stia approfondendo una pratica esistente, le mie sessioni di coaching individuali sono progettate intorno ai tuoi obiettivi unici e al ritmo della tua vita. Insieme, coltiveremo presenza, resilienza e consapevolezza di sé, un respiro consapevole alla volta.',
                 pricing: [
                     {
                         title: 'Sessione Individuale',
@@ -938,7 +1020,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     {
                         title: 'Programma (8 sessioni)',
                         icon: 'fas fa-calendar-alt',
-                        description: '8 sessioni di 1 ora ciascuna per fino a 10 persone',
+                        description: '8 sessioni di 1h30 ciascuna per fino a 10 persone',
                         price: 'CHF 2,500'
                     }
                 ],
@@ -949,8 +1031,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Sviluppo della leadership',
                     'Supporto continuo'
                 ],
-                buttonText: 'Clicca qui per contattarci',
-                buttonAction: 'home.html?service=mindfulness#calendar',
+                buttonText: 'Richiedi un preventivo',
+                buttonAction: 'mindfulness.html#quote',
                 flyerDownload: '../images/Flyer aziende - it.pdf'
             },
             'mindfulness-underwater': {
@@ -1033,7 +1115,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'fr': {
             'coaching': {
                 title: 'Coaching Mindfulness 1:1',
-                description: 'Entrez dans une vie plus équilibrée avec un accompagnement personnel. Que vous soyez nouveau dans la pleine conscience ou que vous approfondissiez une pratique existante, mes séances de coaching individuelles sont conçues autour de vos objectifs uniques et du rythme de votre vie. Ensemble, nous cultiverons la présence, la résilience et la conscience de soi - une respiration consciente à la fois.',
+                description: 'Entrez dans une vie plus équilibrée avec un accompagnement personnel. Que vous soyez nouveau dans la pleine conscience ou que vous approfondissiez une pratique existante, mes séances de coaching individuelles sont conçues autour de vos objectifs uniques et du rythme de votre vie. Ensemble, nous cultiverons la présence, la résilience et la conscience de soi, une respiration consciente à la fois.',
                 pricing: [
                     {
                         title: 'Séance Individuelle',
@@ -1106,7 +1188,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     {
                         title: 'Programme (8 séances)',
                         icon: 'fas fa-calendar-alt',
-                        description: '8 séances d\'1 heure chacune pour jusqu\'à 10 personnes',
+                        description: '8 séances d\'1h30 chacune pour jusqu\'à 10 personnes',
                         price: 'CHF 2,500'
                     }
                 ],
@@ -1364,7 +1446,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'mindfulness-1to1': {
                 title: 'Séances de Pleine Conscience 1:1',
-                description: 'Entrez dans une vie plus équilibrée avec un accompagnement personnel. Que vous soyez nouveau dans la pleine conscience ou que vous approfondissiez une pratique existante, mes séances de coaching individuelles sont conçues autour de vos objectifs uniques et du rythme de votre vie. Ensemble, nous cultiverons la présence, la résilience et la conscience de soi - une respiration consciente à la fois.',
+                description: 'Entrez dans une vie plus équilibrée avec un accompagnement personnel. Que vous soyez nouveau dans la pleine conscience ou que vous approfondissiez une pratique existante, mes séances de coaching individuelles sont conçues autour de vos objectifs uniques et du rythme de votre vie. Ensemble, nous cultiverons la présence, la résilience et la conscience de soi, une respiration consciente à la fois.',
                 pricing: [
                     {
                         title: 'Séance Individuelle',
@@ -1409,7 +1491,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     {
                         title: 'Programme (8 séances)',
                         icon: 'fas fa-calendar-alt',
-                        description: '8 séances d\'1 heure chacune pour jusqu\'à 10 personnes',
+                        description: '8 séances d\'1h30 chacune pour jusqu\'à 10 personnes',
                         price: 'CHF 2,500'
                     }
                 ],
@@ -1420,8 +1502,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Développement du leadership',
                     'Soutien continu'
                 ],
-                buttonText: 'Cliquez ici pour nous contacter',
-                buttonAction: 'home.html?service=mindfulness#calendar',
+                buttonText: 'Demander un devis',
+                buttonAction: 'mindfulness.html#quote',
                 flyerDownload: '../images/Flyer aziende - fr.pdf'
             },
             'mindfulness-underwater': {
@@ -1519,6 +1601,11 @@ document.addEventListener('DOMContentLoaded', function() {
             included: 'Ce qui est inclus :',
             downloadFlyer: 'Télécharger le Dépliant',
             inCollaboration: 'En collaboration avec :'
+        },
+        'de': {
+            included: 'Inbegriffen:',
+            downloadFlyer: 'Flyer herunterladen',
+            inCollaboration: 'In Zusammenarbeit mit:'
         }
     };
     
@@ -1529,6 +1616,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let currentLang = 'en'; // Default
         if (path.includes('/it/')) currentLang = 'it';
         else if (path.includes('/fr/')) currentLang = 'fr';
+        else if (path.includes('/de/')) currentLang = 'de';
         else if (path.includes('/en/')) currentLang = 'en';
         
         // Fallback to 'en' if language data doesn't exist
@@ -1616,7 +1704,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 
                 <div class="modal-cta">
-                    <button class="btn-primary" onclick="window.location.href='${data.buttonAction}'">${data.buttonText}</button>
+                    <button type="button" class="btn-primary modal-cta-btn" data-href="${data.buttonAction}">${data.buttonText}</button>
                 </div>
             </div>
         `;
@@ -1634,6 +1722,34 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.classList.remove('active');
         document.body.style.overflow = '';
     }
+
+    function followModalAction(url) {
+        closeModal();
+        if (!url) return;
+        const hashIndex = url.indexOf('#');
+        const hash = hashIndex >= 0 ? url.slice(hashIndex) : '';
+        const page = hashIndex >= 0 ? url.slice(0, hashIndex) : url;
+        const currentPage = window.location.pathname.split('/').pop();
+        const samePage = !page || page === currentPage;
+        window.setTimeout(() => {
+            if (samePage && hash) {
+                const target = document.querySelector(hash);
+                if (target) {
+                    history.replaceState(null, '', hash);
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    return;
+                }
+            }
+            window.location.href = url;
+        }, 50);
+    }
+
+    modalBody.addEventListener('click', function(e) {
+        const btn = e.target.closest('.modal-cta-btn');
+        if (!btn) return;
+        e.preventDefault();
+        followModalAction(btn.getAttribute('data-href'));
+    });
     
     // Event listeners for service cards
     serviceCards.forEach(card => {
@@ -1919,3 +2035,24 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
+
+function submitCompanyQuote(event) {
+    event.preventDefault();
+    const form = event.target;
+    const val = (name) => (form.elements[name] && form.elements[name].value.trim()) || '';
+    const company = val('company');
+    const subject = encodeURIComponent('Quote request / Devis - ' + (company || 'Veranaturae'));
+    const body = encodeURIComponent(
+        'Company: ' + company + '\n' +
+        'Name: ' + val('name') + '\n' +
+        'Email: ' + val('email') + '\n' +
+        'Phone: ' + val('phone') + '\n' +
+        'Participants: ' + val('participants') + '\n' +
+        'Format: ' + val('format') + '\n\n' +
+        val('message')
+    );
+    window.location.href = 'mailto:v.caggia@veranaturae.ch?subject=' + subject + '&body=' + body;
+    const status = form.querySelector('.quote-status');
+    if (status) status.hidden = false;
+    return false;
+}
